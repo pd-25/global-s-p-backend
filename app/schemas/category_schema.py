@@ -1,0 +1,91 @@
+from datetime import datetime
+from typing import Optional
+from pydantic import BaseModel, Field
+
+from app.enums.enums import CategoryOrderBy, SortOrder
+
+
+
+class CategorySchema(BaseModel):
+    id: int
+    slug: str
+    created_at: Optional[datetime] = None
+
+#Filter validation od category list  
+class CategoryFilterSchema(BaseModel):
+    search_string: Optional[str] = None
+    per_page: int = Field(default=10, ge=1, le=100)
+    page: int = Field(default=1, ge=1)  
+    order_by_column: CategoryOrderBy = Field(default=CategoryOrderBy.id)
+    sort_order: SortOrder = Field(default=SortOrder.desc)
+ 
+ #admin list response of category   
+class CategoryResponseSchema(CategorySchema):
+    name: str
+    image: Optional[str]
+
+    class Config:
+        from_attributes = True  # Allows Pydantic to read SQLAlchemy models
+        
+
+
+from fastapi import UploadFile, File, Form
+from pydantic import field_validator
+import re
+
+class CreateCategorySchema(BaseModel):
+    name: str
+    description: str
+    image: UploadFile
+
+    @classmethod
+    def as_form(
+        cls,
+        name: str = Form(...),
+        description: str = Form(...),
+        image: UploadFile = File(...)
+    ) -> "CreateCategorySchema":
+        return cls(name=name, description=description, image=image)
+
+    @field_validator('name')
+    def validate_name(cls, v):
+        if not re.match(r'^[a-zA-Z0-9\s]+$', v):
+            raise ValueError('Name must be alphanumeric and can contain spaces, no special characters')
+        if not (2 <= len(v) <= 50):
+            raise ValueError('Name must be between 2 and 50 characters')
+        return v
+
+    @field_validator('description')
+    def validate_description(cls, v):
+        if not re.match(r'^[a-zA-Z0-9\s]+$', v):
+            raise ValueError('Description must be alphanumeric and can contain spaces, no special characters')
+        if not (5 <= len(v) <= 500):
+            raise ValueError('Description must be between 5 and 500 characters')
+        return v
+
+    @field_validator('image')
+    def validate_image(cls, v: UploadFile):
+        # 2 MB = 2 * 1024 * 1024 bytes
+        # Note: UploadFile might not always have 'size' populated depending on the backend, 
+        # but usually we can check. However, checking size without reading chunks might be tricky 
+        # if the spool fits in memory. 
+        # A common way is to check content-length header or read.
+        # For simplicity in Pydantic validator, we might check file.size if available (Starlette/FastAPI)
+        # But 'size' attribute isn't standard on UploadFile object without spooled file.
+        # We'll try to check the request header content-length roughly if needed, 
+        # but typically file validation logic is better done by reading.
+        # Let's rely on checking the file.size or seeking.
+        
+        MAX_SIZE = 2 * 1024 * 1024
+        
+        # We can check the file's size by moving cursor to end
+        v.file.seek(0, 2)
+        file_size = v.file.tell()
+        v.file.seek(0)  # reset cursor
+
+        if file_size > MAX_SIZE:
+             raise ValueError('Image size must be less than 2MB')
+        
+        return v
+
+        
