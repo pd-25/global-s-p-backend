@@ -68,3 +68,6 @@ docs/_build/
 *.egg
 *.whl
 pip-selfcheck.json
+
+# App static files
+app/static

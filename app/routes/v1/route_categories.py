@@ -1,11 +1,12 @@
 from typing import List
-from fastapi import APIRouter, Depends,status
+from fastapi import APIRouter, Depends, UploadFile,status, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from app.database.session import get_db
 from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema
 from app.schemas.response import APIResponse
-from app.services.categories.category_service import retrieve_all_categories
+from app.services.categories.category_service import create_category_service, retrieve_all_categories
+from app.utils.file_utils import validate_image_file
 
 
 category_router = APIRouter()
@@ -62,15 +63,14 @@ def get_categories(filters: CategoryFilterSchema = Depends(), db: Session = Depe
      
 
 
-@category_router.post("/", description="This endpoint will create new category")
-def create_category(category_data: CreateCategorySchema = Depends(CreateCategorySchema.as_form)):
+@category_router.post("/", response_model=APIResponse[CategoryResponseSchema], description="This endpoint will create new category")
+async def create_category(category_data: CreateCategorySchema = Depends(CreateCategorySchema.as_form), db: Session = Depends(get_db)):
+    validate_image_file(category_data.image)
     # Here category_data is already validated
-    return {
-        "success": True, 
-        "message": "Category created successfully",
-        "data": {
-            "name": category_data.name, 
-            "description": category_data.description,
-            "filename": category_data.image.filename
-        }
-    }
+    response = await create_category_service(category_data=category_data, db=db)
+    
+    return APIResponse(
+        success=True, 
+        message="Category created successfully",
+        data=response
+    )
