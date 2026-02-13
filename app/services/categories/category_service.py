@@ -1,3 +1,4 @@
+import os
 from fastapi import HTTPException, status
 from sqlalchemy import asc, desc
 from sqlalchemy.orm import Session
@@ -6,7 +7,7 @@ from app.models.category import Categories
 from sqlalchemy.exc import SQLAlchemyError
 import logging
 
-from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema
+from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema, UpdateCategorySchema
 logger = logging.getLogger(__name__)
         
 
@@ -61,6 +62,7 @@ from app.utils.file_utils import save_upload_file
 from app.utils.string_utils import generate_slug
 import time
 
+
 async def create_category_service(category_data: CreateCategorySchema, db: Session):
     try:
         slug = generate_slug(category_data.name)
@@ -99,4 +101,45 @@ async def create_category_service(category_data: CreateCategorySchema, db: Sessi
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not create category."
+        )
+
+async def update_single_category(slug: str, category_data: UpdateCategorySchema, db: Session):
+    try:
+        existing_category = db.query(Categories).filter(Categories.slug == slug).first()
+        if not existing_category:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Category not found"
+            )
+        print(existing_category)
+        # Update fields
+        existing_category.name = category_data.name
+        existing_category.description = category_data.description
+        
+        # Handle image update if a new image is provided
+        if category_data.image:
+            # Delete old image
+            if existing_category.image:
+                try:
+                    os.remove(existing_category.image)
+                except OSError:
+                    pass  # Ignore if file doesn't exist
+            
+            # Save new image
+            image_path = save_upload_file(category_data.image, "app/static/uploads/categories")
+            existing_category.image = image_path
+        
+        db.commit()
+        db.refresh(existing_category)
+        
+        return existing_category
+        
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error updating category: {str(e)}")
+        db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not update category."
         )

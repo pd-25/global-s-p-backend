@@ -1,11 +1,12 @@
+import string
 from typing import List
 from fastapi import APIRouter, Depends, UploadFile,status, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from app.database.session import get_db
-from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema
+from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema, UpdateCategorySchema
 from app.schemas.response import APIResponse
-from app.services.categories.category_service import create_category_service, retrieve_all_categories
+from app.services.categories.category_service import create_category_service, retrieve_all_categories, update_single_category
 from app.utils.file_utils import validate_image_file
 
 
@@ -72,5 +73,17 @@ async def create_category(category_data: CreateCategorySchema = Depends(CreateCa
     return APIResponse(
         success=True, 
         message="Category created successfully",
+        data=response
+    )
+
+@category_router.put('/{slug}', response_model=APIResponse[CategoryResponseSchema],  description="This endpoint will update category by id")
+async def update_category(slug: str, category_data: UpdateCategorySchema = Depends(UpdateCategorySchema.as_form), db: Session = Depends(get_db)):
+    print("hooooooooooo")
+    if category_data.image:
+        validate_image_file(category_data.image)
+    response = await update_single_category(slug=slug, category_data=category_data, db=db)
+    return APIResponse(
+        success=True,
+        message="Category updated successfully",
         data=response
     )
