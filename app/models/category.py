@@ -17,5 +17,6 @@ class Categories(Base):
     )
     created_at = Column(DateTime, default=datetime.now)
     updated_at = Column(DateTime, default=datetime.now)
+    deleted_at = Column(DateTime, nullable=True)
     is_active = Column(Boolean, default=False)
     

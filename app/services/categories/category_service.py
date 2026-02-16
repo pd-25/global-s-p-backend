@@ -105,7 +105,7 @@ async def create_category_service(category_data: CreateCategorySchema, db: Sessi
 
 async def update_single_category(slug: str, category_data: UpdateCategorySchema, db: Session):
     try:
-        existing_category = db.query(Categories).filter(Categories.slug == slug).first()
+        existing_category = await retrieve_single_category(slug=slug, db=db)
         if not existing_category:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
@@ -143,3 +143,11 @@ async def update_single_category(slug: str, category_data: UpdateCategorySchema,
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not update category."
         )
+        
+def retrieve_single_category(slug: str, db: Session):
+    category = db.query(Categories).filter(Categories.slug == slug).first()
+    
+    if not category:
+        raise HTTPException(status_code=404, detail="Category not found")
+    
+    return category

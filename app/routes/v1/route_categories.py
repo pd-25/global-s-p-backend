@@ -1,12 +1,12 @@
 import string
-from typing import List
+from typing import List, Optional
 from fastapi import APIRouter, Depends, UploadFile,status, HTTPException
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from app.database.session import get_db
 from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema, UpdateCategorySchema
 from app.schemas.response import APIResponse
-from app.services.categories.category_service import create_category_service, retrieve_all_categories, update_single_category
+from app.services.categories.category_service import create_category_service, retrieve_all_categories, retrieve_single_category, update_single_category
 from app.utils.file_utils import validate_image_file
 
 
@@ -62,7 +62,32 @@ def get_categories(filters: CategoryFilterSchema = Depends(), db: Session = Depe
         }
     )
      
+@category_router.get(
+    "/{slug}",
+    # This is the magic: It documents that we return our Standard Envelope containing a List of Categories
+    response_model=APIResponse[CategoryResponseSchema], 
+    status_code=status.HTTP_200_OK,
+    description="This endpoints returns single category with given slug"
+)
+def get_category(slug: str = None, db: Session = Depends(get_db)):
+    
+    # (Service layer)
+    category = retrieve_single_category(slug=slug, db=db)
 
+    # Return using the Wrapper
+    # Pydantic automatically converts the 'categories' ORM objects into the 'data' field schema
+    return APIResponse(
+        success=True,
+        message="Category fetched successfully",
+        data=category,
+        # meta={
+        #     "count": len(categories),
+        #     "total": total_count,
+        #     "page": filters.page,
+        #     "per_page": filters.per_page,
+        # }
+    )
+  
 
 @category_router.post("/", response_model=APIResponse[CategoryResponseSchema], description="This endpoint will create new category")
 async def create_category(category_data: CreateCategorySchema = Depends(CreateCategorySchema.as_form), db: Session = Depends(get_db)):
