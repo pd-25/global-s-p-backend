@@ -1,7 +1,7 @@
 import os
 from fastapi import HTTPException, status
 from sqlalchemy import asc, desc
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 from app.enums.enums import CategoryOrderBy, SortOrder
 from app.models.category import Categories
 from sqlalchemy.exc import SQLAlchemyError
@@ -22,7 +22,7 @@ def retrieve_all_categories(filters: CategoryFilterSchema, db: Session):
         )
         
 def fetch_categories(filters: CategoryFilterSchema, db: Session):
-    query = db.query(Categories)
+    query = db.query(Categories).filter(Categories.parent_id == None, Categories.is_active==1)
 
     # 🔍 Search filter
     if filters.search_string:
@@ -51,6 +51,7 @@ def fetch_categories(filters: CategoryFilterSchema, db: Session):
 
     categories = (
         query
+        .options(joinedload(Categories.children))
         .offset(offset)
         .limit(filters.per_page)
         .all()
@@ -84,7 +85,8 @@ async def create_category_service(category_data: CreateCategorySchema, db: Sessi
             name=category_data.name,
             description=category_data.description,
             slug=slug,
-            image=image_path
+            image=image_path,
+            parent_id=category_data.parent_id
         )
         
         db.add(new_category)
@@ -115,6 +117,7 @@ async def update_single_category(slug: str, category_data: UpdateCategorySchema,
         # Update fields
         existing_category.name = category_data.name
         existing_category.description = category_data.description
+        existing_category.parent_id = category_data.parent_id
         
         # Handle image update if a new image is provided
         if category_data.image:

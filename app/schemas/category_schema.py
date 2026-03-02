@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Annotated, Optional
+from typing import Annotated, Optional, List
 from pydantic import BaseModel, BeforeValidator, Field, field_validator, ValidationError
 from app.enums.enums import CategoryOrderBy, SortOrder
 from fastapi import UploadFile, File, Form, HTTPException, status
@@ -36,6 +36,9 @@ class CategoryFilterSchema(BaseModel):
 class CategoryResponseSchema(CategorySchema):
     name: str
     image: Optional[str]
+    parent_id: Optional[int] = None
+    total_products: int = 0
+    subcategories: List["CategoryResponseSchema"] = Field(default_factory=list, validation_alias="children")
 
     class Config:
         from_attributes = True  # Allows Pydantic to read SQLAlchemy models
@@ -123,16 +126,18 @@ class CreateCategorySchema(BaseModel):
     name: Annotated[str, BeforeValidator(lambda v: validate_alphanumeric_with_spaces(v, 'Name', 2, 50))]
     description: Annotated[str, BeforeValidator(lambda v: validate_alphanumeric_with_spaces(v, 'Description', 5, 500))]
     image: UploadFile
+    parent_id: Optional[int] = None
 
     @classmethod
     def as_form(
         cls,
         name: str = Form(...),
         description: str = Form(...),
-        image: UploadFile = File(...)
+        image: UploadFile = File(...),
+        parent_id: Optional[int] = Form(None)
     ) -> "CreateCategorySchema":
         try:
-            return cls(name=name, description=description, image=image)
+            return cls(name=name, description=description, image=image, parent_id=parent_id)
         except ValidationError as e:
             raise HTTPException(
                 status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,

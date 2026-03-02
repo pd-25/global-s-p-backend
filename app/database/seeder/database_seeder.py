@@ -4,6 +4,7 @@ import os
 # Add the project root to sys.path to allow imports from app
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 
+from app.database.seeder.admin_seeder import AdminSeeder
 from app.database.seeder.categories_seeder import CategoriesSeeder
 from app.database.session import get_db
 
@@ -15,7 +16,8 @@ class DatabaseSeeder:
         db = next(db_gen)
         try:
             # Call individual seeders here, passing the db session
-            CategoriesSeeder().run(db=db)
+            # CategoriesSeeder().run(db=db)
+            AdminSeeder().run(db=db)
             print("✅ Database Seeding Completed Successfully!")
         finally:
             try:

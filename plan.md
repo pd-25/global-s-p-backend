@@ -30,3 +30,9 @@
  3. /categories -> create {name, image, description}
  4. /categories/{slug} -> update {name, image, description}
  5. /categories/{slug} -> delete softdelete
+
+
+ ## Auth
+ 1. admin/token
+ 2. admin/refresh-token
+ 3. admin/forgot-password
