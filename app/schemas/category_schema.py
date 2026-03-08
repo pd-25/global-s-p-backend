@@ -15,7 +15,7 @@ def validate_alphanumeric_with_spaces(value: str, field_name: str, min_len: int,
         if not (min_len <= len(value) <= max_len):
             raise ValueError(f'{field_name} must be between {min_len} and {max_len} characters')
         
-        if not re.match(r'^[a-zA-Z0-9\s]+$', value):
+        if not re.match(r'^[a-zA-Z0-9\s.,""\'\'()]+$', value):
             raise ValueError(f'{field_name} must be alphanumeric and can contain spaces, no special characters')
         
         return value
@@ -35,6 +35,7 @@ class CategoryFilterSchema(BaseModel):
  #admin list response of category   
 class CategoryResponseSchema(CategorySchema):
     name: str
+    description: Optional[str] = None
     image: Optional[str]
     parent_id: Optional[int] = None
     total_products: int = 0
@@ -152,5 +153,34 @@ class CreateCategorySchema(BaseModel):
                     ]
                 }
             )
-class UpdateCategorySchema(CreateCategorySchema):
-    pass      
+class UpdateCategorySchema(BaseModel):
+    # Fields are similar to CreateCategorySchema but image is optional for updates
+    name: Annotated[str, BeforeValidator(lambda v: validate_alphanumeric_with_spaces(v, 'Name', 2, 50))]
+    description: Annotated[str, BeforeValidator(lambda v: validate_alphanumeric_with_spaces(v, 'Description', 5, 500))]
+    parent_id: Optional[int] = None
+    image: Optional[UploadFile] = None
+
+    @classmethod
+    def as_form(
+        cls,
+        name: str = Form(...),
+        description: str = Form(...),
+        image: Optional[UploadFile] = File(None),
+        parent_id: Optional[int] = Form(None)
+    ) -> "UpdateCategorySchema":
+        try:
+            return cls(name=name, description=description, image=image, parent_id=parent_id)
+        except ValidationError as e:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                detail={
+                    "message": "Validation error",
+                    "errors": [
+                        {
+                            "loc": error["loc"],
+                            "msg": error["msg"],
+                            "type": error["type"]
+                        } for error in e.errors()
+                    ]
+                }
+            )      

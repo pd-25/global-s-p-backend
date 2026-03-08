@@ -6,6 +6,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.
 
 from app.database.seeder.admin_seeder import AdminSeeder
 from app.database.seeder.categories_seeder import CategoriesSeeder
+from app.database.seeder.supplier_type_seeder import SupplierTypeSeeder
+from app.database.seeder.supplier_seeder import SupplierSeeder
+from app.database.seeder.product_type_seeder import ProductTypeSeeder
+from app.database.seeder.product_seeder import ProductSeeder
+from app.database.seeder.product_image_seeder import ProductImageSeeder
 from app.database.session import get_db
 
 class DatabaseSeeder:
@@ -16,8 +21,13 @@ class DatabaseSeeder:
         db = next(db_gen)
         try:
             # Call individual seeders here, passing the db session
+            # AdminSeeder().run(db=db)
             # CategoriesSeeder().run(db=db)
-            AdminSeeder().run(db=db)
+            SupplierTypeSeeder().run(db=db)
+            SupplierSeeder().run(db=db)
+            ProductTypeSeeder().run(db=db)
+            ProductSeeder().run(db=db)
+            ProductImageSeeder().run(db=db)
             print("✅ Database Seeding Completed Successfully!")
         finally:
             try:

@@ -22,7 +22,8 @@ def retrieve_all_categories(filters: CategoryFilterSchema, db: Session):
         )
         
 def fetch_categories(filters: CategoryFilterSchema, db: Session):
-    query = db.query(Categories).filter(Categories.parent_id == None, Categories.is_active==1)
+    query = db.query(Categories).filter(Categories.parent_id == None)
+    #  Categories.is_active==1
 
     # 🔍 Search filter
     if filters.search_string:
@@ -107,7 +108,8 @@ async def create_category_service(category_data: CreateCategorySchema, db: Sessi
 
 async def update_single_category(slug: str, category_data: UpdateCategorySchema, db: Session):
     try:
-        existing_category = await retrieve_single_category(slug=slug, db=db)
+        # retrieve_single_category is a synchronous helper, so do not await it
+        existing_category = retrieve_single_category(slug=slug, db=db)
         if not existing_category:
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,

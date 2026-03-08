@@ -21,7 +21,7 @@
 
 
 
-# API LIST
+# Admin API LIST
 
 ## Category
  
@@ -36,3 +36,18 @@
  1. admin/token
  2. admin/refresh-token
  3. admin/forgot-password
+
+
+
+
+
+
+ # Frontend API List
+ ## Home page
+ 1. search/q=
+ 2. products/q=
+ 1. /recomended-products
+ 2. /category-wise-products
+ 3. /valuable-partners
+ 4. /blogs
+ 5. /ratings
