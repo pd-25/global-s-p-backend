@@ -10,7 +10,7 @@ user_router = APIRouter()
 
 @user_router.get("/")
 def get_users():
-    return {"message": "This is the user route"}
+    return {"message": "This is the user route user updated"}
 # @router.get("/", response_model=List[ShowUser])
 # def get_blog(id: Optional[int] = None, db: Session = Depends(get_db)):
 #     if id:
