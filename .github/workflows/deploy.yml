@@ -17,12 +17,12 @@ jobs:
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
-          port: ${{ secrets.SERVER_PORT || 22 }}
+          host: 100.52.107.135
+          username: ubuntu
+          key: ${{ secrets.useworkflow }}
+          port: 22
           script: |
-            cd ${{ secrets.PROJECT_PATH }}
+            cd ~/backend
 
             echo "📥 Pulling latest code..."
             git pull origin main
@@ -35,6 +35,18 @@ jobs:
             alembic upgrade head
 
             echo "🔄 Restarting application..."
-            sudo systemctl restart ${{ secrets.SERVICE_NAME }}
-
-            echo "✅ Deployment complete!"
+            # Kill existing uvicorn process on port 8000 (if running)
+            sudo fuser -k 8000/tcp || true
+            # Wait a moment for the port to be released
+            sleep 2
+            # Start uvicorn in the background
+            nohup python -m uvicorn main:app --host 0.0.0.0 --port 8000 > uvicorn.log 2>&1 &
+            # Wait briefly and verify it started
+            sleep 3
+            if sudo fuser 8000/tcp > /dev/null 2>&1; then
+              echo "✅ Deployment complete! App is running on port 8000"
+            else
+              echo "❌ Failed to start the application. Check uvicorn.log"
+              tail -20 uvicorn.log
+              exit 1
+            fi
