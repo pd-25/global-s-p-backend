@@ -20,6 +20,7 @@ class Product(Base):
     supplier_id = Column(Integer, ForeignKey("suppliers.id"), nullable=True)
     product_type_id = Column(Integer, ForeignKey("product_types.id"), nullable=True)
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)
+    id_recomended = Column(Boolean, default=False, server_default="0")
     created_at = Column(DateTime, default=datetime.now, server_default=text('CURRENT_TIMESTAMP'))
     updated_at = Column(DateTime, default=datetime.now, server_default=text('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP  '))
     deleted_at = Column(DateTime, nullable=True)
@@ -30,3 +31,11 @@ class Product(Base):
     product_type = relationship("ProductType", backref="products")
     category = relationship("Categories", backref="products")
     images = relationship("ProductImage", back_populates="product", cascade="all, delete-orphan")
+    primary_image = relationship(
+        "ProductImage",
+        primaryjoin="and_(Product.id==ProductImage.product_id)",
+        order_by="ProductImage.id",
+        uselist=False,
+        viewonly=True
+    )
+

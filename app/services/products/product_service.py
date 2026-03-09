@@ -22,10 +22,13 @@ logger = logging.getLogger(__name__)
 PRODUCT_IMAGE_DIR = "app/static/uploads/products"
 
 
+def product_model_query(db: Session):
+    return db.query(Product).filter(Product.deleted_at == None)
+
 def retrieve_all_products(filters: ProductFilterSchema, db: Session):
     """Retrieve all products with search, pagination, sorting, filters and all relations."""
     try:
-        query = db.query(Product).filter(Product.deleted_at == None)
+        query = product_model_query(db=db)
 
         # Search filter (search in title)
         if filters.search_string:
@@ -267,3 +270,8 @@ def delete_product_image_service(image_id: int, db: Session):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not delete product image.",
         )
+
+def fetch_recomended_products(db: Session):
+    return product_model_query(db=db).filter(Product.id_recomended == 1).options(
+        joinedload(Product.primary_image)
+    ).all()

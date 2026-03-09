@@ -180,3 +180,32 @@ class CreateProductSchema(BaseModel):
 # Schema for updating a product
 class UpdateProductSchema(CreateProductSchema):
     pass
+
+
+
+class RecommendedProductImageSchema(BaseModel):
+    id: int
+    image: str
+    is_preview: Optional[bool] = False
+
+    class Config:
+        from_attributes = True
+
+
+class RecommendedProductSchema(BaseModel):
+    """Lightweight product schema for website — only essential fields, no extra relations."""
+    id: int
+    slug: str
+    title: str
+    short_desc: Optional[str] = None
+    currency: Optional[str] = None
+    price: Optional[Decimal] = None
+    price_per_measurement: Optional[str] = None
+    min_order: Optional[int] = None
+    created_at: Optional[datetime] = None
+
+    # Only the preview image, not all relations
+    primary_image: Optional[RecommendedProductImageSchema] = None
+
+    class Config:
+        from_attributes = True
