@@ -17,8 +17,8 @@ jobs:
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1
         with:
-          host: 100.52.107.135
-          username: ubuntu
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.useworkflow }}
           port: 22
           script: |

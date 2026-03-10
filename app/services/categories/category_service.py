@@ -156,3 +156,56 @@ def retrieve_single_category(slug: str, db: Session):
         raise HTTPException(status_code=404, detail="Category not found")
     
     return category
+
+
+def fetch_category_wise_subcategories(db: Session):
+    from app.models.product import Product
+    from sqlalchemy import func
+
+    parents = (
+        db.query(Categories)
+        .filter(
+            Categories.parent_id == None,
+            Categories.deleted_at == None
+        )
+        .limit(4)
+        .all()
+    )
+
+    parent_ids = [p.id for p in parents]
+
+    children = (
+        db.query(Categories)
+        .filter(Categories.parent_id.in_(parent_ids))
+        .limit(40)
+        .all()
+    )
+
+    child_map = {}
+
+    for child in children:
+        child_map.setdefault(child.parent_id, []).append(child)
+
+    for parent in parents:
+        parent.children = child_map.get(parent.id, [])[:10]
+
+    # Collect all category IDs (parents + children) to count products in one query
+    all_category_ids = parent_ids + [c.id for c in children]
+
+    product_counts = dict(
+        db.query(Product.category_id, func.count(Product.id))
+        .filter(
+            Product.category_id.in_(all_category_ids),
+            Product.deleted_at == None,
+        )
+        .group_by(Product.category_id)
+        .all()
+    )
+
+    # Assign total_products independently to each category
+    for parent in parents:
+        parent.total_products = product_counts.get(parent.id, 0)
+        for child in parent.children:
+            child.total_products = product_counts.get(child.id, 0)
+
+    return parents

@@ -25,5 +25,3 @@ def get_recomended_products(db: Session = Depends(get_db)):
         data=recomended_products,
         meta={},
     )
-
-

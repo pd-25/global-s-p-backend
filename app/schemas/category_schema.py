@@ -184,3 +184,30 @@ class UpdateCategorySchema(BaseModel):
                     ]
                 }
             )      
+
+
+# --- Category-wise Subcategories Schemas (Website) ---
+
+class SubcategorySchema(BaseModel):
+    """Lightweight schema for a subcategory."""
+    id: int
+    slug: str
+    name: str
+    image: Optional[str] = None
+    total_products: int = 0
+
+    class Config:
+        from_attributes = True
+
+
+class CategoryWiseSubcategoriesSchema(BaseModel):
+    """A parent category with its list of subcategories."""
+    id: int
+    slug: str
+    name: str
+    image: Optional[str] = None
+    total_products: int = 0
+    subcategories: List[SubcategorySchema] = Field(default_factory=list, validation_alias="children")
+
+    class Config:
+        from_attributes = True

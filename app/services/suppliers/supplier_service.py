@@ -208,3 +208,15 @@ def delete_supplier_service(slug: str, db: Session):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not delete supplier.",
         )
+
+
+def fetch_valuable_partners(db: Session):
+    """Fetch all suppliers — only id, name, and logo."""
+    return (
+        db.query(
+            Supplier.id,
+            Supplier.name,
+            Supplier.logo)
+        .filter(Supplier.deleted_at.is_(None))
+        .all()
+    )

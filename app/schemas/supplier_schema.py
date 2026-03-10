@@ -147,3 +147,15 @@ class CreateSupplierSchema(BaseModel):
 # Schema for updating a supplier
 class UpdateSupplierSchema(CreateSupplierSchema):
     pass
+
+
+# --- Website Schemas ---
+
+class ValuablePartnerSchema(BaseModel):
+    """Lightweight schema for valuable partners — only name and logo."""
+    id: int
+    name: str
+    logo: Optional[str] = None
+
+    class Config:
+        from_attributes = True
