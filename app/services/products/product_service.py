@@ -273,5 +273,6 @@ def delete_product_image_service(image_id: int, db: Session):
 
 def fetch_recomended_products(db: Session):
     return product_model_query(db=db).filter(Product.id_recomended == 1).options(
-        joinedload(Product.primary_image)
+        joinedload(Product.primary_image),
+        joinedload(Product.country),
     ).all()

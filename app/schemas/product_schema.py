@@ -184,28 +184,26 @@ class UpdateProductSchema(CreateProductSchema):
 
 
 class RecommendedProductImageSchema(BaseModel):
-    id: int
     image: str
-    is_preview: Optional[bool] = False
+
+    class Config:
+        from_attributes = True
+
+
+class RecommendedProductCountrySchema(BaseModel):
+    country_flag: str
 
     class Config:
         from_attributes = True
 
 
 class RecommendedProductSchema(BaseModel):
-    """Lightweight product schema for website — only essential fields, no extra relations."""
+    """Lightweight product schema for website — only title, primary image, and country flag."""
     id: int
     slug: str
     title: str
-    short_desc: Optional[str] = None
-    currency: Optional[str] = None
-    price: Optional[Decimal] = None
-    price_per_measurement: Optional[str] = None
-    min_order: Optional[int] = None
-    created_at: Optional[datetime] = None
-
-    # Only the preview image, not all relations
     primary_image: Optional[RecommendedProductImageSchema] = None
+    country: Optional[RecommendedProductCountrySchema] = None
 
     class Config:
         from_attributes = True
