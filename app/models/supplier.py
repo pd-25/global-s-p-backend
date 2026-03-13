@@ -11,6 +11,7 @@ class Supplier(Base):
     slug = Column(String(255), unique=True, index=True, nullable=False)
     name = Column(String(255), nullable=False)
     about = Column(Text, nullable=True)
+    busines_doc = Column(Text, nullable=True)
     logo = Column(Text, nullable=True)
     zipcode = Column(String(20), nullable=True)
     city = Column(String(255), nullable=True)
