@@ -7,7 +7,7 @@ from app.models.category import Categories
 from sqlalchemy.exc import SQLAlchemyError
 import logging
 
-from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CreateCategorySchema, UpdateCategorySchema
+from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CategoryWiseSubcategoriesFilterSchema, CreateCategorySchema, UpdateCategorySchema
 logger = logging.getLogger(__name__)
         
 
@@ -158,18 +158,20 @@ def retrieve_single_category(slug: str, db: Session):
     return category
 
 
-def fetch_category_wise_subcategories(db: Session):
+def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcategoriesFilterSchema):
     from app.models.product import Product
     from sqlalchemy import func
+    
+    query = db.query(Categories).filter(
+                Categories.parent_id == None,
+                Categories.deleted_at == None
+            )
+    
+    if filters.limit:
+        query.limit(filters.limit)
 
     parents = (
-        db.query(Categories)
-        .filter(
-            Categories.parent_id == None,
-            Categories.deleted_at == None
-        )
-        .limit(4)
-        .all()
+        query.all()
     )
 
     parent_ids = [p.id for p in parents]

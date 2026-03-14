@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
-from app.schemas.category_schema import CategoryWiseSubcategoriesSchema
+from app.schemas.category_schema import CategoryWiseSubcategoriesFilterSchema, CategoryWiseSubcategoriesSchema
 from app.schemas.response import APIResponse
 from app.services.categories.category_service import fetch_category_wise_subcategories
 
@@ -18,8 +18,8 @@ category_router = APIRouter()
     status_code=status.HTTP_200_OK,
     description="This api will list all the category wise subcategories"
 )
-def get_category_wise_subcategories(db: Session = Depends(get_db)):
-    category_wise_subcategories = fetch_category_wise_subcategories(db=db)
+def get_category_wise_subcategories(filters: CategoryWiseSubcategoriesFilterSchema = Depends(), db: Session = Depends(get_db)):
+    category_wise_subcategories = fetch_category_wise_subcategories(db=db, filters=filters)
     return APIResponse(
         success=True,
         message="Category Wise Subcategories Fetched Successfully",

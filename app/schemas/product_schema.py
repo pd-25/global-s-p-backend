@@ -80,8 +80,8 @@ class ProductResponseSchema(BaseModel):
         from_attributes = True
 
 
-# Filter/pagination schema for listing products
-class ProductFilterSchema(BaseModel):
+# Filter/pagination schema for admin product listing (uses FK ids)
+class AdminProductFilterSchema(BaseModel):
     search_string: Optional[str] = None
     per_page: int = Field(default=10, ge=1, le=100)
     page: int = Field(default=1, ge=1)
@@ -195,6 +195,10 @@ class RecommendedProductCountrySchema(BaseModel):
 
     class Config:
         from_attributes = True
+class ProductListSupplierSchema(BaseModel):
+    name: str
+    class Config:
+        from_attributes = True
 
 
 class RecommendedProductSchema(BaseModel):
@@ -207,4 +211,15 @@ class RecommendedProductSchema(BaseModel):
 
     class Config:
         from_attributes = True
+        
+class ProductListingSchema(RecommendedProductSchema):
+    supplier: Optional[ProductListSupplierSchema] = None
+
+class ProductFilterSchema(BaseModel):
+    search_string: Optional[str] = None
+    per_page: int = Field(default=30, ge=1, le=100)
+    page: int = Field(default=1, ge=1)
+    country_code: Optional[str] = None          # ISO country code, e.g. "BD", "US"
+    supplier_type_slug: Optional[str] = None    # slug-style, e.g. "raw-material"
+
 

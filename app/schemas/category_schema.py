@@ -211,3 +211,6 @@ class CategoryWiseSubcategoriesSchema(BaseModel):
 
     class Config:
         from_attributes = True
+
+class CategoryWiseSubcategoriesFilterSchema(BaseModel):
+    limit: Optional[int] = None

@@ -3,13 +3,18 @@ import time
 from datetime import datetime
 from fastapi import HTTPException, status
 from sqlalchemy import asc, desc
-from sqlalchemy.orm import Session, joinedload
+from sqlalchemy.orm import Session, joinedload, load_only
 from sqlalchemy.exc import SQLAlchemyError
 import logging
 
+from app.models.category import Categories
+from app.models.country import Country
 from app.models.product import Product
 from app.models.product_image import ProductImage
+from app.models.supplier import Supplier
+from app.models.supplier_type import SupplierType
 from app.schemas.product_schema import (
+    AdminProductFilterSchema,
     ProductFilterSchema,
     CreateProductSchema,
     UpdateProductSchema,
@@ -25,7 +30,7 @@ PRODUCT_IMAGE_DIR = "app/static/uploads/products"
 def product_model_query(db: Session):
     return db.query(Product).filter(Product.deleted_at == None)
 
-def retrieve_all_products(filters: ProductFilterSchema, db: Session):
+def retrieve_all_products(filters: AdminProductFilterSchema, db: Session):
     """Retrieve all products with search, pagination, sorting, filters and all relations."""
     try:
         query = product_model_query(db=db)
@@ -81,6 +86,96 @@ def retrieve_all_products(filters: ProductFilterSchema, db: Session):
 
     except SQLAlchemyError as e:
         logger.error(f"DB Error: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not fetch products.",
+        )
+
+
+def fetch_website_products(category_slug: str, filters: ProductFilterSchema, db: Session):
+    """Fetch paginated products for the public website listing page.
+
+    Supports:
+    - Full-text search on product title
+    - Filter by country_code (ISO code, e.g. "BD", "US") — exact, case-insensitive
+    - Filter by supplier_type_slug (e.g. "raw-material") — slug converted to name match
+    - Pagination (page + per_page)
+    Returns: (products list, total_count, total_pages)
+    """
+    try:
+        query = product_model_query(db=db)
+
+        # Filter by category slug
+        if category_slug:
+            query = query.join(Categories, Product.category_id == Categories.id).filter(
+                Categories.slug.ilike(category_slug)
+            )
+
+        # Full-text search on product title
+        if filters.search_string:
+            query = query.filter(
+                Product.title.ilike(f"%{filters.search_string}%")
+            )
+
+        # Filter by ISO country code — exact match (e.g. "BD")
+        if filters.country_code:
+            query = query.join(Country, Product.country_id == Country.id).filter(
+                Country.country_code.ilike(filters.country_code)
+            )
+
+        # Filter by supplier_type slug — convert "raw-material" → "raw material"
+        # and match against SupplierType.name (no slug column exists on supplier_types)
+        if filters.supplier_type_slug:
+            name_from_slug = filters.supplier_type_slug.replace("-", " ")
+            query = (
+                query
+                .join(Supplier, Product.supplier_id == Supplier.id)
+                .join(SupplierType, Supplier.supplier_type_id == SupplierType.id)
+                .filter(SupplierType.name.ilike(name_from_slug))
+            )
+
+        # Sort newest first by default
+        query = query.order_by(desc(Product.id))
+
+        # Total count before pagination
+        total_count = query.count()
+        total_pages = (total_count + filters.per_page - 1) // filters.per_page
+
+        # Pagination + select ONLY the columns needed by ProductListingSchema
+        # products  : id, slug, title  (+ FK cols kept for relationship resolution)
+        # images    : image
+        # countries : country_flag
+        # suppliers : name
+        offset = (filters.page - 1) * filters.per_page
+        products = (
+            query
+            .options(
+                load_only(
+                    Product.id,
+                    Product.slug,
+                    Product.title,
+                    Product.country_id,
+                    Product.supplier_id,
+                ),
+                joinedload(Product.primary_image).load_only(
+                    ProductImage.image,
+                ),
+                joinedload(Product.country).load_only(
+                    Country.country_flag,
+                ),
+                joinedload(Product.supplier).load_only(
+                    Supplier.name,
+                ),
+            )
+            .offset(offset)
+            .limit(filters.per_page)
+            .all()
+        )
+
+        return products, total_count, total_pages
+
+    except SQLAlchemyError as e:
+        logger.error(f"DB Error in fetch_website_products: {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not fetch products.",

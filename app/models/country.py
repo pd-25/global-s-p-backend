@@ -7,6 +7,7 @@ class Country(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String(255), nullable=False)
+    country_code = Column(String(50), unique=True, nullable=True)
     country_flag = Column(Text, nullable=False)
     created_at = Column(DateTime, default=datetime.now)
     updated_at = Column(DateTime, default=datetime.now)
