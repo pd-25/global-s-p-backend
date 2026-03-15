@@ -18,13 +18,14 @@ MEASUREMENTS = ["per kg", "per unit", "per liter", "per meter", "per ton", "per 
 
 class ProductSeeder:
 
-    def seed(self, db: Session, count: int = 50):
+    def seed(self, db: Session, count: int = 900):
         try:
             # Fetch existing foreign key IDs
             supplier_ids = [s.id for s in db.query(Supplier.id).all()]
             product_type_ids = [pt.id for pt in db.query(ProductType.id).all()]
             country_ids = [c.id for c in db.query(Country.id).all()]
             category_ids = [cat.id for cat in db.query(Categories.id).all()]
+            # category_ids = [6,36, 37, 38, 39, 40]
 
             if not supplier_ids:
                 print("⚠️  No suppliers found. Run SupplierSeeder first.")

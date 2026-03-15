@@ -26,6 +26,26 @@ def get_recomended_products(db: Session = Depends(get_db)):
         meta={},
     )
 
+@product_router.get(
+    '/',
+    response_model=APIResponse[List[ProductListingSchema]],
+    status_code=status.HTTP_200_OK,
+    description="Public product listing page — supports search, country & supplier-type filtering, and pagination",
+)
+def get_products(filters: ProductFilterSchema = Depends(), db: Session = Depends(get_db)):
+    products, total_count, total_pages = fetch_website_products(filters=filters, db=db)
+    return APIResponse(
+        success=True,
+        message="Products Fetched Successfully",
+        data=products,
+        meta={
+            "page": filters.page,
+            "per_page": filters.per_page,
+            "total_count": total_count,
+            "total_pages": total_pages,
+        },
+    )
+
 
 @product_router.get(
     '/{category_slug}',
@@ -34,7 +54,7 @@ def get_recomended_products(db: Session = Depends(get_db)):
     description="Public product listing page — supports search, country & supplier-type filtering, and pagination",
 )
 def get_products(category_slug: str, filters: ProductFilterSchema = Depends(), db: Session = Depends(get_db)):
-    products, total_count, total_pages = fetch_website_products(category_slug=category_slug, filters=filters, db=db)
+    products, total_count, total_pages = fetch_website_products(filters=filters, db=db, category_slug=category_slug)
     return APIResponse(
         success=True,
         message="Products Fetched Successfully",

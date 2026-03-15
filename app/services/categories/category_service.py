@@ -161,39 +161,52 @@ def retrieve_single_category(slug: str, db: Session):
 def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcategoriesFilterSchema):
     from app.models.product import Product
     from sqlalchemy import func
-    
+
+    # 1. Fetch Parents
     query = db.query(Categories).filter(
-                Categories.parent_id == None,
-                Categories.deleted_at == None
-            )
+        Categories.parent_id == None,
+        Categories.deleted_at == None
+    )
     
     if filters.limit:
-        query.limit(filters.limit)
-
-    parents = (
-        query.all()
-    )
+        print('limit- ', filters.limit)
+        query = query.limit(filters.limit)
+    print(str(query.statement))
+    parents = query.all()
+    
+    # Return early if no parents are found
+    if not parents:
+        return []
 
     parent_ids = [p.id for p in parents]
 
-    children = (
-        db.query(Categories)
-        .filter(Categories.parent_id.in_(parent_ids))
-        .limit(40)
-        .all()
+    # 2. Fetch ALL Children for the fetched parents (No global limit here!)
+    children_query = db.query(Categories).filter(
+        Categories.parent_id.in_(parent_ids),
+        Categories.deleted_at == None # Added deleted_at check for safety
     )
 
-    child_map = {}
+    children = children_query.all()
 
+    # 3. Map children to parents
+    child_map = {}
     for child in children:
         child_map.setdefault(child.parent_id, []).append(child)
 
+    # 4. Assign children to parents and apply the PER-CATEGORY limit via Python slicing
     for parent in parents:
-        parent.children = child_map.get(parent.id, [])[:10]
+        parent_children = child_map.get(parent.id, [])
+        if filters.sub_cat_limit:
+            parent.children = parent_children[:filters.sub_cat_limit]
+        else:
+            parent.children = parent_children
 
-    # Collect all category IDs (parents + children) to count products in one query
-    all_category_ids = parent_ids + [c.id for c in children]
+    # 5. Collect category IDs (only the sliced children) to count products efficiently
+    all_category_ids = parent_ids.copy()
+    for parent in parents:
+        all_category_ids.extend([c.id for c in parent.children])
 
+    # 6. Fetch product counts
     product_counts = dict(
         db.query(Product.category_id, func.count(Product.id))
         .filter(
@@ -204,7 +217,7 @@ def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcateg
         .all()
     )
 
-    # Assign total_products independently to each category
+    # 7. Assign product counts
     for parent in parents:
         parent.total_products = product_counts.get(parent.id, 0)
         for child in parent.children:

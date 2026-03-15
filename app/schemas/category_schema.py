@@ -214,3 +214,4 @@ class CategoryWiseSubcategoriesSchema(BaseModel):
 
 class CategoryWiseSubcategoriesFilterSchema(BaseModel):
     limit: Optional[int] = None
+    sub_cat_limit: Optional[int] = None

@@ -21,11 +21,11 @@ class DatabaseSeeder:
         db = next(db_gen)
         try:
             # Call individual seeders here, passing the db session
-            AdminSeeder().run(db=db)
-            CategoriesSeeder().run(db=db)
-            SupplierTypeSeeder().run(db=db)
-            SupplierSeeder().run(db=db)
-            ProductTypeSeeder().run(db=db)
+            # AdminSeeder().run(db=db)
+            # CategoriesSeeder().run(db=db)
+            # SupplierTypeSeeder().run(db=db)
+            # SupplierSeeder().run(db=db)
+            # ProductTypeSeeder().run(db=db)
             ProductSeeder().run(db=db)
             ProductImageSeeder().run(db=db)
             print("✅ Database Seeding Completed Successfully!")
