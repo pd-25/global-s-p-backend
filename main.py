@@ -15,6 +15,7 @@ def start_application():
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",  # Next.js dev server
+        "https://global-s-p.netlify.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],       # Allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
