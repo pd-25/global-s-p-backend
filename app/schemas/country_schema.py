@@ -10,6 +10,7 @@ class CountryResponseSchema(BaseModel):
     id: int
     name: str
     country_flag: Optional[str] = None
+    country_code: Optional[str] = None
     created_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
 

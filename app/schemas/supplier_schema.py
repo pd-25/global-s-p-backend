@@ -154,6 +154,7 @@ class UpdateSupplierSchema(CreateSupplierSchema):
 class ValuablePartnerSchema(BaseModel):
     """Lightweight schema for valuable partners — only name and logo."""
     id: int
+    slug: str
     name: str
     logo: Optional[str] = None
 

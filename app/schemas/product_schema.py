@@ -221,5 +221,8 @@ class ProductFilterSchema(BaseModel):
     page: int = Field(default=1, ge=1)
     country_code: Optional[str] = None          # ISO country code, e.g. "BD", "US"
     supplier_type_slug: Optional[str] = None    # slug-style, e.g. "raw-material"
+    supplier_slug: Optional[str] = None    # slug-style, e.g. "raw-material"
+    min_price: Optional[int] = None    # slug-style, e.g. "raw-material"
+    max_price: Optional[int] = None    # slug-style, e.g. "raw-material"
 
 

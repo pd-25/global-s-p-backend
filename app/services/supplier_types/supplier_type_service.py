@@ -14,6 +14,8 @@ from app.schemas.supplier_type_schema import (
 
 logger = logging.getLogger(__name__)
 
+def fetch_website_supplier_types(db: Session):
+    return db.query(SupplierType).filter(SupplierType.deleted_at == None).all()
 
 def retrieve_all_supplier_types(filters: SupplierTypeFilterSchema, db: Session):
     """Retrieve all supplier types with search, pagination and sorting."""

@@ -215,8 +215,10 @@ def fetch_valuable_partners(db: Session):
     return (
         db.query(
             Supplier.id,
+            Supplier.slug,
             Supplier.name,
-            Supplier.logo)
+            Supplier.logo
+            )
         .filter(Supplier.deleted_at.is_(None))
         .all()
     )

@@ -236,15 +236,27 @@ def fetch_website_products(filters: ProductFilterSchema, db: Session, category_s
                 Country.country_code.ilike(filters.country_code)
             )
 
-        # Filter by supplier_type slug — convert "raw-material" → "raw material"
-        if filters.supplier_type_slug:
-            name_from_slug = filters.supplier_type_slug.replace("-", " ")
-            query = (
-                query
-                .join(Supplier, Product.supplier_id == Supplier.id)
-                .join(SupplierType, Supplier.supplier_type_id == SupplierType.id)
-                .filter(SupplierType.name.ilike(name_from_slug))
-            )
+        # Filter by supplier/supplier_type
+        if filters.supplier_type_slug or getattr(filters, 'supplier_slug', None):
+            query = query.join(Supplier, Product.supplier_id == Supplier.id)
+
+            if filters.supplier_type_slug:
+                name_from_slug = filters.supplier_type_slug.replace("-", " ")
+                query = (
+                    query
+                    .join(SupplierType, Supplier.supplier_type_id == SupplierType.id)
+                    .filter(SupplierType.name.ilike(name_from_slug))
+                )
+
+            if getattr(filters, 'supplier_slug', None):
+                query = query.filter(Supplier.slug.ilike(filters.supplier_slug))
+
+        # Filter by price
+        if getattr(filters, 'min_price', None) is not None:
+            query = query.filter(Product.price >= filters.min_price)
+
+        if getattr(filters, 'max_price', None) is not None:
+            query = query.filter(Product.price <= filters.max_price)
 
         # Sort newest first by default
         query = query.order_by(desc(Product.id))

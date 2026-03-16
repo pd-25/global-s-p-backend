@@ -12,6 +12,8 @@ from app.utils.file_utils import save_upload_file
 
 logger = logging.getLogger(__name__)
 
+def fetch_countries_website(db: Session):
+    return db.query(Country).filter(Country.deleted_at == None).all()
 
 def retrieve_all_countries(filters: CountryFilterSchema, db: Session):
     """Retrieve all countries with search, pagination and sorting."""
