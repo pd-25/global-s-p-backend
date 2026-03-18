@@ -232,24 +232,29 @@ def fetch_website_products(filters: ProductFilterSchema, db: Session, category_s
 
         # Filter by ISO country code — exact match (e.g. "BD")
         if filters.country_code:
-            query = query.join(Country, Product.country_id == Country.id).filter(
-                Country.country_code.ilike(filters.country_code)
-            )
-
-        # Filter by supplier/supplier_type
-        if filters.supplier_type_slug or getattr(filters, 'supplier_slug', None):
-            query = query.join(Supplier, Product.supplier_id == Supplier.id)
-
-            if filters.supplier_type_slug:
-                name_from_slug = filters.supplier_type_slug.replace("-", " ")
-                query = (
-                    query
-                    .join(SupplierType, Supplier.supplier_type_id == SupplierType.id)
-                    .filter(SupplierType.name.ilike(name_from_slug))
+            country_codes = [c.strip() for c in filters.country_code.split(",") if c.strip()]
+            if country_codes:
+                query = query.join(Country, Product.country_id == Country.id).filter(
+                    or_(*[Country.country_code.ilike(c) for c in country_codes])
                 )
 
+        # Filter by supplier/supplier_type
+        if getattr(filters, 'supplier_type_slug', None) or getattr(filters, 'supplier_slug', None):
+            query = query.join(Supplier, Product.supplier_id == Supplier.id)
+
+            if getattr(filters, 'supplier_type_slug', None):
+                supplier_types = [s.strip().replace("-", " ") for s in filters.supplier_type_slug.split(",") if s.strip()]
+                if supplier_types:
+                    query = (
+                        query
+                        .join(SupplierType, Supplier.supplier_type_id == SupplierType.id)
+                        .filter(or_(*[SupplierType.name.ilike(s) for s in supplier_types]))
+                    )
+
             if getattr(filters, 'supplier_slug', None):
-                query = query.filter(Supplier.slug.ilike(filters.supplier_slug))
+                supplier_slugs = [s.strip() for s in filters.supplier_slug.split(",") if s.strip()]
+                if supplier_slugs:
+                    query = query.filter(or_(*[Supplier.slug.ilike(s) for s in supplier_slugs]))
 
         # Filter by price
         if getattr(filters, 'min_price', None) is not None:
