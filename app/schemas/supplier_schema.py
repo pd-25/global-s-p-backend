@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from fastapi import UploadFile, File, Form, HTTPException, status
+from app.schemas.supplier_type_schema import SupplierTypeResponseSchema
 import re
 
 
@@ -27,6 +28,8 @@ class SupplierResponseSchema(BaseModel):
     company_email: Optional[str] = None
     created_at: Optional[datetime] = None
     updated_at: Optional[datetime] = None
+
+    supplier_type: Optional[SupplierTypeResponseSchema] = None
 
     class Config:
         from_attributes = True

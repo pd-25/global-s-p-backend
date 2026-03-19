@@ -4,6 +4,8 @@ from typing import List, Optional
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from fastapi import UploadFile, File, Form, HTTPException, status
 
+from app.schemas.supplier_schema import SupplierResponseSchema
+
 
 # Response schema for product image
 class ProductImageResponseSchema(BaseModel):
@@ -20,6 +22,7 @@ class ProductImageResponseSchema(BaseModel):
 class CountryNestedSchema(BaseModel):
     id: int
     name: str
+    country_flag: str
 
     class Config:
         from_attributes = True
@@ -79,6 +82,32 @@ class ProductResponseSchema(BaseModel):
     class Config:
         from_attributes = True
 
+class ProductDetailsResponse(BaseModel):
+    id: int
+    slug: str
+    title: str
+    description: Optional[str] = None
+    short_desc: Optional[str] = None
+    currency: Optional[str] = None
+    price: Optional[Decimal] = None
+    price_per_measurement: Optional[str] = None
+    min_order: Optional[int] = None
+    country_id: Optional[int] = None
+    supplier_id: Optional[int] = None
+    product_type_id: Optional[int] = None
+    category_id: Optional[int] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+    # Relations
+    country: Optional[CountryNestedSchema] = None
+    supplier: Optional[SupplierResponseSchema] = None
+    product_type: Optional[ProductTypeNestedSchema] = None
+    category: Optional[CategoryNestedSchema] = None
+    images: List[ProductImageResponseSchema] = []
+
+    class Config:
+        from_attributes = True
 
 # Filter/pagination schema for admin product listing (uses FK ids)
 class AdminProductFilterSchema(BaseModel):

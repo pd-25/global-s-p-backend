@@ -403,7 +403,7 @@ def retrieve_single_product(slug: str, db: Session):
         db.query(Product)
         .options(
             joinedload(Product.country),
-            joinedload(Product.supplier),
+            joinedload(Product.supplier).joinedload(Supplier.supplier_type),
             joinedload(Product.product_type),
             joinedload(Product.category),
             joinedload(Product.images),

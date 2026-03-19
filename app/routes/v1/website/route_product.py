@@ -4,9 +4,9 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
-from app.schemas.product_schema import ProductFilterSchema, ProductListingSchema, RecommendedProductSchema
+from app.schemas.product_schema import ProductDetailsResponse, ProductFilterSchema, ProductListingSchema, RecommendedProductSchema, ProductResponseSchema
 from app.schemas.response import APIResponse
-from app.services.products.product_service import fetch_recomended_products, fetch_website_products
+from app.services.products.product_service import fetch_recomended_products, fetch_website_products, retrieve_single_product
 
 product_router = APIRouter()
 
@@ -44,6 +44,20 @@ def get_products(filters: ProductFilterSchema = Depends(), db: Session = Depends
             "total_count": total_count,
             "total_pages": total_pages,
         },
+    )
+    
+@product_router.get(
+    '/product/{slug}',
+    response_model=APIResponse[ProductDetailsResponse],
+    status_code=status.HTTP_200_OK,
+    description="Fetch single product details by slug",
+)
+def get_product_detail(slug: str, db: Session = Depends(get_db)):
+    product = retrieve_single_product(slug=slug, db=db)
+    return APIResponse(
+        success=True,
+        message="Product details fetched successfully",
+        data=product,
     )
 
 

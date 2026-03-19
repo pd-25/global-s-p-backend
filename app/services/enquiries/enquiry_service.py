@@ -1,11 +1,13 @@
 import logging
-from sqlalchemy.orm import Session
+from typing import Any
+from sqlalchemy.orm import Session, joinedload
 from fastapi import HTTPException, status
 
 from app.models.enquiry import Enquiry
 from app.models.enquiry_files import EnquiryFiles
 from app.models.product import Product
 from app.models.supplier import Supplier
+from app.models.product_image import ProductImage
 from app.schemas.enquiry_schema import CreateEnquirySchema
 from app.utils.file_utils import save_upload_file
 
@@ -73,4 +75,65 @@ def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not create enquiry."
+        )
+
+def fetch_product_supplier_data_service(db: Session, slug: str, req_type: str):
+    try:
+        result: dict[str, Any] = {"product": None, "supplier": None}
+        # print("req_type", req_type)
+        # print("slug", slug)
+        # return
+        if req_type == "product":
+            product = db.query(Product).options(joinedload(Product.supplier).joinedload(Supplier.supplier_type)).filter(Product.slug == slug, Product.deleted_at == None).first()
+            if not product:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Product not found"
+                )
+            
+            # Get preview image
+            preview_image = db.query(ProductImage).filter(
+                ProductImage.product_id == product.id,
+                ProductImage.is_preview == True
+            ).first()
+            
+            if not preview_image:
+                preview_image = db.query(ProductImage).filter(
+                    ProductImage.product_id == product.id
+                ).first()
+
+            result["product"] = {
+                "id": product.id,
+                "title": product.title,
+                "slug": product.slug,
+                "preview_image": preview_image.image if preview_image else None
+            }
+            
+            if product.supplier:
+                result["supplier"] = product.supplier
+
+        elif req_type == "supplier":
+            supplier = db.query(Supplier).options(joinedload(Supplier.supplier_type)).filter(Supplier.slug == slug, Supplier.deleted_at == None).first()
+            if not supplier:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Supplier not found"
+                )
+            result["supplier"] = supplier
+        
+        else:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Invalid type. Must be 'product' or 'supplier'."
+            )
+            
+        return result
+
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error fetching product/supplier data: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not fetch product/supplier data."
         )

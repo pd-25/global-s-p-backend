@@ -2,9 +2,26 @@ from datetime import datetime
 from typing import List, Optional
 from pydantic import BaseModel, ValidationError
 from fastapi import UploadFile, File, Form, HTTPException, status
+from app.schemas.supplier_schema import SupplierResponseSchema
+
+class ProductBasicSchema(BaseModel):
+    id: int
+    title: str
+    slug: str
+    preview_image: Optional[str] = None
+
+    class Config:
+        from_attributes = True
+
+class ProductSupplierDataSchema(BaseModel):
+    product: Optional[ProductBasicSchema] = None
+    supplier: Optional[SupplierResponseSchema] = None
+
+    class Config:
+        from_attributes = True
 
 class EnquiryFileResponseSchema(BaseModel):
-    id: int
+    id: int| str
     file: str
     is_preview: Optional[bool] = False
     created_at: Optional[datetime] = None
