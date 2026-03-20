@@ -3,6 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from fastapi import UploadFile, File, Form, HTTPException, status
 from app.schemas.supplier_type_schema import SupplierTypeResponseSchema
+from app.schemas.country_schema import CountryNestedSchema
 import re
 
 
@@ -30,6 +31,7 @@ class SupplierResponseSchema(BaseModel):
     updated_at: Optional[datetime] = None
 
     supplier_type: Optional[SupplierTypeResponseSchema] = None
+    country: Optional[CountryNestedSchema] = None
 
     class Config:
         from_attributes = True

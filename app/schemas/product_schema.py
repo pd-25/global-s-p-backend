@@ -19,13 +19,7 @@ class ProductImageResponseSchema(BaseModel):
 
 
 # Nested response schemas for relations
-class CountryNestedSchema(BaseModel):
-    id: int
-    name: str
-    country_flag: str
-
-    class Config:
-        from_attributes = True
+from app.schemas.country_schema import CountryNestedSchema
 
 
 class SupplierNestedSchema(BaseModel):
@@ -255,3 +249,109 @@ class ProductFilterSchema(BaseModel):
     max_price: Optional[int] = None    # slug-style, e.g. "raw-material"
 
 
+# ---- Products by Supplier ----
+
+class ProductBySupplierImageSchema(BaseModel):
+    image: str
+
+    class Config:
+        from_attributes = True
+
+
+class ProductBySupplierCountrySchema(BaseModel):
+    country_flag: str
+
+    class Config:
+        from_attributes = True
+
+
+class ProductBySupplierCategorySchema(BaseModel):
+    name: str
+
+    class Config:
+        from_attributes = True
+
+
+class ProductBySupplierSchema(BaseModel):
+    slug: str
+    title: str
+    short_desc: Optional[str] = None
+    primary_image: Optional[ProductBySupplierImageSchema] = None
+    country: Optional[ProductBySupplierCountrySchema] = None
+    category: Optional[ProductBySupplierCategorySchema] = None
+
+    class Config:
+        from_attributes = True
+
+
+class SupplierProductsFilterSchema(BaseModel):
+    per_page: int = Field(default=4, ge=1, le=100)
+    page: int = Field(default=1, ge=1)
+
+
+# ---- Trending Products ----
+
+class TrendingProductImageSchema(BaseModel):
+    image: str
+
+    class Config:
+        from_attributes = True
+
+
+class TrendingProductCountrySchema(BaseModel):
+    country_flag: Optional[str] = None
+
+    class Config:
+        from_attributes = True
+
+
+class TrendingProductSupplierSchema(BaseModel):
+    name: str
+    is_verified: Optional[bool] = False
+
+    class Config:
+        from_attributes = True
+
+
+class TrendingProductSchema(BaseModel):
+    slug: str
+    title: str
+    short_desc: Optional[str] = None
+    primary_image: Optional[TrendingProductImageSchema] = None
+    country: Optional[TrendingProductCountrySchema] = None
+    supplier: Optional[TrendingProductSupplierSchema] = None
+
+    class Config:
+        from_attributes = True
+
+
+# ---- Similar Products ----
+
+class SimilarProductImageSchema(BaseModel):
+    image: str
+
+    class Config:
+        from_attributes = True
+
+
+class SimilarProductSupplierSchema(BaseModel):
+    name: str
+
+    class Config:
+        from_attributes = True
+
+
+class SimilarProductSchema(BaseModel):
+    slug: str
+    title: str
+    short_desc: Optional[str] = None
+    primary_image: Optional[SimilarProductImageSchema] = None
+    supplier: Optional[SimilarProductSupplierSchema] = None
+
+    class Config:
+        from_attributes = True
+
+
+class SimilarProductsFilterSchema(BaseModel):
+    perPage: int = Field(default=12, ge=1, le=100)
+    page: int = Field(default=1, ge=1)

@@ -18,6 +18,15 @@ class CountryResponseSchema(BaseModel):
         from_attributes = True
 
 
+class CountryNestedSchema(BaseModel):
+    id: int
+    name: str
+    country_flag: str
+
+    class Config:
+        from_attributes = True
+
+
 # Filter/pagination schema for listing countries
 class CountryFilterSchema(BaseModel):
     search_string: Optional[str] = None

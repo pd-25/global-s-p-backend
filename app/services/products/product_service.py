@@ -2,7 +2,7 @@ import os
 import time
 from datetime import datetime
 from fastapi import HTTPException, status
-from sqlalchemy import asc, desc
+from sqlalchemy import asc, desc, func
 from sqlalchemy.orm import Session, joinedload, load_only, selectinload
 from sqlalchemy.exc import SQLAlchemyError
 import logging
@@ -404,8 +404,9 @@ def retrieve_single_product(slug: str, db: Session):
         .options(
             joinedload(Product.country),
             joinedload(Product.supplier).joinedload(Supplier.supplier_type),
+            joinedload(Product.supplier).joinedload(Supplier.country),
             joinedload(Product.product_type),
-            joinedload(Product.category),
+            # joinedload(Product.category),
             joinedload(Product.images),
         )
         .filter(
@@ -530,3 +531,135 @@ def fetch_recomended_products(db: Session):
         joinedload(Product.primary_image),
         joinedload(Product.country),
     ).all()
+
+
+def fetch_products_by_supplier(supplier_slug: str, page: int, per_page: int, db: Session):
+    """Fetch paginated products for a specific supplier identified by slug.
+
+    Loads only the lightweight fields needed for a product card:
+    slug, title, short_desc, primary_image, country.country_flag, category.name
+    """
+    try:
+        query = (
+            product_model_query(db=db)
+            .join(Supplier, Product.supplier_id == Supplier.id)
+            .filter(Supplier.slug == supplier_slug)
+            .order_by(desc(Product.id))
+        )
+
+        total_count = query.count()
+        total_pages = (total_count + per_page - 1) // per_page if per_page else 0
+
+        offset = (page - 1) * per_page
+        products = (
+            query
+            .options(
+                load_only(
+                    Product.id,
+                    Product.slug,
+                    Product.title,
+                    Product.short_desc,
+                    Product.country_id,
+                    Product.category_id,
+                ),
+                selectinload(Product.primary_image).load_only(ProductImage.image),
+                joinedload(Product.country).load_only(Country.country_flag),
+                joinedload(Product.category).load_only(Categories.name),
+            )
+            .offset(offset)
+            .limit(per_page)
+            .all()
+        )
+
+        return products, total_count, total_pages
+
+    except SQLAlchemyError as e:
+        logger.error(f"DB Error in fetch_products_by_supplier: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not fetch products.",
+        )
+
+
+def fetch_trending_products(db: Session):
+    """Fetch 20 random trending products.
+
+    Loads only the lightweight fields needed:
+    slug, title, short_desc, primary_image, supplier.is_verified, country.country_flag, supplier.name
+    """
+    try:
+        products = (
+            product_model_query(db=db)
+            .join(Supplier, Product.supplier_id == Supplier.id)
+            # Use func.rand() for MySQL to get random records
+            .order_by(func.rand())
+            .options(
+                load_only(
+                    Product.id,
+                    Product.slug,
+                    Product.title,
+                    Product.short_desc,
+                    Product.country_id,
+                    Product.supplier_id,
+                ),
+                selectinload(Product.primary_image).load_only(ProductImage.image),
+                joinedload(Product.country).load_only(Country.country_flag),
+                joinedload(Product.supplier).load_only(Supplier.name, Supplier.is_verified),
+            )
+            .limit(20)
+            .all()
+        )
+
+        return products
+
+    except SQLAlchemyError as e:
+        logger.error(f"DB Error in fetch_trending_products: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not fetch trending products.",
+        )
+
+
+def fetch_similar_products(page: int, per_page: int, db: Session):
+    """Fetch paginated, random similar products.
+
+    Loads only the lightweight fields needed:
+    slug, title, short_desc, primary_image, supplier.name
+    """
+    try:
+        query = (
+            product_model_query(db=db)
+            .join(Supplier, Product.supplier_id == Supplier.id)
+            .order_by(func.rand())
+        )
+
+        total_count = query.count()
+        total_pages = (total_count + per_page - 1) // per_page if per_page else 0
+
+        offset = (page - 1) * per_page
+        products = (
+            query
+            .options(
+                load_only(
+                    Product.id,
+                    Product.slug,
+                    Product.title,
+                    Product.short_desc,
+                    Product.supplier_id,
+                ),
+                selectinload(Product.primary_image).load_only(ProductImage.image),
+                joinedload(Product.supplier).load_only(Supplier.name),
+            )
+            .offset(offset)
+            .limit(per_page)
+            .all()
+        )
+
+        return products, total_count, total_pages
+
+    except SQLAlchemyError as e:
+        logger.error(f"DB Error in fetch_similar_products: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not fetch similar products.",
+        )

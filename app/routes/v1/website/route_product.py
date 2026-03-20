@@ -4,9 +4,27 @@ from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
-from app.schemas.product_schema import ProductDetailsResponse, ProductFilterSchema, ProductListingSchema, RecommendedProductSchema, ProductResponseSchema
+from app.schemas.product_schema import (
+    ProductDetailsResponse,
+    ProductFilterSchema,
+    ProductListingSchema,
+    ProductResponseSchema,
+    RecommendedProductSchema,
+    ProductBySupplierSchema,
+    SupplierProductsFilterSchema,
+    TrendingProductSchema,
+    SimilarProductSchema,
+    SimilarProductsFilterSchema,
+)
 from app.schemas.response import APIResponse
-from app.services.products.product_service import fetch_recomended_products, fetch_website_products, retrieve_single_product
+from app.services.products.product_service import (
+    fetch_recomended_products,
+    fetch_website_products,
+    fetch_products_by_supplier,
+    retrieve_single_product,
+    fetch_trending_products,
+    fetch_similar_products,
+)
 
 product_router = APIRouter()
 
@@ -25,6 +43,50 @@ def get_recomended_products(db: Session = Depends(get_db)):
         data=recomended_products,
         meta={},
     )
+
+@product_router.get(
+    '/trending-products',
+    response_model=APIResponse[List[TrendingProductSchema]],
+    status_code=status.HTTP_200_OK,
+    description="Fetch random 20 trending products for the website",
+)
+def get_trending_products(db: Session = Depends(get_db)):
+    trending_products = fetch_trending_products(db=db)
+    return APIResponse(
+        success=True,
+        message="Trending products fetched successfully",
+        data=trending_products,
+        meta={},
+    )
+
+
+@product_router.get(
+    '/similer-products',
+    response_model=APIResponse[List[SimilarProductSchema]],
+    status_code=status.HTTP_200_OK,
+    description="Fetch paginated random similar products list",
+)
+def get_similar_products(
+    filters: SimilarProductsFilterSchema = Depends(),
+    db: Session = Depends(get_db),
+):
+    products, total_count, total_pages = fetch_similar_products(
+        page=filters.page,
+        per_page=filters.perPage,
+        db=db,
+    )
+    return APIResponse(
+        success=True,
+        message="Similar products fetched successfully",
+        data=products,
+        meta={
+            "page": filters.page,
+            "per_page": filters.perPage,
+            "total_count": total_count,
+            "total_pages": total_pages,
+        },
+    )
+
 
 @product_router.get(
     '/',
@@ -58,6 +120,36 @@ def get_product_detail(slug: str, db: Session = Depends(get_db)):
         success=True,
         message="Product details fetched successfully",
         data=product,
+    )
+
+
+@product_router.get(
+    '/products-by-supplier/{supplier_slug}',
+    response_model=APIResponse[List[ProductBySupplierSchema]],
+    status_code=status.HTTP_200_OK,
+    description="Fetch paginated product cards for a specific supplier by their slug",
+)
+def get_products_by_supplier(
+    supplier_slug: str,
+    filters: SupplierProductsFilterSchema = Depends(),
+    db: Session = Depends(get_db),
+):
+    products, total_count, total_pages = fetch_products_by_supplier(
+        supplier_slug=supplier_slug,
+        page=filters.page,
+        per_page=filters.per_page,
+        db=db,
+    )
+    return APIResponse(
+        success=True,
+        message="Products fetched successfully",
+        data=products,
+        meta={
+            "page": filters.page,
+            "per_page": filters.per_page,
+            "total_count": total_count,
+            "total_pages": total_pages,
+        },
     )
 
 
