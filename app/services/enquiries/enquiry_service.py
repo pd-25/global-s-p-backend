@@ -10,6 +10,8 @@ from app.models.supplier import Supplier
 from app.models.product_image import ProductImage
 from app.schemas.enquiry_schema import CreateEnquirySchema
 from app.utils.file_utils import save_upload_file
+from app.models.enquiry_supplier_types import EnquirySupplierType
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -36,21 +38,42 @@ def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
                 )
 
         new_enquiry = Enquiry(
-            reason_for_contacting=enquiry_data.reason_for_contacting,
-            request_title=enquiry_data.request_title,
-            delivery_location=enquiry_data.delivery_location,
-            quantity=enquiry_data.quantity,
-            request_type=enquiry_data.request_type,
-            message=enquiry_data.message,
-            business_email=enquiry_data.business_email,
-            company_name=enquiry_data.company_name,
-            forward_to_other=enquiry_data.forward_to_other,
-            supplier_id=enquiry_data.supplier_id,
-            product_id=enquiry_data.product_id,
+            reason_for_contacting=enquiry_data.reason_for_contacting or None,
+            request_title=enquiry_data.request_title or None,
+            delivery_location=enquiry_data.delivery_location or None,
+            quantity=enquiry_data.quantity or None,
+            request_type=enquiry_data.request_type or None,
+            message=enquiry_data.message or None,
+            business_email=enquiry_data.business_email or None,
+            company_name=enquiry_data.company_name or None,
+            forward_to_other=enquiry_data.forward_to_other or None,
+            supplier_id=enquiry_data.supplier_id or None,
+            product_id=enquiry_data.product_id or None,
         )
+        
+        if enquiry_data.supplier_type_ids:
+            new_enquiry.is_quote_form = True
         
         db.add(new_enquiry)
         db.flush()
+        
+        if enquiry_data.supplier_type_ids:
+            try:
+                # Parse JSON array if it comes as a stringified list
+                parsed_ids = json.loads(enquiry_data.supplier_type_ids)
+                if not isinstance(parsed_ids, list):
+                    parsed_ids = [parsed_ids]
+            except Exception:
+                # Fallback to comma-separated string
+                parsed_ids = [int(s) for s in str(enquiry_data.supplier_type_ids).split(",") if str(s).strip().isdigit()]
+            
+            for s_id in parsed_ids:
+                supplier_enquiry = EnquirySupplierType(
+                    enquiry_id=new_enquiry.id,
+                    supplier_type_id=int(s_id)
+                )
+                db.add(supplier_enquiry)
+
         
         if enquiry_data.files:
             for index, file in enumerate(enquiry_data.files):

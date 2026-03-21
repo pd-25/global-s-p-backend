@@ -31,7 +31,7 @@ class EnquiryFileResponseSchema(BaseModel):
 
 class EnquiryResponseSchema(BaseModel):
     id: int
-    reason_for_contacting: str
+    reason_for_contacting: Optional[str] = None
     request_title: Optional[str] = None
     delivery_location: Optional[str] = None
     quantity: Optional[str] = None
@@ -51,7 +51,7 @@ class EnquiryResponseSchema(BaseModel):
         from_attributes = True
 
 class CreateEnquirySchema(BaseModel):
-    reason_for_contacting: str
+    reason_for_contacting: Optional[str] = None
     request_title: Optional[str] = None
     delivery_location: Optional[str] = None
     quantity: Optional[str] = None
@@ -61,13 +61,14 @@ class CreateEnquirySchema(BaseModel):
     company_name: Optional[str] = None
     forward_to_other: Optional[bool] = False
     supplier_id: Optional[int] = None
+    supplier_type_ids: Optional[str] = None
     product_id: Optional[int] = None
     files: Optional[List[UploadFile]] = None
 
     @classmethod
     def as_form(
         cls,
-        reason_for_contacting: str = Form(...),
+        reason_for_contacting: Optional[str] = Form(None),
         request_title: Optional[str] = Form(None),
         delivery_location: Optional[str] = Form(None),
         quantity: Optional[str] = Form(None),
@@ -77,6 +78,7 @@ class CreateEnquirySchema(BaseModel):
         company_name: Optional[str] = Form(None),
         forward_to_other: Optional[bool] = Form(False),
         supplier_id: Optional[int] = Form(None),
+        supplier_type_ids: Optional[str] = Form(None),
         product_id: Optional[int] = Form(None),
         files: Optional[List[UploadFile]] = None,
     ) -> "CreateEnquirySchema":
@@ -92,6 +94,7 @@ class CreateEnquirySchema(BaseModel):
                 company_name=company_name,
                 forward_to_other=forward_to_other,
                 supplier_id=supplier_id,
+                supplier_type_ids=supplier_type_ids,
                 product_id=product_id,
                 files=files,
             )

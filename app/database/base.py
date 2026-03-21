@@ -9,4 +9,5 @@ from app.models.product import Product
 from app.models.product_image import ProductImage
 from app.models.enquiry import Enquiry
 from app.models.enquiry_files import EnquiryFiles
+from app.models.enquiry_supplier_types import EnquirySupplierType
 
