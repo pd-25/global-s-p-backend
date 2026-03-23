@@ -15,6 +15,7 @@ from app.schemas.product_schema import (
     TrendingProductSchema,
     SimilarProductSchema,
     SimilarProductsFilterSchema,
+    TrendingProductsFilterSchema,
 )
 from app.schemas.response import APIResponse
 from app.services.products.product_service import (
@@ -48,15 +49,26 @@ def get_recomended_products(db: Session = Depends(get_db)):
     '/trending-products',
     response_model=APIResponse[List[TrendingProductSchema]],
     status_code=status.HTTP_200_OK,
-    description="Fetch random 20 trending products for the website",
+    description="Fetch paginated trending products list with filters",
 )
-def get_trending_products(db: Session = Depends(get_db)):
-    trending_products = fetch_trending_products(db=db)
+def get_trending_products(
+    filters: TrendingProductsFilterSchema = Depends(),
+    db: Session = Depends(get_db),
+):
+    trending_products, total_count, total_pages = fetch_trending_products(
+        db=db, 
+        filters=filters
+    )
     return APIResponse(
         success=True,
         message="Trending products fetched successfully",
         data=trending_products,
-        meta={},
+        meta={
+            "page": filters.page,
+            "per_page": filters.perPage,
+            "total_count": total_count,
+            "total_pages": total_pages,
+        },
     )
 
 

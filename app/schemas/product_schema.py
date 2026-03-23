@@ -325,6 +325,14 @@ class TrendingProductSchema(BaseModel):
         from_attributes = True
 
 
+class TrendingProductsFilterSchema(BaseModel):
+    page: int = Field(default=1, ge=1)
+    perPage: int = Field(default=20, ge=1, le=100)
+    category_id: Optional[int] = None
+    search_string: Optional[str] = None
+    location: Optional[int] = None
+
+
 # ---- Similar Products ----
 
 class SimilarProductImageSchema(BaseModel):

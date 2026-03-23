@@ -18,6 +18,7 @@ from app.schemas.product_schema import (
     ProductFilterSchema,
     CreateProductSchema,
     UpdateProductSchema,
+    TrendingProductsFilterSchema,
 )
 from app.utils.file_utils import save_upload_file
 from app.utils.string_utils import generate_slug
@@ -581,18 +582,44 @@ def fetch_products_by_supplier(supplier_slug: str, page: int, per_page: int, db:
         )
 
 
-def fetch_trending_products(db: Session):
-    """Fetch 20 random trending products.
+def fetch_trending_products(db: Session, filters: TrendingProductsFilterSchema):
+    """Fetch paginated trending products with filters.
 
     Loads only the lightweight fields needed:
     slug, title, short_desc, primary_image, supplier.is_verified, country.country_flag, supplier.name
     """
     try:
-        products = (
+        query = (
             product_model_query(db=db)
             .join(Supplier, Product.supplier_id == Supplier.id)
-            # Use func.rand() for MySQL to get random records
-            .order_by(func.rand())
+        )
+
+        # Filter by category
+        if filters.category_id is not None:
+            query = query.filter(Product.category_id == filters.category_id)
+
+        # Filter by location (country_id)
+        if filters.location is not None:
+            query = query.filter(Product.country_id == filters.location)
+
+        # Filter by search_string
+        if filters.search_string:
+            query = query.filter(
+                Product.title.ilike(f"%{filters.search_string}%")
+            )
+
+        # Randomize order (original requirement was "random 20 trending products", 
+        # but now we have pagination, so we keep randomization if no search is performed? 
+        # Usually trending is either fixed or randomized. 
+        # Let's stick to randomization as per previous logic but apply pagination)
+        query = query.order_by(func.rand())
+
+        total_count = query.count()
+        total_pages = (total_count + filters.perPage - 1) // filters.perPage if filters.perPage else 0
+
+        offset = (filters.page - 1) * filters.perPage
+        products = (
+            query
             .options(
                 load_only(
                     Product.id,
@@ -606,11 +633,12 @@ def fetch_trending_products(db: Session):
                 joinedload(Product.country).load_only(Country.country_flag),
                 joinedload(Product.supplier).load_only(Supplier.name, Supplier.is_verified),
             )
-            .limit(20)
+            .offset(offset)
+            .limit(filters.perPage)
             .all()
         )
 
-        return products
+        return products, total_count, total_pages
 
     except SQLAlchemyError as e:
         logger.error(f"DB Error in fetch_trending_products: {str(e)}")
