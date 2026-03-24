@@ -169,9 +169,9 @@ def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcateg
     )
     
     if filters.limit:
-        print('limit- ', filters.limit)
+        # print('limit- ', filters.limit)
         query = query.limit(filters.limit)
-    print(str(query.statement))
+    # print(str(query.statement))
     parents = query.all()
     
     # Return early if no parents are found

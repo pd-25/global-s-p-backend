@@ -595,8 +595,16 @@ def fetch_trending_products(db: Session, filters: TrendingProductsFilterSchema):
         )
 
         # Filter by category
-        if filters.category_id is not None:
-            query = query.filter(Product.category_id == filters.category_id)
+        if filters.subcategory_id is not None:
+            query = query.filter(Product.category_id == filters.subcategory_id)
+        elif filters.category_id is not None:
+            # Fetch the IDs of all subcategories for the given category_id
+            sub_cat_ids = [r[0] for r in db.query(Categories.id).filter(Categories.parent_id == filters.category_id).all()]
+            
+            # Include the parent category ID itself in the filter
+            all_category_ids = [filters.category_id] + sub_cat_ids
+            
+            query = query.filter(Product.category_id.in_(all_category_ids))
 
         # Filter by location (country_id)
         if filters.location is not None:
