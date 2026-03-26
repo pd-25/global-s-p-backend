@@ -20,7 +20,7 @@ class SupplierResponseSchema(BaseModel):
     address: Optional[str] = None
     delivery_area: Optional[str] = None
     founded_year: Optional[int] = None
-    employee_strength: Optional[int] = None
+    employee_strength: Optional[str] = None
     supplier_type_id: Optional[int] = None
     is_verified: Optional[bool] = False
     vat_number: Optional[str] = None
@@ -57,9 +57,11 @@ class CreateSupplierSchema(BaseModel):
     city: Optional[str] = None
     country_id: Optional[int] = None
     address: Optional[str] = None
+    address_two: Optional[str] = None
+    business_sector: Optional[str] = None
     delivery_area: Optional[str] = None
     founded_year: Optional[int] = None
-    employee_strength: Optional[int] = None
+    employee_strength: Optional[str] = None
     supplier_type_id: Optional[int] = None
     is_verified: Optional[bool] = False
     vat_number: Optional[str] = None
@@ -103,9 +105,11 @@ class CreateSupplierSchema(BaseModel):
         city: Optional[str] = Form(None),
         country_id: Optional[int] = Form(None),
         address: Optional[str] = Form(None),
+        address_two: Optional[str] = Form(None),
+        business_sector: Optional[str] = Form(None),
         delivery_area: Optional[str] = Form(None),
         founded_year: Optional[int] = Form(None),
-        employee_strength: Optional[int] = Form(None),
+        employee_strength: Optional[str] = Form(None),
         supplier_type_id: Optional[int] = Form(None),
         is_verified: Optional[bool] = Form(False),
         vat_number: Optional[str] = Form(None),
@@ -122,6 +126,8 @@ class CreateSupplierSchema(BaseModel):
                 city=city,
                 country_id=country_id,
                 address=address,
+                address_two=address_two,
+                business_sector=business_sector,
                 delivery_area=delivery_area,
                 founded_year=founded_year,
                 employee_strength=employee_strength,
