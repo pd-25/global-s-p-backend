@@ -1,6 +1,8 @@
 import sys
 import os
 
+
+
 # Add the project root to sys.path to allow imports from app
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 
@@ -11,6 +13,7 @@ from app.database.seeder.supplier_seeder import SupplierSeeder
 from app.database.seeder.product_type_seeder import ProductTypeSeeder
 from app.database.seeder.product_seeder import ProductSeeder
 from app.database.seeder.product_image_seeder import ProductImageSeeder
+from app.database.seeder.initial_data_import_seeder import InitialDataImportSeeder
 from app.database.session import get_db
 
 class DatabaseSeeder:
@@ -26,8 +29,9 @@ class DatabaseSeeder:
             # SupplierTypeSeeder().run(db=db)
             # SupplierSeeder().run(db=db)
             # ProductTypeSeeder().run(db=db)
-            ProductSeeder().run(db=db)
-            ProductImageSeeder().run(db=db)
+            # ProductSeeder().run(db=db)
+            # ProductImageSeeder().run(db=db)
+            InitialDataImportSeeder().run(db=db)
             print("✅ Database Seeding Completed Successfully!")
         finally:
             try:
