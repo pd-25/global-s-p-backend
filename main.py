@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from app.core.config import settings
 # from db.session import engine
 # from db.base import Base
@@ -22,6 +23,8 @@ def start_application():
     allow_headers=["*"],       # Allow all headers
 )
     include_router(app)
+    # Mount static files so /jute_images/*, /uploads/*, etc. are served
+    app.mount("/", StaticFiles(directory="app/static"), name="static")
     # create_tables()
     return app
 

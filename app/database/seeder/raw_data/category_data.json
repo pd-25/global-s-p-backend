@@ -1,315 +1,328 @@
 [
   {
     "name": "JUTE COLLECTION",
+    "image": "http://localhost:8000/jute_images/jute_shoping_and_tote_bags.jpg",
     "subcategories": [
       {
         "name": "JUTE SHOPING & TOTE BAGS",
+        "image": "http://localhost:8000/jute_images/jute_shoping_and_tote_bags.jpg",
         "products": [
           {
             "name": "Grocery & Retail Bags",
             "images": [
-              "https://loremflickr.com/500/500/Grocery%2CJUTE?random=317"
+              "http://localhost:8000/jute_images/grocery_and_retail_bags.jpg"
             ]
           },
           {
             "name": "Promotional & Branded Bags",
             "images": [
-              "https://loremflickr.com/500/500/Promotional%2CJUTE?random=586"
+              "http://localhost:8000/jute_images/promotional_and_branded_bags.jpg"
             ]
           },
           {
             "name": "Gift & Drawstring Bags / Pouches",
             "images": [
-              "https://loremflickr.com/500/500/Gift%2CJUTE?random=188"
+              "http://localhost:8000/jute_images/grocery_and_retail_bags.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE PACKAGING ACCESSORIES",
+        "image": "http://localhost:8000/jute_images/jute_packaging_accessories.jpg",
         "products": [
           {
             "name": "Ribbons & Cords",
             "images": [
-              "https://loremflickr.com/500/500/Ribbons%2CJUTE?random=992"
+              "http://localhost:8000/jute_images/ribbons_and_cords.jpg"
             ]
           },
           {
             "name": "Ropes & Strings",
             "images": [
-              "https://loremflickr.com/500/500/Ropes%2CJUTE?random=114"
+              "http://localhost:8000/jute_images/ropes_and_strings_.jpg"
             ]
           },
           {
             "name": "Webbing & Straps",
             "images": [
-              "https://loremflickr.com/500/500/Webbing%2CJUTE?random=550"
+              "http://localhost:8000/jute_images/webbing_and_straps.jpg"
             ]
           },
           {
             "name": "Wrapping Cloth",
             "images": [
-              "https://loremflickr.com/500/500/Wrapping%2CJUTE?random=546"
+              "http://localhost:8000/jute_images/wrapping_cloth.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE RUGS FLOOR COVERINGS",
+        "image": "http://localhost:8000/jute_images/jute_rugs_floor_coverings.jpg",
         "products": [
           {
             "name": "Area Rugs & Carpets",
             "images": [
-              "https://loremflickr.com/500/500/Area%2CJUTE?random=436"
+              "http://localhost:8000/jute_images/area_rugs_and_carpets.jpg"
             ]
           },
           {
             "name": "Floor Mats (Door, kitchen, bathroom)",
             "images": [
-              "https://loremflickr.com/500/500/Floor%2CJUTE?random=294"
+              "http://localhost:8000/jute_images/floor_mats_(door,_kitchen,_bathroom).jpg"
             ]
           },
           {
             "name": "Braided & Flat-Weave Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Braided%2CJUTE?random=590"
+              "http://localhost:8000/jute_images/braided_and_flat-weave_rugs.webp"
             ]
           },
           {
             "name": "Runners",
             "images": [
-              "https://loremflickr.com/500/500/Runners%2CJUTE?random=742"
+              "http://localhost:8000/jute_images/runners.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE HOME DECOR",
+        "image": "http://localhost:8000/jute_images/jute_home_decor.jpg",
         "products": [
           {
             "name": "Cushion Covers & Throw Pillows",
             "images": [
-              "https://loremflickr.com/500/500/Cushion%2CJUTE?random=473"
+              "http://localhost:8000/jute_images/cushion_covers_and_throw_pillows.jpg"
             ]
           },
           {
             "name": "Wall Hangings & Tapestries",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CJUTE?random=319"
+              "http://localhost:8000/jute_images/wall_hangings_and_tapestries.jpg"
             ]
           },
           {
             "name": "Lampshades",
             "images": [
-              "https://loremflickr.com/500/500/Lampshades%2CJUTE?random=622"
+              "http://localhost:8000/jute_images/lampshades.jpg"
             ]
           },
           {
             "name": "Baskets & Storage Organizers",
             "images": [
-              "https://loremflickr.com/500/500/Baskets%2CJUTE?random=476"
+              "http://localhost:8000/jute_images/baskets_and_storage_organizers.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE TABLE & KITCHEN TEXTILES",
+        "image": "http://localhost:8000/jute_images/jute_table_and_kitchen_textiles.jpg",
         "products": [
           {
             "name": "Table Runners & Placemats",
             "images": [
-              "https://loremflickr.com/500/500/Table%2CJUTE?random=110"
+              "http://localhost:8000/jute_images/table_runners_and_placemats.jpg"
             ]
           },
           {
             "name": "Coasters and Napkin Rings",
             "images": [
-              "https://loremflickr.com/500/500/Coasters%2CJUTE?random=606"
+              "http://localhost:8000/jute_images/coasters_and_napkin_rings.jpg"
             ]
           },
           {
             "name": "Kitchen Accessories (Trivets, pot holders)",
             "images": [
-              "https://loremflickr.com/500/500/Kitchen%2CJUTE?random=718"
+              "http://localhost:8000/jute_images/kitchen_accessories_(trivets,_pot_holders).jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE FASHION BAGS & ACCESSORIES",
+        "image": "http://localhost:8000/jute_images/jute_fashion_bags_and_accessories.jpg",
         "products": [
           {
             "name": "Handbags & Shoulder Bags",
             "images": [
-              "https://loremflickr.com/500/500/Handbags%2CJUTE?random=537"
+              "http://localhost:8000/jute_images/handbags_and_shoulder_bags.jpg"
             ]
           },
           {
             "name": "Clutches & Pouches",
             "images": [
-              "https://loremflickr.com/500/500/Clutches%2CJUTE?random=550"
+              "http://localhost:8000/jute_images/clutches_and_pouches.jpg"
             ]
           },
           {
             "name": "Wallets & Card Holders",
             "images": [
-              "https://loremflickr.com/500/500/Wallets%2CJUTE?random=620"
+              "http://localhost:8000/jute_images/wallets_and_card_holders.jpg"
             ]
           },
           {
             "name": "Belts & Fashion Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Belts%2CJUTE?random=708"
+              "http://localhost:8000/jute_images/belts_and_fashion_accessories.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE FOOTWEAR",
+        "image": "http://localhost:8000/jute_images/jute_footwear.jpg",
         "products": [
           {
             "name": "Espadrilles & Sandals (Slides, flip-flops with jute straps)",
             "images": [
-              "https://loremflickr.com/500/500/Espadrilles%2CJUTE?random=733"
+              "http://localhost:8000/jute_images/espadrilles_and_sandals_(slides,_flip-flops_with_jute_straps).png"
             ]
           }
         ]
       },
       {
         "name": "JUTE APPAREL & TEXTILES",
+        "image": "http://localhost:8000/jute_images/jute_apparel_and_textiles.jpg",
         "products": [
           {
             "name": "Scarves and Shawls",
             "images": [
-              "https://loremflickr.com/500/500/Scarves%2CJUTE?random=424"
+              "http://localhost:8000/jute_images/scarves_and_shawls.jpg"
             ]
           },
           {
             "name": "Blended Apparel (Skirts, lightweight tops)",
             "images": [
-              "https://loremflickr.com/500/500/Blended%2CJUTE?random=515"
+              "http://localhost:8000/jute_images/blended_apparel_(skirts,_lightweight_tops)_raw_jute_fiber.jpg"
             ]
           }
         ]
       },
       {
         "name": "RAW JUTE FIBER",
+        "image": "http://localhost:8000/jute_images/white_jute_(corchorus_capsularis).jpg",
         "products": [
           {
             "name": "White Jute (Corchorus capsularis)",
             "images": [
-              "https://loremflickr.com/500/500/White%2CJUTE?random=502"
+              "http://localhost:8000/jute_images/white_jute_(corchorus_capsularis).jpg"
             ]
           },
           {
             "name": "Tossa Jute / Brown Jute (Corchorus olitorius)",
             "images": [
-              "https://loremflickr.com/500/500/Tossa%2CJUTE?random=250"
+              "http://localhost:8000/jute_images/white_jute_(corchorus_capsularis).jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE YARN & TWINE",
+        "image": "http://localhost:8000/jute_images/jute_yarn_and_twine.jpg",
         "products": [
           {
             "name": "Fine Yarn",
             "images": [
-              "https://loremflickr.com/500/500/Fine%2CJUTE?random=132"
+              "http://localhost:8000/jute_images/fine_yarn_.jpg"
             ]
           },
           {
             "name": "Medium/Coarse Yarn",
             "images": [
-              "https://loremflickr.com/500/500/Medium/Coarse%2CJUTE?random=917"
+              "http://localhost:8000/jute_images/blended_yarns.jpg"
             ]
           },
           {
             "name": "Twine and Rope",
             "images": [
-              "https://loremflickr.com/500/500/Twine%2CJUTE?random=56"
+              "http://localhost:8000/jute_images/twine_and_rope.jpg"
             ]
           },
           {
             "name": "Blended Yarns",
             "images": [
-              "https://loremflickr.com/500/500/Blended%2CJUTE?random=34"
+              "http://localhost:8000/jute_images/blended_yarns.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE FABRIC & TEXTILES",
+        "image": "http://localhost:8000/jute_images/jute_fabric_and_textiles.jpg",
         "products": [
           {
             "name": "Hessian/Burlap",
             "images": [
-              "https://loremflickr.com/500/500/Hessian/Burlap%2CJUTE?random=927"
+              "http://localhost:8000/jute_images/sacking_cloth.jpg"
             ]
           },
           {
             "name": "Sacking Cloth",
             "images": [
-              "https://loremflickr.com/500/500/Sacking%2CJUTE?random=802"
+              "http://localhost:8000/jute_images/sacking_cloth.jpg"
             ]
           },
           {
             "name": "Carpet Backing Cloth (CBC)",
             "images": [
-              "https://loremflickr.com/500/500/Carpet%2CJUTE?random=982"
+              "http://localhost:8000/jute_images/carpet_backing_cloth_(cbc).jpg"
             ]
           },
           {
             "name": "Canvas and Scrim",
             "images": [
-              "https://loremflickr.com/500/500/Canvas%2CJUTE?random=286"
+              "http://localhost:8000/jute_images/canvas_and_scrim.jpg"
             ]
           },
           {
             "name": "GEO-Textile Fabrics",
             "images": [
-              "https://loremflickr.com/500/500/GEO-Textile%2CJUTE?random=716"
+              "http://localhost:8000/jute_images/geo-textile_fabrics_.png"
             ]
           },
           {
             "name": "Laminated/ Coated Jute Fabric",
             "images": [
-              "https://loremflickr.com/500/500/Laminated/%2CJUTE?random=159"
+              "http://localhost:8000/jute_images/jute_fabric_and_textiles.jpg"
             ]
           }
         ]
       },
       {
         "name": "JUTE SACKS & INDUSTRIAL BAGS",
+        "image": "http://localhost:8000/jute_images/jute_sacks_and_industrial_bags.webp",
         "products": [
           {
             "name": "Grain & Commodity Sacks",
             "images": [
-              "https://loremflickr.com/500/500/Grain%2CJUTE?random=442"
+              "http://localhost:8000/jute_images/grain_and_commodity_sacks.jpg"
             ]
           },
           {
             "name": "Coffee & Sugar Sacks",
             "images": [
-              "https://loremflickr.com/500/500/Coffee%2CJUTE?random=162"
+              "http://localhost:8000/jute_images/coffee_and_sugar_sacks.jpg"
             ]
           },
           {
             "name": "Fertilizer & Feed Sacks",
             "images": [
-              "https://loremflickr.com/500/500/Fertilizer%2CJUTE?random=755"
+              "http://localhost:8000/jute_images/fertilizer_and_feed_sacks.jpg"
             ]
           },
           {
             "name": "Sand & Flood Control Bags",
             "images": [
-              "https://loremflickr.com/500/500/Sand%2CJUTE?random=994"
+              "http://localhost:8000/jute_images/sand_and_flood_control_bags.jpg"
             ]
           },
           {
             "name": "A-Twill / B-Twill / Double Warp Sacks",
             "images": [
-              "https://loremflickr.com/500/500/A-Twill%2CJUTE?random=785"
+              "http://localhost:8000/jute_images/grain_and_commodity_sacks.jpg"
             ]
           }
         ]
@@ -325,58 +338,59 @@
           {
             "name": "Chyawanprash",
             "images": [
-              "https://loremflickr.com/500/500/Chyawanprash%2CNATURAL?random=831"
+              "http://localhost:8000/natural_images/chyawanprash.png"
             ]
           },
           {
             "name": "Ashwagandha Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Ashwagandha%2CNATURAL?random=604"
+              "http://localhost:8000/natural_images/ashwagandha_supplements.jpg"
             ]
           },
           {
             "name": "Giloy & Guduchi Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Giloy%2CNATURAL?random=840"
+              "http://localhost:8000/natural_images/giloy_and_guduchi_supplements.jpg"
             ]
           },
           {
             "name": "Tulsi Supplements & Drops",
             "images": [
-              "https://loremflickr.com/500/500/Tulsi%2CNATURAL?random=653"
+              "http://localhost:8000/natural_images/tulsi_supplements_and_drops.png"
             ]
           },
           {
             "name": "Amla Supplements & Juice",
             "images": [
-              "https://loremflickr.com/500/500/Amla%2CNATURAL?random=84"
+              "http://localhost:8000/natural_images/amla_supplements_and_juice.jpg"
             ]
           },
           {
             "name": "Turmeric & Curcumin Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Turmeric%2CNATURAL?random=790"
+              "http://localhost:8000/natural_images/turmeric_and_curcumin_supplements.jpg"
             ]
           },
           {
             "name": "Shilajit Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Shilajit%2CNATURAL?random=827"
+              "http://localhost:8000/natural_images/shilajit_supplements.jpg"
             ]
           },
           {
             "name": "Moringa Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Moringa%2CNATURAL?random=410"
+              "http://localhost:8000/natural_images/moringa_supplements.jpg"
             ]
           },
           {
             "name": "Multi-Herb Immunity Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Multi-Herb%2CNATURAL?random=556"
+              "http://localhost:8000/natural_images/multi-herb_immunity_tonics.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/immunity_boosters.jpg"
       },
       {
         "name": "Digestive Health",
@@ -384,28 +398,29 @@
           {
             "name": "Triphala Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Triphala%2CNATURAL?random=15"
+              "http://localhost:8000/natural_images/triphala_supplements.jpg"
             ]
           },
           {
             "name": "Digestive Churnas & Powders",
             "images": [
-              "https://loremflickr.com/500/500/Digestive%2CNATURAL?random=183"
+              "http://localhost:8000/natural_images/digestive_churnas_and_powders.jpg"
             ]
           },
           {
             "name": "Digestive Syrups & Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Digestive%2CNATURAL?random=796"
+              "http://localhost:8000/natural_images/digestive_syrups_and_tonics.jpg"
             ]
           },
           {
             "name": "Laxative & Fibre Supplements (Psyllium Husk)",
             "images": [
-              "https://loremflickr.com/500/500/Laxative%2CNATURAL?random=178"
+              "http://localhost:8000/natural_images/laxative_and_fibre_supplements.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/digestive_health.png"
       },
       {
         "name": "Herbal Juices & Tonics",
@@ -413,28 +428,29 @@
           {
             "name": "Single-Herb Juices (Amla, Aloe Vera, Neem, Giloy, Tulsi)",
             "images": [
-              "https://loremflickr.com/500/500/Single-Herb%2CNATURAL?random=700"
+              "http://localhost:8000/natural_images/single-herb_juices.jpg"
             ]
           },
           {
             "name": "Wheatgrass Juice",
             "images": [
-              "https://loremflickr.com/500/500/Wheatgrass%2CNATURAL?random=877"
+              "http://localhost:8000/natural_images/wheatgrass_juice.jpg"
             ]
           },
           {
             "name": "Blended Wellness & Detox Juices",
             "images": [
-              "https://loremflickr.com/500/500/Blended%2CNATURAL?random=312"
+              "http://localhost:8000/natural_images/blended_wellness_and_detox_juices.png"
             ]
           },
           {
             "name": "Herbal Teas & Infusions",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=382"
+              "http://localhost:8000/natural_images/herbal_teas_and_infusions.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/herbal_juices_and_tonics.png"
       },
       {
         "name": "Stress, Sleep & Brain Health",
@@ -442,22 +458,23 @@
           {
             "name": "Brahmi & Shankhpushpi Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Brahmi%2CNATURAL?random=18"
+              "http://localhost:8000/natural_images/brahmi_and_shankhpushpi_supplements.jpg"
             ]
           },
           {
             "name": "Ashwagandha Stress Support",
             "images": [
-              "https://loremflickr.com/500/500/Ashwagandha%2CNATURAL?random=652"
+              "http://localhost:8000/natural_images/ashwagandha_stress_support.jpg"
             ]
           },
           {
             "name": "Sleep Support Capsules & Syrups",
             "images": [
-              "https://loremflickr.com/500/500/Sleep%2CNATURAL?random=886"
+              "http://localhost:8000/natural_images/sleep_support_capsules_and_syrups.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/stress,_sleep_and_brain_health.jpg"
       },
       {
         "name": "Pain Relief & Joint Care",
@@ -465,28 +482,29 @@
           {
             "name": "Pain Relief Oils, Balms & Gels",
             "images": [
-              "https://loremflickr.com/500/500/Pain%2CNATURAL?random=547"
+              "http://localhost:8000/natural_images/pain_relief_oils,_balms_and_gels.jpg"
             ]
           },
           {
             "name": "Pain Patches & Roll-Ons",
             "images": [
-              "https://loremflickr.com/500/500/Pain%2CNATURAL?random=530"
+              "http://localhost:8000/natural_images/pain_patches_and_roll-ons.jpg"
             ]
           },
           {
             "name": "Joint Care Tablets & Capsules",
             "images": [
-              "https://loremflickr.com/500/500/Joint%2CNATURAL?random=645"
+              "http://localhost:8000/natural_images/joint_care_tablets_and_capsules.jpg"
             ]
           },
           {
             "name": "Anti-Inflammatory & Bone Health Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Anti-Inflammatory%2CNATURAL?random=997"
+              "http://localhost:8000/natural_images/anti-inflammatory_and_bone_health_supplements.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/pain_relief_and_joint_care.jpg"
       },
       {
         "name": "Superfoods & Daily Wellness",
@@ -494,28 +512,29 @@
           {
             "name": "Raw & Infused Honey",
             "images": [
-              "https://loremflickr.com/500/500/Raw%2CNATURAL?random=451"
+              "http://localhost:8000/natural_images/raw_and_infused_honey.jpg"
             ]
           },
           {
             "name": "Moringa Powder",
             "images": [
-              "https://loremflickr.com/500/500/Moringa%2CNATURAL?random=77"
+              "http://localhost:8000/natural_images/moringa_powder.jpg"
             ]
           },
           {
             "name": "Herbal Powders & Blends",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=520"
+              "http://localhost:8000/natural_images/herbal_powders_and_blends.jpg"
             ]
           },
           {
             "name": "Ayurvedic Ghee & Natural Sweeteners",
             "images": [
-              "https://loremflickr.com/500/500/Ayurvedic%2CNATURAL?random=102"
+              "http://localhost:8000/natural_images/ayurvedic_ghee_and_natural_sweeteners.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/superfoods_and_daily_wellness.jpg"
       },
       {
         "name": "Liver Care & Detox",
@@ -523,22 +542,23 @@
           {
             "name": "Liver Tablets & Capsules",
             "images": [
-              "https://loremflickr.com/500/500/Liver%2CNATURAL?random=886"
+              "http://localhost:8000/natural_images/liver_tablets_and_capsules.jpg"
             ]
           },
           {
             "name": "Liver Syrups & Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Liver%2CNATURAL?random=839"
+              "http://localhost:8000/natural_images/liver_syrups_and_tonics.jpg"
             ]
           },
           {
             "name": "Blood Purifier Formulas",
             "images": [
-              "https://loremflickr.com/500/500/Blood%2CNATURAL?random=828"
+              "http://localhost:8000/natural_images/blood_purifier_formulas.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/liver_care_and_detox.png"
       },
       {
         "name": "Men's Health & Vitality",
@@ -546,22 +566,23 @@
           {
             "name": "Shilajit Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Shilajit%2CNATURAL?random=464"
+              "http://localhost:8000/natural_images/shilajit_supplements.jpg"
             ]
           },
           {
             "name": "Stamina Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Stamina%2CNATURAL?random=942"
+              "http://localhost:8000/natural_images/stamina_supplements.png"
             ]
           },
           {
             "name": "Safed Musli, Kaunch & Gokshura Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Safed%2CNATURAL?random=306"
+              "http://localhost:8000/natural_images/safed_musli,_kaunch_and_gokshura_supplements.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/mens_health_and_vitality.jpg"
       },
       {
         "name": "Women's Health & Wellness",
@@ -569,28 +590,29 @@
           {
             "name": "Shatavari Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Shatavari%2CNATURAL?random=900"
+              "http://localhost:8000/natural_images/shatavari_supplements.jpg"
             ]
           },
           {
             "name": "Menstrual & Uterine Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Menstrual%2CNATURAL?random=592"
+              "http://localhost:8000/natural_images/menstrual_and_uterine_tonics.jpg"
             ]
           },
           {
             "name": "Hormonal Balance & Fertility Support",
             "images": [
-              "https://loremflickr.com/500/500/Hormonal%2CNATURAL?random=867"
+              "http://localhost:8000/natural_images/hormonal_balance_and_fertility_support.png"
             ]
           },
           {
             "name": "Lactation & Menopause Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Lactation%2CNATURAL?random=553"
+              "http://localhost:8000/natural_images/lactation_and_menopause_supplements.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/womens_health_and_wellness.png"
       },
       {
         "name": "Respiratory Health",
@@ -598,22 +620,23 @@
           {
             "name": "Herbal Cough Syrups",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=747"
+              "http://localhost:8000/natural_images/herbal_cough_syrups.jpg"
             ]
           },
           {
             "name": "Cough Tablets & Lozenges",
             "images": [
-              "https://loremflickr.com/500/500/Cough%2CNATURAL?random=583"
+              "http://localhost:8000/natural_images/cough_tablets_and_lozenges.jpg"
             ]
           },
           {
             "name": "Respiratory Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Respiratory%2CNATURAL?random=245"
+              "http://localhost:8000/natural_images/respiratory_tonics.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/respiratory_health.jpg"
       },
       {
         "name": "Baby & Child Care",
@@ -621,28 +644,29 @@
           {
             "name": "Baby Massage Oils",
             "images": [
-              "https://loremflickr.com/500/500/Baby%2CNATURAL?random=652"
+              "http://localhost:8000/natural_images/baby_massage_oils.jpg"
             ]
           },
           {
             "name": "Baby Wash, Shampoo & Soap",
             "images": [
-              "https://loremflickr.com/500/500/Baby%2CNATURAL?random=781"
+              "http://localhost:8000/natural_images/baby_wash,_shampoo_and_soap.jpg"
             ]
           },
           {
             "name": "Baby Creams & Rash Creams",
             "images": [
-              "https://loremflickr.com/500/500/Baby%2CNATURAL?random=353"
+              "http://localhost:8000/natural_images/baby_creams_and_rash_creams.jpg"
             ]
           },
           {
             "name": "Child Immunity & Digestive Tonics",
             "images": [
-              "https://loremflickr.com/500/500/Child%2CNATURAL?random=556"
+              "http://localhost:8000/natural_images/child_immunity_and_digestive_tonics.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/baby_and_child_care.webp"
       },
       {
         "name": "Skin Care",
@@ -650,22 +674,23 @@
           {
             "name": "Face Washes & Cleansers",
             "images": [
-              "https://loremflickr.com/500/500/Face%2CNATURAL?random=513"
+              "http://localhost:8000/natural_images/face_washes_and_cleansers.jpg"
             ]
           },
           {
             "name": "Face Packs & Masks",
             "images": [
-              "https://loremflickr.com/500/500/Face%2CNATURAL?random=717"
+              "http://localhost:8000/natural_images/face_packs_and_masks.jpg"
             ]
           },
           {
             "name": "Face Serums, Oils & Creams",
             "images": [
-              "https://loremflickr.com/500/500/Face%2CNATURAL?random=219"
+              "http://localhost:8000/natural_images/face_serums,_oils_and_creams.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/skin_care.jpg"
       },
       {
         "name": "Hair Care",
@@ -673,28 +698,29 @@
           {
             "name": "Hair Oils & Scalp Oils",
             "images": [
-              "https://loremflickr.com/500/500/Hair%2CNATURAL?random=891"
+              "http://localhost:8000/natural_images/hair_oils_and_scalp_oils.jpg"
             ]
           },
           {
             "name": "Herbal Shampoos",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=75"
+              "http://localhost:8000/natural_images/herbal_shampoos.png"
             ]
           },
           {
             "name": "Conditioners & Hair Masks",
             "images": [
-              "https://loremflickr.com/500/500/Conditioners%2CNATURAL?random=288"
+              "http://localhost:8000/natural_images/conditioners_and_hair_masks.jpg"
             ]
           },
           {
             "name": "Anti-Hairfall & Anti-Dandruff Products",
             "images": [
-              "https://loremflickr.com/500/500/Anti-Hairfall%2CNATURAL?random=767"
+              "http://localhost:8000/natural_images/anti-hairfall_and_anti-dandruff_products.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/hair_care.jpg"
       },
       {
         "name": "Medicated Oils & Tailams",
@@ -702,16 +728,17 @@
           {
             "name": "Joint & Pain Relief Oils",
             "images": [
-              "https://loremflickr.com/500/500/Joint%2CNATURAL?random=763"
+              "http://localhost:8000/natural_images/joint_and_pain_relief_oils.png"
             ]
           },
           {
             "name": "Nourishing & Therapeutic Oils",
             "images": [
-              "https://loremflickr.com/500/500/Nourishing%2CNATURAL?random=192"
+              "http://localhost:8000/natural_images/nourishing_and_therapeutic_oils.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/medicated_oils_and_tailams.jpg"
       },
       {
         "name": "Essential Oils & Aromatherapy",
@@ -719,16 +746,17 @@
           {
             "name": "Single Essential Oils",
             "images": [
-              "https://loremflickr.com/500/500/Single%2CNATURAL?random=27"
+              "http://localhost:8000/natural_images/single_essential_oils.jpg"
             ]
           },
           {
             "name": "Essential Oil Blends",
             "images": [
-              "https://loremflickr.com/500/500/Essential%2CNATURAL?random=873"
+              "http://localhost:8000/natural_images/essential_oil_blends.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/essential_oils_and_aromatherapy.jpg"
       },
       {
         "name": "Oral Care",
@@ -736,22 +764,23 @@
           {
             "name": "Ayurvedic Toothpaste & Powders",
             "images": [
-              "https://loremflickr.com/500/500/Ayurvedic%2CNATURAL?random=55"
+              "http://localhost:8000/natural_images/ayurvedic_toothpaste_and_powders.jpg"
             ]
           },
           {
             "name": "Herbal Mouthwash",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=399"
+              "http://localhost:8000/natural_images/herbal_mouthwash.jpg"
             ]
           },
           {
             "name": "Oil Pulling Blends",
             "images": [
-              "https://loremflickr.com/500/500/Oil%2CNATURAL?random=996"
+              "http://localhost:8000/natural_images/oil_pulling_blends.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/oral_care.png"
       },
       {
         "name": "Personal Care & Hygiene",
@@ -759,24 +788,26 @@
           {
             "name": "Herbal Soaps & Body Wash",
             "images": [
-              "https://loremflickr.com/500/500/Herbal%2CNATURAL?random=61"
+              "http://localhost:8000/natural_images/herbal_soaps_and_body_wash.jpg"
             ]
           },
           {
             "name": "Natural Deodorants",
             "images": [
-              "https://loremflickr.com/500/500/Natural%2CNATURAL?random=391"
+              "http://localhost:8000/natural_images/natural_deodorants.jpg"
             ]
           },
           {
             "name": "Intimate Wash",
             "images": [
-              "https://loremflickr.com/500/500/Intimate%2CNATURAL?random=668"
+              "http://localhost:8000/natural_images/intimate_wash.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/natural_images/personal_care_and_hygiene.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/natural_images/immunity_boosters.jpg"
   },
   {
     "name": "LEATHER & CRAFTMANSHIP",
@@ -787,40 +818,41 @@
           {
             "name": "Handbags",
             "images": [
-              "https://loremflickr.com/500/500/Handbags%2CLEATHER?random=325"
+              "http://localhost:8000/leather_images/handbags.jpg"
             ]
           },
           {
             "name": "Clutches and Purses",
             "images": [
-              "https://loremflickr.com/500/500/Clutches%2CLEATHER?random=52"
+              "http://localhost:8000/leather_images/clutches_and_purses.jpg"
             ]
           },
           {
             "name": "Crossbody Bags",
             "images": [
-              "https://loremflickr.com/500/500/Crossbody%2CLEATHER?random=597"
+              "http://localhost:8000/leather_images/crossbody_bags.jpg"
             ]
           },
           {
             "name": "Hobo Bags",
             "images": [
-              "https://loremflickr.com/500/500/Hobo%2CLEATHER?random=874"
+              "http://localhost:8000/leather_images/hobo_bags.jpg"
             ]
           },
           {
             "name": "Satchels",
             "images": [
-              "https://loremflickr.com/500/500/Satchels%2CLEATHER?random=219"
+              "http://localhost:8000/leather_images/satchels.jpg"
             ]
           },
           {
             "name": "Tote Bags",
             "images": [
-              "https://loremflickr.com/500/500/Tote%2CLEATHER?random=346"
+              "http://localhost:8000/leather_images/tote_bags.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/womens_bags.jpg"
       },
       {
         "name": "Men's Bags",
@@ -828,28 +860,29 @@
           {
             "name": "Briefcases",
             "images": [
-              "https://loremflickr.com/500/500/Briefcases%2CLEATHER?random=773"
+              "http://localhost:8000/leather_images/briefcases.jpg"
             ]
           },
           {
             "name": "Messenger Bags",
             "images": [
-              "https://loremflickr.com/500/500/Messenger%2CLEATHER?random=549"
+              "http://localhost:8000/leather_images/messenger_bags.png"
             ]
           },
           {
             "name": "Laptop Bags",
             "images": [
-              "https://loremflickr.com/500/500/Laptop%2CLEATHER?random=1"
+              "http://localhost:8000/leather_images/laptop_bags.webp"
             ]
           },
           {
             "name": "Crossbody/Sling Bags",
             "images": [
-              "https://loremflickr.com/500/500/Crossbody/Sling%2CLEATHER?random=721"
+              "http://localhost:8000/leather_images/crossbody_bags.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/mens_bags.jpg"
       },
       {
         "name": "Backpacks & Rucksacks",
@@ -857,28 +890,29 @@
           {
             "name": "Casual Backpacks",
             "images": [
-              "https://loremflickr.com/500/500/Casual%2CLEATHER?random=508"
+              "http://localhost:8000/leather_images/casual_backpacks.png"
             ]
           },
           {
             "name": "Professional Backpacks",
             "images": [
-              "https://loremflickr.com/500/500/Professional%2CLEATHER?random=985"
+              "http://localhost:8000/leather_images/professional_backpacks.jpg"
             ]
           },
           {
             "name": "Travel Backpacks",
             "images": [
-              "https://loremflickr.com/500/500/Travel%2CLEATHER?random=503"
+              "http://localhost:8000/leather_images/travel_backpacks.jpg"
             ]
           },
           {
             "name": "Mini Backpacks",
             "images": [
-              "https://loremflickr.com/500/500/Mini%2CLEATHER?random=892"
+              "http://localhost:8000/leather_images/mini_backpacks.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/casual_backpacks.png"
       },
       {
         "name": "Travel & Luggage",
@@ -886,16 +920,17 @@
           {
             "name": "Suitcases & Rolling Luggage",
             "images": [
-              "https://loremflickr.com/500/500/Suitcases%2CLEATHER?random=890"
+              "http://localhost:8000/leather_images/suitcases_and_rolling_luggage.jpg"
             ]
           },
           {
             "name": "Weekend Bags & Duffels",
             "images": [
-              "https://loremflickr.com/500/500/Weekend%2CLEATHER?random=250"
+              "http://localhost:8000/leather_images/weekend_bags_and_duffels.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/travel_and_luggage.jpg"
       },
       {
         "name": "Wallets & Small Leather Goods",
@@ -903,46 +938,47 @@
           {
             "name": "Men's Wallets",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CLEATHER?random=810"
+              "http://localhost:8000/leather_images/mens_wallets.jpg"
             ]
           },
           {
             "name": "Women's Wallets",
             "images": [
-              "https://loremflickr.com/500/500/Women%27s%2CLEATHER?random=395"
+              "http://localhost:8000/leather_images/womens_wallets.jpg"
             ]
           },
           {
             "name": "Card Holders",
             "images": [
-              "https://loremflickr.com/500/500/Card%2CLEATHER?random=107"
+              "http://localhost:8000/leather_images/card_holders.jpg"
             ]
           },
           {
             "name": "Coin Pouches",
             "images": [
-              "https://loremflickr.com/500/500/Coin%2CLEATHER?random=271"
+              "http://localhost:8000/leather_images/coin_pouches.webp"
             ]
           },
           {
             "name": "Money Clips",
             "images": [
-              "https://loremflickr.com/500/500/Money%2CLEATHER?random=262"
+              "http://localhost:8000/leather_images/money_clips.webp"
             ]
           },
           {
             "name": "Key Holders",
             "images": [
-              "https://loremflickr.com/500/500/Key%2CLEATHER?random=916"
+              "http://localhost:8000/leather_images/key_holders.jpg"
             ]
           },
           {
             "name": "Passport Holders",
             "images": [
-              "https://loremflickr.com/500/500/Passport%2CLEATHER?random=568"
+              "http://localhost:8000/leather_images/passport_holders.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/wallets_and_small_leather_goods.jpg"
       },
       {
         "name": "Tech & Device Accessories",
@@ -950,34 +986,35 @@
           {
             "name": "Phone Cases",
             "images": [
-              "https://loremflickr.com/500/500/Phone%2CLEATHER?random=757"
+              "http://localhost:8000/leather_images/phone_cases.png"
             ]
           },
           {
             "name": "Laptop Sleeves & Cases",
             "images": [
-              "https://loremflickr.com/500/500/Laptop%2CLEATHER?random=662"
+              "http://localhost:8000/leather_images/laptop_sleeves_and_cases.jpg"
             ]
           },
           {
             "name": "Tablet Covers",
             "images": [
-              "https://loremflickr.com/500/500/Tablet%2CLEATHER?random=55"
+              "http://localhost:8000/leather_images/tablet_covers.jpg"
             ]
           },
           {
             "name": "Watch Bands",
             "images": [
-              "https://loremflickr.com/500/500/Watch%2CLEATHER?random=519"
+              "http://localhost:8000/leather_images/watch_bands.jpg"
             ]
           },
           {
             "name": "Tech Organizers & Cable Pouches",
             "images": [
-              "https://loremflickr.com/500/500/Tech%2CLEATHER?random=783"
+              "http://localhost:8000/leather_images/tech_organizers_and_cable_pouches.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/tech_and_device_accessories.jpg"
       },
       {
         "name": "Belts",
@@ -985,22 +1022,23 @@
           {
             "name": "Formal Belts",
             "images": [
-              "https://loremflickr.com/500/500/Formal%2CLEATHER?random=125"
+              "http://localhost:8000/leather_images/formal_belts.png"
             ]
           },
           {
             "name": "Casual Belts",
             "images": [
-              "https://loremflickr.com/500/500/Casual%2CLEATHER?random=523"
+              "http://localhost:8000/leather_images/casual_belts.jpg"
             ]
           },
           {
             "name": "Designer and Customized Belts",
             "images": [
-              "https://loremflickr.com/500/500/Designer%2CLEATHER?random=545"
+              "http://localhost:8000/leather_images/designer_and_customized_belts.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/belts.jpg"
       },
       {
         "name": "Leather Footwear",
@@ -1008,34 +1046,35 @@
           {
             "name": "Dress Shoes",
             "images": [
-              "https://loremflickr.com/500/500/Dress%2CLEATHER?random=748"
+              "http://localhost:8000/leather_images/dress_shoes.jpg"
             ]
           },
           {
             "name": "Casual Shoes",
             "images": [
-              "https://loremflickr.com/500/500/Casual%2CLEATHER?random=444"
+              "http://localhost:8000/leather_images/casual_shoes.jpg"
             ]
           },
           {
             "name": "Boots",
             "images": [
-              "https://loremflickr.com/500/500/Boots%2CLEATHER?random=170"
+              "http://localhost:8000/leather_images/boots.jpg"
             ]
           },
           {
             "name": "Loafers & Moccasins",
             "images": [
-              "https://loremflickr.com/500/500/Loafers%2CLEATHER?random=34"
+              "http://localhost:8000/leather_images/loafers_and_moccasins.jpg"
             ]
           },
           {
             "name": "Sandals",
             "images": [
-              "https://loremflickr.com/500/500/Sandals%2CLEATHER?random=556"
+              "http://localhost:8000/leather_images/sandals.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/leather_footwear.png"
       },
       {
         "name": "Leather Clothing",
@@ -1043,28 +1082,29 @@
           {
             "name": "Men's Leather Jackets (Classic, Biker, Bomber)",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CLEATHER?random=120"
+              "http://localhost:8000/leather_images/mens_leather_jackets.jpg"
             ]
           },
           {
             "name": "Women's Leather Jackets (Fitted, Moto, Long Coats)",
             "images": [
-              "https://loremflickr.com/500/500/Women%27s%2CLEATHER?random=698"
+              "http://localhost:8000/leather_images/womens_leather_jackets.jpg"
             ]
           },
           {
             "name": "Leather Skirts and Pants",
             "images": [
-              "https://loremflickr.com/500/500/Leather%2CLEATHER?random=244"
+              "http://localhost:8000/leather_images/leather_skirts_and_pants.jpg"
             ]
           },
           {
             "name": "Leather Vests",
             "images": [
-              "https://loremflickr.com/500/500/Leather%2CLEATHER?random=184"
+              "http://localhost:8000/leather_images/leather_vests.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/leather_clothing.jpg"
       },
       {
         "name": "Home & Office Leather Goods",
@@ -1072,16 +1112,17 @@
           {
             "name": "Desk pads & Mouse pads",
             "images": [
-              "https://loremflickr.com/500/500/Desk%2CLEATHER?random=753"
+              "http://localhost:8000/leather_images/desk_pads_and_mouse_pads.jpg"
             ]
           },
           {
             "name": "Padfolios & Portfolios",
             "images": [
-              "https://loremflickr.com/500/500/Padfolios%2CLEATHER?random=14"
+              "http://localhost:8000/leather_images/padfolios_and_portfolios.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/home_and_office_leather_goods.jpg"
       },
       {
         "name": "CUSTOMIZED & PERSONALIZED LEATHER GOODS",
@@ -1089,46 +1130,47 @@
           {
             "name": "Monogrammed Wallets & Cardholders",
             "images": [
-              "https://loremflickr.com/500/500/Monogrammed%2CLEATHER?random=691"
+              "http://localhost:8000/leather_images/monogrammed_wallets_and_cardholders.jpg"
             ]
           },
           {
             "name": "Personalized Handbags & Tote Bags",
             "images": [
-              "https://loremflickr.com/500/500/Personalized%2CLEATHER?random=826"
+              "http://localhost:8000/leather_images/personalized_handbags_and_tote_bags.webp"
             ]
           },
           {
             "name": "Bespoke Briefcases & Laptop Bags",
             "images": [
-              "https://loremflickr.com/500/500/Bespoke%2CLEATHER?random=38"
+              "http://localhost:8000/leather_images/bespoke_briefcases_and_laptop_bags.jpg"
             ]
           },
           {
             "name": "Corporate Gifting Sets",
             "images": [
-              "https://loremflickr.com/500/500/Corporate%2CLEATHER?random=722"
+              "http://localhost:8000/leather_images/corporate_gifting_sets.png"
             ]
           },
           {
             "name": "Custom Logo Branded Merchandise",
             "images": [
-              "https://loremflickr.com/500/500/Custom%2CLEATHER?random=999"
+              "http://localhost:8000/leather_images/custom_logo_branded_merchandise.png"
             ]
           },
           {
             "name": "Made-to-Order Footwear",
             "images": [
-              "https://loremflickr.com/500/500/Made-to-Order%2CLEATHER?random=438"
+              "http://localhost:8000/leather_images/made-to-order_footwear.jpg"
             ]
           },
           {
             "name": "Personalized Travel Tags & Passport Holders",
             "images": [
-              "https://loremflickr.com/500/500/Personalized%2CLEATHER?random=709"
+              "http://localhost:8000/leather_images/personalized_travel_tags_and_passport_holders.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/customized_and_personalized_leather_goods.jpg"
       },
       {
         "name": "Sustainable & High-Grade Raw Materials",
@@ -1136,48 +1178,50 @@
           {
             "name": "Full-Grain Leather",
             "images": [
-              "https://loremflickr.com/500/500/Full-Grain%2CLEATHER?random=221"
+              "http://localhost:8000/leather_images/full-grain_leather.jpg"
             ]
           },
           {
             "name": "Top-Grain Leather",
             "images": [
-              "https://loremflickr.com/500/500/Top-Grain%2CLEATHER?random=22"
+              "http://localhost:8000/leather_images/top-grain_leather.jpg"
             ]
           },
           {
             "name": "Suede and Nubuck",
             "images": [
-              "https://loremflickr.com/500/500/Suede%2CLEATHER?random=921"
+              "http://localhost:8000/leather_images/suede_and_nubuck.jpg"
             ]
           },
           {
             "name": "Bonded Leather",
             "images": [
-              "https://loremflickr.com/500/500/Bonded%2CLEATHER?random=815"
+              "http://localhost:8000/leather_images/bonded_leather.png"
             ]
           },
           {
             "name": "Patent Leather",
             "images": [
-              "https://loremflickr.com/500/500/Patent%2CLEATHER?random=547"
+              "http://localhost:8000/leather_images/patent_leather.jpg"
             ]
           },
           {
             "name": "Vegan/Sustainable Leather Alternatives",
             "images": [
-              "https://loremflickr.com/500/500/Vegan/Sustainable%2CLEATHER?random=850"
+              "http://localhost:8000/leather_images/sustainable_and_high-grade_raw_materials.jpg"
             ]
           },
           {
             "name": "Specialty & Exotic Leathers",
             "images": [
-              "https://loremflickr.com/500/500/Specialty%2CLEATHER?random=49"
+              "http://localhost:8000/leather_images/specialty_and_exotic_leathers.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/leather_images/sustainable_and_high-grade_raw_materials.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/leather_images/leather_and_craftsmanship.jpg"
   },
   {
     "name": "FRUITS ZONE",
@@ -1188,52 +1232,53 @@
           {
             "name": "Citrus Fruits (Oranges, Lemons, Limes, Grapefruit, Specialty Citrus)",
             "images": [
-              "https://loremflickr.com/500/500/Citrus%2CFRUITS?random=135"
+              "http://localhost:8000/frute_images/citrus_fruits_(oranges,_lemons,_limes,_grapefruit,_specialty_citrus).jpg"
             ]
           },
           {
             "name": "Berries (Strawberries, Blueberries, Raspberries, Blackberries, Currants)",
             "images": [
-              "https://loremflickr.com/500/500/Berries%2CFRUITS?random=279"
+              "http://localhost:8000/frute_images/berries_(strawberries,_blueberries,_raspberries,_blackberries,_currants).jpg"
             ]
           },
           {
             "name": "Tropical & Subtropical Fruits (Banana, Mango, Pineapple, Papaya, Avocado, Dragon Fruit, Passion Fruit, Guava, Lychee)",
             "images": [
-              "https://loremflickr.com/500/500/Tropical%2CFRUITS?random=652"
+              "http://localhost:8000/frute_images/tropical_and_subtropical_fruits_(banana,_mango,_pineapple,_papaya,_avocado,_dragon_fruit,_passion_fruit,_guava,_lychee).jpg"
             ]
           },
           {
             "name": "Stone Fruits (Peaches & Nectarines, Plums, Cherries, Apricots, Dates)",
             "images": [
-              "https://loremflickr.com/500/500/Stone%2CFRUITS?random=176"
+              "http://localhost:8000/frute_images/stone_fruits_(peaches_and_nectarines,_plums,_cherries,_apricots,_dates).jpg"
             ]
           },
           {
             "name": "Pome Fruits (Apples, Pears, Quince)",
             "images": [
-              "https://loremflickr.com/500/500/Pome%2CFRUITS?random=612"
+              "http://localhost:8000/frute_images/pome_fruits_(apples,_pears,_quince).jpg"
             ]
           },
           {
             "name": "Melons (Watermelon, Cantaloupe, Honeydew, Other Melons)",
             "images": [
-              "https://loremflickr.com/500/500/Melons%2CFRUITS?random=655"
+              "http://localhost:8000/frute_images/melons_(watermelon,_cantaloupe,_honeydew,_other_melons).jpg"
             ]
           },
           {
             "name": "Grapes (Table Grapes, Specialty Varieties)",
             "images": [
-              "https://loremflickr.com/500/500/Grapes%2CFRUITS?random=259"
+              "http://localhost:8000/frute_images/grapes_(table_grapes,_specialty_varieties).webp"
             ]
           },
           {
             "name": "Other Fresh Fruits (Coconut, Pomegranate, Kiwi, Figs, Persimmon)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CFRUITS?random=282"
+              "http://localhost:8000/frute_images/other_fresh_fruits_(coconut,_pomegranate,_kiwi,_figs,_persimmon).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/fresh_fruits.png"
       },
       {
         "name": "Frozen Fruits",
@@ -1241,22 +1286,23 @@
           {
             "name": "Frozen Berries (Strawberries, Blueberries, Raspberries, Blackberries, Mixed Berries)",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CFRUITS?random=449"
+              "http://localhost:8000/frute_images/frozen_berries_(strawberries,_blueberries,_raspberries,_blackberries,_mixed_berries).jpg"
             ]
           },
           {
             "name": "Frozen Tropical Fruits (Mango Chunks/Slices, Pineapple, Papaya)",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CFRUITS?random=857"
+              "http://localhost:8000/frute_images/frozen_fruits.png"
             ]
           },
           {
             "name": "Frozen Other Fruits (Peaches, Cherries, Bananas)",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CFRUITS?random=163"
+              "http://localhost:8000/frute_images/frozen_other_fruits_(peaches,_cherries,_bananas).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/frozen_fruits.png"
       },
       {
         "name": "Dried Fruits",
@@ -1264,28 +1310,29 @@
           {
             "name": "Dried Berries & Small Fruits (Cranberries, Blueberries, Goji Berries)",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CFRUITS?random=932"
+              "http://localhost:8000/frute_images/dried_berries_and_small_fruits_(cranberries,_blueberries,_goji_berries).jpg"
             ]
           },
           {
             "name": "Dried Tropical Fruits (Mango, Pineapple, Papaya, Banana Chips, Coconut)",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CFRUITS?random=742"
+              "http://localhost:8000/frute_images/dried_tropical_fruits_(mango,_pineapple,_papaya,_banana_chips,_coconut).png"
             ]
           },
           {
             "name": "Dried Pome & Stone Fruits (Apples, Apricots, Prunes, Dates, Figs, Peaches)",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CFRUITS?random=729"
+              "http://localhost:8000/frute_images/dried_pome_and_stone_fruits_(apples,_apricots,_prunes,_dates,_figs,_peaches).jpg"
             ]
           },
           {
             "name": "Specialty Dried (Freeze-Dried, Unsulfured, Organic Assortments)",
             "images": [
-              "https://loremflickr.com/500/500/Specialty%2CFRUITS?random=40"
+              "http://localhost:8000/frute_images/specialty_dried_(freeze-dried,_unsulfured,_organic_assortments).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/dried_fruits.jpg"
       },
       {
         "name": "Fruit Juices & Concentrates",
@@ -1293,22 +1340,23 @@
           {
             "name": "100% Fruit Juices (Orange, Apple, Pineapple, Grape, Pomegranate, Tropical Blends)",
             "images": [
-              "https://loremflickr.com/500/500/100%25%2CFRUITS?random=459"
+              "http://localhost:8000/frute_images/100_percent_fruit_juices_(orange,_apple,_pineapple,_grape,_pomegranate,_tropical_blends).jpg"
             ]
           },
           {
             "name": "Juice Concentrates (Orange, Apple, Grape, Lemon, Mango, Passion Fruit)",
             "images": [
-              "https://loremflickr.com/500/500/Juice%2CFRUITS?random=721"
+              "http://localhost:8000/frute_images/juice_concentrates_(orange,_apple,_grape,_lemon,_mango,_passion_fruit).jpg"
             ]
           },
           {
             "name": "NFC (Not From Concentrate) Juices",
             "images": [
-              "https://loremflickr.com/500/500/NFC%2CFRUITS?random=892"
+              "http://localhost:8000/frute_images/nfc_(not_from_concentrate)_juices.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/fruit_juices_and_concentrates.jpg"
       },
       {
         "name": "Fruit Purees & Pulps",
@@ -1316,22 +1364,23 @@
           {
             "name": "Single-Fruit Purees (Mango, Apple, Strawberry, Banana, Passion Fruit, Guava)",
             "images": [
-              "https://loremflickr.com/500/500/Single-Fruit%2CFRUITS?random=576"
+              "http://localhost:8000/frute_images/single-fruit_purees_(mango,_apple,_strawberry,_banana,_passion_fruit,_guava).png"
             ]
           },
           {
             "name": "Berry & Tropical Blends",
             "images": [
-              "https://loremflickr.com/500/500/Berry%2CFRUITS?random=565"
+              "http://localhost:8000/frute_images/berry_and_tropical_blends.jpg"
             ]
           },
           {
             "name": "Aseptic & Frozen Purees",
             "images": [
-              "https://loremflickr.com/500/500/Aseptic%2CFRUITS?random=693"
+              "http://localhost:8000/frute_images/aseptic_and_frozen_purees.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/fruit_purees_and_pulps.jpg"
       },
       {
         "name": "Canned & Preserved Fruits",
@@ -1339,16 +1388,17 @@
           {
             "name": "Canned Fruits in Juice/Syrup (Pineapple, Peaches, Pears, Mandarin Oranges, Fruit Cocktail)",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CFRUITS?random=930"
+              "http://localhost:8000/frute_images/canned_and_preserved_fruits.jpg"
             ]
           },
           {
             "name": "Preserved & Candied Fruits (Jams, Compotes, Glace Fruits)",
             "images": [
-              "https://loremflickr.com/500/500/Preserved%2CFRUITS?random=639"
+              "http://localhost:8000/frute_images/preserved_and_candied_fruits_(jams,_compotes,_glace_fruits).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/canned_and_preserved_fruits.jpg"
       },
       {
         "name": "Fruit By-Products & Ingredients",
@@ -1356,24 +1406,26 @@
           {
             "name": "Fruit Extracts & Natural Colors",
             "images": [
-              "https://loremflickr.com/500/500/Fruit%2CFRUITS?random=301"
+              "http://localhost:8000/frute_images/fruit_extracts_and_natural_colors.jpg"
             ]
           },
           {
             "name": "Pectin & Fiber (Apple, Citrus)",
             "images": [
-              "https://loremflickr.com/500/500/Pectin%2CFRUITS?random=726"
+              "http://localhost:8000/frute_images/pectin_and_fiber_(apple,_citrus).jpg"
             ]
           },
           {
             "name": "Essential Oils & Essences (Citrus Oils)",
             "images": [
-              "https://loremflickr.com/500/500/Essential%2CFRUITS?random=955"
+              "http://localhost:8000/frute_images/fruit_extracts_and_natural_colors.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/frute_images/fruit_by-products_and_ingredients.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/frute_images/fruits_zone.jpg"
   },
   {
     "name": "TEA & COFFEE",
@@ -1384,28 +1436,29 @@
           {
             "name": "Indian Black (Assam CTC/Orthodox, Darjeeling First/Second Flush, Nilgiri)",
             "images": [
-              "https://loremflickr.com/500/500/Indian%2CTEA?random=576"
+              "http://localhost:8000/tea_images/black_tea.jpg"
             ]
           },
           {
             "name": "Ceylon/Sri Lankan (Dimbula, Nuwara Eliya, Uva, Ruhuna)",
             "images": [
-              "https://loremflickr.com/500/500/Ceylon/Sri%2CTEA?random=967"
+              "http://localhost:8000/tea_images/black_tea.jpg"
             ]
           },
           {
             "name": "Chinese Black (Keemun, Yunnan Dian Hong, Lapsang Souchong)",
             "images": [
-              "https://loremflickr.com/500/500/Chinese%2CTEA?random=422"
+              "http://localhost:8000/tea_images/chinese_black_(keemun,_yunnan_dian_hong,_lapsang_souchong).jpg"
             ]
           },
           {
             "name": "Other Origins (Kenyan CTC, African Orthodox)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CTEA?random=431"
+              "http://localhost:8000/tea_images/other_origins_(kenyan_ctc,_african_orthodox).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/black_tea.jpg"
       },
       {
         "name": "Green Tea",
@@ -1413,22 +1466,23 @@
           {
             "name": "Japanese Green (Sencha, Matcha Powder, Gyokuro, Genmaicha)",
             "images": [
-              "https://loremflickr.com/500/500/Japanese%2CTEA?random=195"
+              "http://localhost:8000/tea_images/japanese_green_(sencha,_matcha_powder,_gyokuro,_genmaicha).jpg"
             ]
           },
           {
             "name": "Chinese Green (Dragon Well/Longjing, Chun Mee, Mao Feng)",
             "images": [
-              "https://loremflickr.com/500/500/Chinese%2CTEA?random=403"
+              "http://localhost:8000/tea_images/green_tea.jpg"
             ]
           },
           {
             "name": "Other Green (Korean, Vietnamese, Indian)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CTEA?random=976"
+              "http://localhost:8000/tea_images/other_green_(korean,_vietnamese,_indian).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/green_tea.jpg"
       },
       {
         "name": "Oolong Tea",
@@ -1436,16 +1490,17 @@
           {
             "name": "Traditional Chinese Oolong (Tieguanyin, Da Hong Pao)",
             "images": [
-              "https://loremflickr.com/500/500/Traditional%2CTEA?random=197"
+              "http://localhost:8000/tea_images/oolong_tea.jpg"
             ]
           },
           {
             "name": "Taiwanese Oolong (High Mountain, Dong Ding, Milk Oolong)",
             "images": [
-              "https://loremflickr.com/500/500/Taiwanese%2CTEA?random=436"
+              "http://localhost:8000/tea_images/taiwanese_oolong_(high_mountain,_dong_ding,_milk_oolong).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/oolong_tea.jpg"
       },
       {
         "name": "White Tea",
@@ -1453,16 +1508,17 @@
           {
             "name": "Chinese White (Silver Needle, White Peony, Shou Mei)",
             "images": [
-              "https://loremflickr.com/500/500/Chinese%2CTEA?random=9"
+              "http://localhost:8000/tea_images/chinese_white_(silver_needle,_white_peony,_shou_mei).jpg"
             ]
           },
           {
             "name": "Other White (Darjeeling White, Ceylon White)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CTEA?random=960"
+              "http://localhost:8000/tea_images/other_white_(darjeeling_white,_ceylon_white).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/white_tea.jpg"
       },
       {
         "name": "Dark & Fermented Tea",
@@ -1470,16 +1526,17 @@
           {
             "name": "Pu-erh (Raw/Sheng, Ripe/Shou, Compressed Tuocha & Bricks)",
             "images": [
-              "https://loremflickr.com/500/500/Pu-erh%2CTEA?random=605"
+              "http://localhost:8000/tea_images/dark_and_fermented_tea.jpg"
             ]
           },
           {
             "name": "Liu Bao & Hei Cha",
             "images": [
-              "https://loremflickr.com/500/500/Liu%2CTEA?random=1"
+              "http://localhost:8000/tea_images/liu_bao_and_hei_cha.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/dark_and_fermented_tea.jpg"
       },
       {
         "name": "Herbal Tea / Tisanes",
@@ -1487,28 +1544,29 @@
           {
             "name": "Rooibos (Red Bush)",
             "images": [
-              "https://loremflickr.com/500/500/Rooibos%2CTEA?random=236"
+              "http://localhost:8000/tea_images/rooibos_(red_bush).jpg"
             ]
           },
           {
             "name": "Chamomile, Peppermint, Hibiscus",
             "images": [
-              "https://loremflickr.com/500/500/Chamomile%2C%2CTEA?random=823"
+              "http://localhost:8000/tea_images/chamomile,_peppermint,_hibiscus.jpg"
             ]
           },
           {
             "name": "Ginger Turmeric, Holy Basil/Tulsi, Lemongrass",
             "images": [
-              "https://loremflickr.com/500/500/Ginger%2CTEA?random=720"
+              "http://localhost:8000/tea_images/moringa,_ashwagandha,_echinacea_blends.jpg"
             ]
           },
           {
             "name": "Moringa, Ashwagandha, Echinacea Blends",
             "images": [
-              "https://loremflickr.com/500/500/Moringa%2C%2CTEA?random=444"
+              "http://localhost:8000/tea_images/moringa,_ashwagandha,_echinacea_blends.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/chamomile,_peppermint,_hibiscus.jpg"
       },
       {
         "name": "Flavored & Specialty Tea",
@@ -1516,16 +1574,17 @@
           {
             "name": "Jasmine, Earl Grey, English Breakfast",
             "images": [
-              "https://loremflickr.com/500/500/Jasmine%2C%2CTEA?random=788"
+              "http://localhost:8000/tea_images/jasmine,_earl_grey,_english_breakfast.png"
             ]
           },
           {
             "name": "Fruit-Infused & Spiced Blends (Moroccan Mint, Chai)",
             "images": [
-              "https://loremflickr.com/500/500/Fruit-Infused%2CTEA?random=19"
+              "http://localhost:8000/tea_images/fruit-infused_and_spiced_blends_(moroccan_mint,_chai).png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/flavored_and_specialty_tea.png"
       },
       {
         "name": "Tea by Processing Form",
@@ -1533,22 +1592,23 @@
           {
             "name": "Loose Leaf (Whole, Broken, Fannings)",
             "images": [
-              "https://loremflickr.com/500/500/Loose%2CTEA?random=245"
+              "http://localhost:8000/tea_images/loose_leaf_(whole,_broken,_fannings).jpg"
             ]
           },
           {
             "name": "Pyramid & Biodegradable Tea Bags",
             "images": [
-              "https://loremflickr.com/500/500/Pyramid%2CTEA?random=515"
+              "http://localhost:8000/tea_images/pyramid_and_biodegradable_tea_bags.png"
             ]
           },
           {
             "name": "Compressed Tea (Tea Bricks, Tea Cakes, Tuocha)",
             "images": [
-              "https://loremflickr.com/500/500/Compressed%2CTEA?random=278"
+              "http://localhost:8000/tea_images/compressed_tea_(tea_bricks,_tea_cakes,_tuocha).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/tea_by_processing_form.jpg"
       },
       {
         "name": "Coffee by Species",
@@ -1556,69 +1616,71 @@
           {
             "name": "Arabica (Smooth Flavor, Lower Caffeine)",
             "images": [
-              "https://loremflickr.com/500/500/Arabica%2CTEA?random=821"
+              "http://localhost:8000/tea_images/arabica_(smooth_flavor,_lower_caffeine).jpg"
             ]
           },
           {
             "name": "Robusta (Strong Flavor, Higher Caffeine)",
             "images": [
-              "https://loremflickr.com/500/500/Robusta%2CTEA?random=882"
+              "http://localhost:8000/tea_images/robusta_(strong_flavor,_higher_caffeine).jpg"
             ]
           },
           {
             "name": "Liberica (Rare, Unique Flavor Profile)",
             "images": [
-              "https://loremflickr.com/500/500/Liberica%2CTEA?random=39"
+              "http://localhost:8000/tea_images/liberica_(rare,_unique_flavor_profile).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/coffee_by_species.jpg"
       },
       {
         "name": "Coffee by Origin & Grade",
         "products": [
           {
-            "name": "Ethiopian (Yirgacheffe, Sidamo \u2013 Floral & Fruity Profiles)",
+            "name": "Ethiopian (Yirgacheffe, Sidamo – Floral & Fruity Profiles)",
             "images": [
-              "https://loremflickr.com/500/500/Ethiopian%2CTEA?random=33"
+              "http://localhost:8000/tea_images/ethiopian_(yirgacheffe,_sidamo_–_floral_and_fruity_profiles).webp"
             ]
           },
           {
             "name": "Kenyan Coffee (AA, AB, PB, C, E, TT)",
             "images": [
-              "https://loremflickr.com/500/500/Kenyan%2CTEA?random=654"
+              "http://localhost:8000/tea_images/kenyan_coffee_(aa,_ab,_pb,_c,_e,_tt).jpg"
             ]
           },
           {
             "name": "Colombian (Supremo, Excelso)",
             "images": [
-              "https://loremflickr.com/500/500/Colombian%2CTEA?random=416"
+              "http://localhost:8000/tea_images/colombian_(supremo,_excelso).jpg"
             ]
           },
           {
             "name": "Brazilian (Santos, Cerrado)",
             "images": [
-              "https://loremflickr.com/500/500/Brazilian%2CTEA?random=459"
+              "http://localhost:8000/tea_images/brazilian_(santos,_cerrado).jpg"
             ]
           },
           {
             "name": "Central American (Guatemala Antigua, Costa Rica Tarrazu, Honduras SHG)",
             "images": [
-              "https://loremflickr.com/500/500/Central%2CTEA?random=7"
+              "http://localhost:8000/tea_images/central_american_(guatemala_antigua,_costa_rica_tarrazu,_honduras_shg).jpg"
             ]
           },
           {
             "name": "Asian/Indonesian (Sumatra Mandheling, Indian Monsoon Malabar)",
             "images": [
-              "https://loremflickr.com/500/500/Asian/Indonesian%2CTEA?random=907"
+              "http://localhost:8000/tea_images/coffee_by_origin_and_grade.webp"
             ]
           },
           {
             "name": "Other Origins (Panamanian Geisha, Hawaiian Kona)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CTEA?random=426"
+              "http://localhost:8000/tea_images/other_origins_(panamanian_geisha,_hawaiian_kona).png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/coffee_by_origin_and_grade.webp"
       },
       {
         "name": "Roast & Processing Forms",
@@ -1626,34 +1688,35 @@
           {
             "name": "Whole Bean (Light, Medium, Dark, Espresso Roast)",
             "images": [
-              "https://loremflickr.com/500/500/Whole%2CTEA?random=958"
+              "http://localhost:8000/tea_images/whole_bean_(light,_medium,_dark,_espresso_roast).jpg"
             ]
           },
           {
             "name": "Ground Coffee (Fine for Espresso, Medium for Drip, Coarse for French Press)",
             "images": [
-              "https://loremflickr.com/500/500/Ground%2CTEA?random=364"
+              "http://localhost:8000/tea_images/ground_coffee_(fine_for_espresso,_medium_for_drip,_coarse_for_french_press).jpg"
             ]
           },
           {
-            "name": "Decaffeinated (Swiss Water Process, CO2 \u2013 Organic Preferred)",
+            "name": "Decaffeinated (Swiss Water Process, CO2 – Organic Preferred)",
             "images": [
-              "https://loremflickr.com/500/500/Decaffeinated%2CTEA?random=179"
+              "http://localhost:8000/tea_images/decaffeinated_(swiss_water_process,_co2_–_organic_preferred).jpg"
             ]
           },
           {
             "name": "Instant & Soluble (Freeze-Dried, Spray-Dried, 100% Arabica)",
             "images": [
-              "https://loremflickr.com/500/500/Instant%2CTEA?random=63"
+              "http://localhost:8000/tea_images/instant_and_soluble_(freeze-dried,_spray-dried,_100%_arabica).jpg"
             ]
           },
           {
             "name": "Cold Brew Concentrate & Ready-to-Drink (RTD) Formats",
             "images": [
-              "https://loremflickr.com/500/500/Cold%2CTEA?random=458"
+              "http://localhost:8000/tea_images/cold_brew_concentrate_and_ready-to-drink_(rtd)_formats.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/roast_and_processing_forms.jpg"
       },
       {
         "name": "Blended Coffee",
@@ -1661,24 +1724,26 @@
           {
             "name": "Espresso Blend",
             "images": [
-              "https://loremflickr.com/500/500/Espresso%2CTEA?random=71"
+              "http://localhost:8000/tea_images/espresso_blend.jpg"
             ]
           },
           {
             "name": "House Blend",
             "images": [
-              "https://loremflickr.com/500/500/House%2CTEA?random=51"
+              "http://localhost:8000/tea_images/house_blend.jpg"
             ]
           },
           {
             "name": "Dark Roast Blends",
             "images": [
-              "https://loremflickr.com/500/500/Dark%2CTEA?random=173"
+              "http://localhost:8000/tea_images/dark_roast_blends.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/tea_images/blended_coffee.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/tea_images/tea_and_coffee.jpg"
   },
   {
     "name": "ARTISAN HOME & HERITAGE",
@@ -1689,76 +1754,77 @@
           {
             "name": "Hand-Carved Sculptures & Figurines",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Carved%2CARTISAN?random=182"
+              "http://localhost:8000/artisan_images/hand-carved_sculptures_and_figurines.jpg"
             ]
           },
           {
             "name": "Wooden Showpieces & Decorative Objects",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=962"
+              "http://localhost:8000/artisan_images/wooden_showpieces_and_decorative_objects.jpg"
             ]
           },
           {
             "name": "Wooden Wall Art & Panels",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=455"
+              "http://localhost:8000/artisan_images/wooden_wall_art_and_panels.jpg"
             ]
           },
           {
             "name": "Wooden Mirrors",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=458"
+              "http://localhost:8000/artisan_images/wooden_mirrors.jpg"
             ]
           },
           {
             "name": "Wooden Jewellery Boxes",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=610"
+              "http://localhost:8000/artisan_images/wooden_jewellery_boxes.jpg"
             ]
           },
           {
             "name": "Wooden Key Holders & Organisers",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=565"
+              "http://localhost:8000/artisan_images/wooden_key_holders_and_organisers.jpg"
             ]
           },
           {
             "name": "Hand-Carved Furniture (Chairs, Side Tables, Cabinets)",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Carved%2CARTISAN?random=538"
+              "http://localhost:8000/artisan_images/hand-carved_furniture_(chairs,_side_tables,_cabinets).jpg"
             ]
           },
           {
             "name": "Sheesham Wood Products",
             "images": [
-              "https://loremflickr.com/500/500/Sheesham%2CARTISAN?random=265"
+              "http://localhost:8000/artisan_images/sheesham_wood_products.webp"
             ]
           },
           {
             "name": "Mango Wood Products",
             "images": [
-              "https://loremflickr.com/500/500/Mango%2CARTISAN?random=184"
+              "http://localhost:8000/artisan_images/mango_wood_products.jpg"
             ]
           },
           {
             "name": "Teak Wood Products",
             "images": [
-              "https://loremflickr.com/500/500/Teak%2CARTISAN?random=188"
+              "http://localhost:8000/artisan_images/teak_wood_products.png"
             ]
           },
           {
             "name": "Walnut Wood Products",
             "images": [
-              "https://loremflickr.com/500/500/Walnut%2CARTISAN?random=223"
+              "http://localhost:8000/artisan_images/walnut_wood_products.jpg"
             ]
           },
           {
             "name": "Recycled Wood Crafts (Carvings, Boxes, Frames)",
             "images": [
-              "https://loremflickr.com/500/500/Recycled%2CARTISAN?random=974"
+              "http://localhost:8000/artisan_images/recycled_wood_crafts_(carvings,_boxes,_frames).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/wood_handicrafts.jpg"
       },
       {
         "name": "Bamboo & Cane Handicrafts",
@@ -1766,70 +1832,71 @@
           {
             "name": "Bamboo Baskets & Trays",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=589"
+              "http://localhost:8000/artisan_images/bamboo_baskets_and_trays.jpg"
             ]
           },
           {
             "name": "Bamboo Home Decor Items",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=969"
+              "http://localhost:8000/artisan_images/bamboo_home_decor_items.jpg"
             ]
           },
           {
             "name": "Bamboo Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=868"
+              "http://localhost:8000/artisan_images/bamboo_furniture.jpg"
             ]
           },
           {
             "name": "Bamboo Lamps & Lighting",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=244"
+              "http://localhost:8000/artisan_images/bamboo_lamps_and_lighting.jpg"
             ]
           },
           {
             "name": "Bamboo Wind Chimes",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=525"
+              "http://localhost:8000/artisan_images/bamboo_wind_chimes.jpg"
             ]
           },
           {
             "name": "Bamboo Planters",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=462"
+              "http://localhost:8000/artisan_images/bamboo_planters.jpg"
             ]
           },
           {
             "name": "Bamboo Kitchen Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=277"
+              "http://localhost:8000/artisan_images/bamboo_kitchen_accessories.png"
             ]
           },
           {
             "name": "Bamboo Wall Hangings",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=851"
+              "http://localhost:8000/artisan_images/bamboo_wall_hangings.jpg"
             ]
           },
           {
             "name": "Cane Chairs & Stools",
             "images": [
-              "https://loremflickr.com/500/500/Cane%2CARTISAN?random=41"
+              "http://localhost:8000/artisan_images/cane_chairs_and_stools.jpg"
             ]
           },
           {
             "name": "Rattan Baskets",
             "images": [
-              "https://loremflickr.com/500/500/Rattan%2CARTISAN?random=910"
+              "http://localhost:8000/artisan_images/rattan_baskets.jpg"
             ]
           },
           {
             "name": "Wickerwork",
             "images": [
-              "https://loremflickr.com/500/500/Wickerwork%2CARTISAN?random=332"
+              "http://localhost:8000/artisan_images/wickerwork.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/bamboo_and_cane_handicrafts.jpg"
       },
       {
         "name": "Textile & Fabric Handicrafts",
@@ -1837,76 +1904,77 @@
           {
             "name": "Handwoven Rugs & Carpets",
             "images": [
-              "https://loremflickr.com/500/500/Handwoven%2CARTISAN?random=883"
+              "http://localhost:8000/artisan_images/handwoven_rugs_and_carpets.jpg"
             ]
           },
           {
             "name": "Hand-Embroidered Cushion Covers",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Embroidered%2CARTISAN?random=363"
+              "http://localhost:8000/artisan_images/hand-embroidered_cushion_covers.jpg"
             ]
           },
           {
             "name": "Hand-Quilted Bedcovers",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Quilted%2CARTISAN?random=641"
+              "http://localhost:8000/artisan_images/hand-quilted_bedcovers.jpg"
             ]
           },
           {
             "name": "Block Print Textiles",
             "images": [
-              "https://loremflickr.com/500/500/Block%2CARTISAN?random=367"
+              "http://localhost:8000/artisan_images/block_print_textiles.jpg"
             ]
           },
           {
             "name": "Batik Textiles",
             "images": [
-              "https://loremflickr.com/500/500/Batik%2CARTISAN?random=935"
+              "http://localhost:8000/artisan_images/batik_textiles.png"
             ]
           },
           {
             "name": "Tie-Dye & Bandhani Fabrics",
             "images": [
-              "https://loremflickr.com/500/500/Tie-Dye%2CARTISAN?random=650"
+              "http://localhost:8000/artisan_images/tie-dye_and_bandhani_fabrics.jpg"
             ]
           },
           {
             "name": "Phulkari Embroidery",
             "images": [
-              "https://loremflickr.com/500/500/Phulkari%2CARTISAN?random=978"
+              "http://localhost:8000/artisan_images/phulkari_embroidery.jpg"
             ]
           },
           {
             "name": "Pashmina Shawls",
             "images": [
-              "https://loremflickr.com/500/500/Pashmina%2CARTISAN?random=345"
+              "http://localhost:8000/artisan_images/pashmina_shawls.jpg"
             ]
           },
           {
             "name": "Applique Work Textiles",
             "images": [
-              "https://loremflickr.com/500/500/Applique%2CARTISAN?random=475"
+              "http://localhost:8000/artisan_images/applique_work_textiles.jpg"
             ]
           },
           {
             "name": "Tapestries",
             "images": [
-              "https://loremflickr.com/500/500/Tapestries%2CARTISAN?random=837"
+              "http://localhost:8000/artisan_images/tapestries.jpg"
             ]
           },
           {
             "name": "Table Runners & Placemats",
             "images": [
-              "https://loremflickr.com/500/500/Table%2CARTISAN?random=727"
+              "http://localhost:8000/artisan_images/table_runners_and_placemats.jpg"
             ]
           },
           {
             "name": "Natural Dye Textiles & Wall Hangings",
             "images": [
-              "https://loremflickr.com/500/500/Natural%2CARTISAN?random=784"
+              "http://localhost:8000/artisan_images/natural_dye_textiles_and_wall_hangings.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/textile_and_fabric_handicrafts.jpg"
       },
       {
         "name": "Ceramic & Pottery Handicrafts",
@@ -1914,76 +1982,77 @@
           {
             "name": "Handmade Ceramic Vases & Bowls",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=703"
+              "http://localhost:8000/artisan_images/handmade_ceramic_vases_and_bowls.jpg"
             ]
           },
           {
             "name": "Ceramic Dinner Sets & Tableware",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=739"
+              "http://localhost:8000/artisan_images/ceramic_dinner_sets_and_tableware.jpg"
             ]
           },
           {
             "name": "Ceramic Mugs & Cups",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=911"
+              "http://localhost:8000/artisan_images/ceramic_mugs_and_cups.jpg"
             ]
           },
           {
             "name": "Decorative Ceramic Jars",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=944"
+              "http://localhost:8000/artisan_images/decorative_ceramic_jars.jpg"
             ]
           },
           {
             "name": "Ceramic Lampshades",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=947"
+              "http://localhost:8000/artisan_images/ceramic_lampshades.jpg"
             ]
           },
           {
             "name": "Ceramic Tiles & Coasters",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=502"
+              "http://localhost:8000/artisan_images/ceramic_tiles_and_coasters.jpg"
             ]
           },
           {
             "name": "Hand-Painted Ceramics",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Painted%2CARTISAN?random=590"
+              "http://localhost:8000/artisan_images/hand-painted_ceramics.jpg"
             ]
           },
           {
             "name": "Blue Pottery",
             "images": [
-              "https://loremflickr.com/500/500/Blue%2CARTISAN?random=224"
+              "http://localhost:8000/artisan_images/blue_pottery.png"
             ]
           },
           {
             "name": "Studio Pottery",
             "images": [
-              "https://loremflickr.com/500/500/Studio%2CARTISAN?random=287"
+              "http://localhost:8000/artisan_images/studio_pottery.jpg"
             ]
           },
           {
             "name": "Terracotta Sculptures & Figurines",
             "images": [
-              "https://loremflickr.com/500/500/Terracotta%2CARTISAN?random=623"
+              "http://localhost:8000/artisan_images/terracotta_sculptures_and_figurines.jpg"
             ]
           },
           {
             "name": "Clay & Terracotta Planters",
             "images": [
-              "https://loremflickr.com/500/500/Clay%2CARTISAN?random=728"
+              "http://localhost:8000/artisan_images/clay_and_terracotta_planters.jpg"
             ]
           },
           {
             "name": "Clay Kitchen Decor Items",
             "images": [
-              "https://loremflickr.com/500/500/Clay%2CARTISAN?random=760"
+              "http://localhost:8000/artisan_images/clay_kitchen_decor_items.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/ceramic_and_pottery_handicrafts.jpg"
       },
       {
         "name": "Metal Handicrafts",
@@ -1991,76 +2060,77 @@
           {
             "name": "Brass Bowls & Showpieces",
             "images": [
-              "https://loremflickr.com/500/500/Brass%2CARTISAN?random=299"
+              "http://localhost:8000/artisan_images/brass_bowls_and_showpieces.jpg"
             ]
           },
           {
             "name": "Brass Religious Items",
             "images": [
-              "https://loremflickr.com/500/500/Brass%2CARTISAN?random=572"
+              "http://localhost:8000/artisan_images/brass_religious_items.jpg"
             ]
           },
           {
             "name": "Copper Items",
             "images": [
-              "https://loremflickr.com/500/500/Copper%2CARTISAN?random=896"
+              "http://localhost:8000/artisan_images/copper_items.jpg"
             ]
           },
           {
             "name": "Iron Handicrafts",
             "images": [
-              "https://loremflickr.com/500/500/Iron%2CARTISAN?random=405"
+              "http://localhost:8000/artisan_images/iron_handicrafts.jpg"
             ]
           },
           {
             "name": "Silver Handicrafts",
             "images": [
-              "https://loremflickr.com/500/500/Silver%2CARTISAN?random=645"
+              "http://localhost:8000/artisan_images/silver_handicrafts.jpg"
             ]
           },
           {
             "name": "Aluminium Handicrafts",
             "images": [
-              "https://loremflickr.com/500/500/Aluminium%2CARTISAN?random=221"
+              "http://localhost:8000/artisan_images/aluminium_handicrafts.jpg"
             ]
           },
           {
             "name": "Meenakari Craft",
             "images": [
-              "https://loremflickr.com/500/500/Meenakari%2CARTISAN?random=889"
+              "http://localhost:8000/artisan_images/meenakari_craft.jpg"
             ]
           },
           {
             "name": "Metal Wall Art",
             "images": [
-              "https://loremflickr.com/500/500/Metal%2CARTISAN?random=35"
+              "http://localhost:8000/artisan_images/metal_wall_art.jpg"
             ]
           },
           {
             "name": "Metal Sculptures & Statues",
             "images": [
-              "https://loremflickr.com/500/500/Metal%2CARTISAN?random=867"
+              "http://localhost:8000/artisan_images/metal_sculptures_and_statues.jpg"
             ]
           },
           {
             "name": "Metal Lanterns & Lamps",
             "images": [
-              "https://loremflickr.com/500/500/Metal%2CARTISAN?random=793"
+              "http://localhost:8000/artisan_images/metal_lanterns_and_lamps.png"
             ]
           },
           {
             "name": "Decorative Metal Showpieces",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=710"
+              "http://localhost:8000/artisan_images/decorative_metal_showpieces.jpg"
             ]
           },
           {
             "name": "Wrought Iron Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Wrought%2CARTISAN?random=176"
+              "http://localhost:8000/artisan_images/wrought_iron_furniture.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/metal_handicrafts.jpg"
       },
       {
         "name": "Stone & Marble Handicrafts",
@@ -2068,64 +2138,65 @@
           {
             "name": "Marble Carvings",
             "images": [
-              "https://loremflickr.com/500/500/Marble%2CARTISAN?random=541"
+              "http://localhost:8000/artisan_images/marble_carvings.jpg"
             ]
           },
           {
             "name": "Marble Inlay Craft",
             "images": [
-              "https://loremflickr.com/500/500/Marble%2CARTISAN?random=145"
+              "http://localhost:8000/artisan_images/marble_inlay_craft.jpg"
             ]
           },
           {
             "name": "Marble Tabletops & Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Marble%2CARTISAN?random=470"
+              "http://localhost:8000/artisan_images/marble_tabletops_and_furniture.webp"
             ]
           },
           {
             "name": "Stone Carvings",
             "images": [
-              "https://loremflickr.com/500/500/Stone%2CARTISAN?random=395"
+              "http://localhost:8000/artisan_images/stone_carvings.jpg"
             ]
           },
           {
             "name": "Stone Inlay Craft",
             "images": [
-              "https://loremflickr.com/500/500/Stone%2CARTISAN?random=627"
+              "http://localhost:8000/artisan_images/stone_inlay_craft.jpg"
             ]
           },
           {
             "name": "Stone Vases & Planters",
             "images": [
-              "https://loremflickr.com/500/500/Stone%2CARTISAN?random=386"
+              "http://localhost:8000/artisan_images/stone_vases_and_planters.jpg"
             ]
           },
           {
             "name": "Soapstone Carvings",
             "images": [
-              "https://loremflickr.com/500/500/Soapstone%2CARTISAN?random=528"
+              "http://localhost:8000/artisan_images/soapstone_carvings.jpg"
             ]
           },
           {
             "name": "Alabaster Sculptures",
             "images": [
-              "https://loremflickr.com/500/500/Alabaster%2CARTISAN?random=656"
+              "http://localhost:8000/artisan_images/alabaster_sculptures.png"
             ]
           },
           {
             "name": "Granite Decorative Items",
             "images": [
-              "https://loremflickr.com/500/500/Granite%2CARTISAN?random=902"
+              "http://localhost:8000/artisan_images/granite_decorative_items.jpg"
             ]
           },
           {
             "name": "Slate Coasters & Trays",
             "images": [
-              "https://loremflickr.com/500/500/Slate%2CARTISAN?random=59"
+              "http://localhost:8000/artisan_images/slate_coasters_and_trays.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/stone_and_marble_handicrafts.jpg"
       },
       {
         "name": "Glass Handicrafts",
@@ -2133,58 +2204,59 @@
           {
             "name": "Hand-Blown Glass Vases",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Blown%2CARTISAN?random=381"
+              "http://localhost:8000/artisan_images/hand-blown_glass_vases.jpg"
             ]
           },
           {
             "name": "Hand-Blown Glass Pendant Lights",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Blown%2CARTISAN?random=451"
+              "http://localhost:8000/artisan_images/hand-blown_glass_pendant_lights.jpg"
             ]
           },
           {
             "name": "Stained Glass Art",
             "images": [
-              "https://loremflickr.com/500/500/Stained%2CARTISAN?random=95"
+              "http://localhost:8000/artisan_images/stained_glass_art.jpg"
             ]
           },
           {
             "name": "Glass Mosaics",
             "images": [
-              "https://loremflickr.com/500/500/Glass%2CARTISAN?random=349"
+              "http://localhost:8000/artisan_images/glass_mosaics.jpg"
             ]
           },
           {
             "name": "Glass Sculptures",
             "images": [
-              "https://loremflickr.com/500/500/Glass%2CARTISAN?random=462"
+              "http://localhost:8000/artisan_images/glass_sculptures.jpg"
             ]
           },
           {
             "name": "Glass Beadwork",
             "images": [
-              "https://loremflickr.com/500/500/Glass%2CARTISAN?random=145"
+              "http://localhost:8000/artisan_images/glass_beadwork.jpg"
             ]
           },
           {
             "name": "Decorative Glass Bowls",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=273"
+              "http://localhost:8000/artisan_images/decorative_glass_bowls.jpg"
             ]
           },
           {
             "name": "Glass Candle Holders",
             "images": [
-              "https://loremflickr.com/500/500/Glass%2CARTISAN?random=943"
+              "http://localhost:8000/artisan_images/glass_candle_holders.jpg"
             ]
           },
           {
             "name": "Glass Paperweights",
             "images": [
-              "https://loremflickr.com/500/500/Glass%2CARTISAN?random=432"
+              "http://localhost:8000/artisan_images/glass_paperweights.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/glass_handicrafts.jpg"
       },
       {
         "name": "Paper & Cardboard Crafts",
@@ -2192,58 +2264,59 @@
           {
             "name": "Papier-Mache Handicrafts",
             "images": [
-              "https://loremflickr.com/500/500/Papier-Mache%2CARTISAN?random=553"
+              "http://localhost:8000/artisan_images/papier-mache_handicrafts.jpg"
             ]
           },
           {
             "name": "Handmade Paper Products",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=19"
+              "http://localhost:8000/artisan_images/handmade_paper_products.jpg"
             ]
           },
           {
             "name": "Handmade Notebooks & Diaries",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=714"
+              "http://localhost:8000/artisan_images/handmade_notebooks_and_diaries.jpg"
             ]
           },
           {
             "name": "Recycled Paper Crafts",
             "images": [
-              "https://loremflickr.com/500/500/Recycled%2CARTISAN?random=530"
+              "http://localhost:8000/artisan_images/recycled_paper_crafts.jpg"
             ]
           },
           {
             "name": "Origami Art",
             "images": [
-              "https://loremflickr.com/500/500/Origami%2CARTISAN?random=943"
+              "http://localhost:8000/artisan_images/origami_art.jpg"
             ]
           },
           {
             "name": "Paper Sculptures",
             "images": [
-              "https://loremflickr.com/500/500/Paper%2CARTISAN?random=118"
+              "http://localhost:8000/artisan_images/paper_sculptures.jpg"
             ]
           },
           {
             "name": "Paper Lampshades",
             "images": [
-              "https://loremflickr.com/500/500/Paper%2CARTISAN?random=475"
+              "http://localhost:8000/artisan_images/paper_lampshades.jpg"
             ]
           },
           {
             "name": "Quilled Paper Art",
             "images": [
-              "https://loremflickr.com/500/500/Quilled%2CARTISAN?random=953"
+              "http://localhost:8000/artisan_images/quilled_paper_art.jpg"
             ]
           },
           {
             "name": "Paper Wall Art",
             "images": [
-              "https://loremflickr.com/500/500/Paper%2CARTISAN?random=716"
+              "http://localhost:8000/artisan_images/paper_wall_art.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/paper_and_cardboard_crafts.png"
       },
       {
         "name": "Natural Fibre Handicrafts",
@@ -2251,52 +2324,53 @@
           {
             "name": "Hemp Baskets & Decor",
             "images": [
-              "https://loremflickr.com/500/500/Hemp%2CARTISAN?random=586"
+              "http://localhost:8000/artisan_images/hemp_baskets_and_decor.jpg"
             ]
           },
           {
             "name": "Coir Products",
             "images": [
-              "https://loremflickr.com/500/500/Coir%2CARTISAN?random=870"
+              "http://localhost:8000/artisan_images/coir_products.jpg"
             ]
           },
           {
             "name": "Seagrass Baskets",
             "images": [
-              "https://loremflickr.com/500/500/Seagrass%2CARTISAN?random=299"
+              "http://localhost:8000/artisan_images/seagrass_baskets.jpg"
             ]
           },
           {
             "name": "Water Hyacinth Products",
             "images": [
-              "https://loremflickr.com/500/500/Water%2CARTISAN?random=578"
+              "http://localhost:8000/artisan_images/water_hyacinth_products.webp"
             ]
           },
           {
             "name": "Banana Fibre Crafts",
             "images": [
-              "https://loremflickr.com/500/500/Banana%2CARTISAN?random=430"
+              "http://localhost:8000/artisan_images/banana_fibre_crafts.jpg"
             ]
           },
           {
             "name": "Palm Leaf Products",
             "images": [
-              "https://loremflickr.com/500/500/Palm%2CARTISAN?random=304"
+              "http://localhost:8000/artisan_images/palm_leaf_products.jpg"
             ]
           },
           {
             "name": "Sisal Items",
             "images": [
-              "https://loremflickr.com/500/500/Sisal%2CARTISAN?random=949"
+              "http://localhost:8000/artisan_images/sisal_items.png"
             ]
           },
           {
             "name": "Reed Baskets",
             "images": [
-              "https://loremflickr.com/500/500/Reed%2CARTISAN?random=811"
+              "http://localhost:8000/artisan_images/reed_baskets.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/natural_fibre_handicrafts.webp"
       },
       {
         "name": "Resin, Horn & Lacquer Crafts",
@@ -2304,46 +2378,47 @@
           {
             "name": "Resin Decorative Items",
             "images": [
-              "https://loremflickr.com/500/500/Resin%2CARTISAN?random=286"
+              "http://localhost:8000/artisan_images/resin_decorative_items.jpg"
             ]
           },
           {
             "name": "Resin Jewellery",
             "images": [
-              "https://loremflickr.com/500/500/Resin%2CARTISAN?random=566"
+              "http://localhost:8000/artisan_images/resin_jewellery.jpg"
             ]
           },
           {
             "name": "Resin Coasters & Art Pieces",
             "images": [
-              "https://loremflickr.com/500/500/Resin%2CARTISAN?random=322"
+              "http://localhost:8000/artisan_images/resin_coasters_and_art_pieces.png"
             ]
           },
           {
             "name": "Horn Combs & Jewellery",
             "images": [
-              "https://loremflickr.com/500/500/Horn%2CARTISAN?random=9"
+              "http://localhost:8000/artisan_images/horn_combs_and_jewellery.jpg"
             ]
           },
           {
             "name": "Horn Decorative Items",
             "images": [
-              "https://loremflickr.com/500/500/Horn%2CARTISAN?random=759"
+              "http://localhost:8000/artisan_images/horn_decorative_items.jpg"
             ]
           },
           {
             "name": "Lacquered Boxes & Trays",
             "images": [
-              "https://loremflickr.com/500/500/Lacquered%2CARTISAN?random=358"
+              "http://localhost:8000/artisan_images/lacquered_boxes_and_trays.jpg"
             ]
           },
           {
             "name": "Lacquered Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Lacquered%2CARTISAN?random=328"
+              "http://localhost:8000/artisan_images/lacquered_furniture.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/resin,_horn_and_lacquer_crafts.jpg"
       },
       {
         "name": "Handwoven & Artisan Rugs",
@@ -2351,58 +2426,59 @@
           {
             "name": "Hand-Knotted Wool Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Knotted%2CARTISAN?random=576"
+              "http://localhost:8000/artisan_images/hand-knotted_wool_rugs.jpg"
             ]
           },
           {
             "name": "Hand-Tufted Wool Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Tufted%2CARTISAN?random=492"
+              "http://localhost:8000/artisan_images/hand-tufted_wool_rugs.jpg"
             ]
           },
           {
             "name": "Silk Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Silk%2CARTISAN?random=484"
+              "http://localhost:8000/artisan_images/silk_rugs.jpg"
             ]
           },
           {
             "name": "Kilim Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Kilim%2CARTISAN?random=953"
+              "http://localhost:8000/artisan_images/kilim_rugs.jpg"
             ]
           },
           {
             "name": "Dhurrie Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Dhurrie%2CARTISAN?random=762"
+              "http://localhost:8000/artisan_images/dhurrie_rugs.jpg"
             ]
           },
           {
             "name": "Persian-Style Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Persian-Style%2CARTISAN?random=174"
+              "http://localhost:8000/artisan_images/persian-style_rugs.jpg"
             ]
           },
           {
             "name": "Tibetan Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Tibetan%2CARTISAN?random=873"
+              "http://localhost:8000/artisan_images/tibetan_rugs.jpg"
             ]
           },
           {
             "name": "Moroccan Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Moroccan%2CARTISAN?random=908"
+              "http://localhost:8000/artisan_images/moroccan_rugs.jpg"
             ]
           },
           {
             "name": "Runner Rugs",
             "images": [
-              "https://loremflickr.com/500/500/Runner%2CARTISAN?random=754"
+              "http://localhost:8000/artisan_images/runner_rugs.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/handwoven_and_artisan_rugs.jpg"
       },
       {
         "name": "Home Decor",
@@ -2410,94 +2486,95 @@
           {
             "name": "Decorative Mirrors",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=540"
+              "http://localhost:8000/artisan_images/decorative_mirrors.jpg"
             ]
           },
           {
             "name": "Metal Wall Art",
             "images": [
-              "https://loremflickr.com/500/500/Metal%2CARTISAN?random=578"
+              "http://localhost:8000/artisan_images/metal_wall_art.jpg"
             ]
           },
           {
             "name": "Wooden Wall Panels",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=287"
+              "http://localhost:8000/artisan_images/wooden_wall_panels.jpg"
             ]
           },
           {
             "name": "Macrame Wall Hangings",
             "images": [
-              "https://loremflickr.com/500/500/Macrame%2CARTISAN?random=388"
+              "http://localhost:8000/artisan_images/macrame_wall_hangings.jpg"
             ]
           },
           {
             "name": "Wall Art & Gallery Pieces",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CARTISAN?random=611"
+              "http://localhost:8000/artisan_images/wall_art_and_gallery_pieces.jpg"
             ]
           },
           {
             "name": "Masks & Puppets",
             "images": [
-              "https://loremflickr.com/500/500/Masks%2CARTISAN?random=374"
+              "http://localhost:8000/artisan_images/masks_and_puppets.jpg"
             ]
           },
           {
             "name": "Vases & Planters",
             "images": [
-              "https://loremflickr.com/500/500/Vases%2CARTISAN?random=2"
+              "http://localhost:8000/artisan_images/vases_and_planters.jpg"
             ]
           },
           {
             "name": "Candle Holders & Stands",
             "images": [
-              "https://loremflickr.com/500/500/Candle%2CARTISAN?random=281"
+              "http://localhost:8000/artisan_images/candle_holders_and_stands.jpg"
             ]
           },
           {
             "name": "Figurines & Sculptures",
             "images": [
-              "https://loremflickr.com/500/500/Figurines%2CARTISAN?random=822"
+              "http://localhost:8000/artisan_images/figurines_and_sculptures.png"
             ]
           },
           {
             "name": "Decorative Bowls",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=614"
+              "http://localhost:8000/artisan_images/decorative_bowls.jpg"
             ]
           },
           {
             "name": "Picture Frames",
             "images": [
-              "https://loremflickr.com/500/500/Picture%2CARTISAN?random=804"
+              "http://localhost:8000/artisan_images/picture_frames.jpg"
             ]
           },
           {
             "name": "Handmade Lamps & Lanterns",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=810"
+              "http://localhost:8000/artisan_images/handmade_lamps_and_lanterns.jpg"
             ]
           },
           {
             "name": "Tea Light Holders",
             "images": [
-              "https://loremflickr.com/500/500/Tea%2CARTISAN?random=52"
+              "http://localhost:8000/artisan_images/tea_light_holders.jpg"
             ]
           },
           {
             "name": "Wooden Crates & Boxes",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=100"
+              "http://localhost:8000/artisan_images/wooden_crates_and_boxes.jpg"
             ]
           },
           {
             "name": "Storage Baskets",
             "images": [
-              "https://loremflickr.com/500/500/Storage%2CARTISAN?random=482"
+              "http://localhost:8000/artisan_images/storage_baskets.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/home_decor.jpg"
       },
       {
         "name": "Furniture & Functional Items",
@@ -2505,40 +2582,41 @@
           {
             "name": "Hand-Carved Wooden Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Carved%2CARTISAN?random=335"
+              "http://localhost:8000/artisan_images/hand-carved_wooden_furniture.jpg"
             ]
           },
           {
             "name": "Bamboo Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CARTISAN?random=455"
+              "http://localhost:8000/artisan_images/bamboo_furniture.jpg"
             ]
           },
           {
             "name": "Rattan Chairs & Stools",
             "images": [
-              "https://loremflickr.com/500/500/Rattan%2CARTISAN?random=214"
+              "http://localhost:8000/artisan_images/rattan_chairs_and_stools.jpg"
             ]
           },
           {
             "name": "Handmade Benches",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=27"
+              "http://localhost:8000/artisan_images/handmade_benches.jpg"
             ]
           },
           {
             "name": "Folding Screens",
             "images": [
-              "https://loremflickr.com/500/500/Folding%2CARTISAN?random=229"
+              "http://localhost:8000/artisan_images/folding_screens.jpg"
             ]
           },
           {
             "name": "Children's Furniture",
             "images": [
-              "https://loremflickr.com/500/500/Children%27s%2CARTISAN?random=120"
+              "http://localhost:8000/artisan_images/childrens_furniture.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/furniture_and_functional_items.jpg"
       },
       {
         "name": "Kitchen & Dining",
@@ -2546,58 +2624,59 @@
           {
             "name": "Handmade Kitchen Utensils",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=859"
+              "http://localhost:8000/artisan_images/handmade_kitchen_utensils.jpg"
             ]
           },
           {
             "name": "Ceramic Dinnerware Sets",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=428"
+              "http://localhost:8000/artisan_images/ceramic_dinnerware_sets.jpg"
             ]
           },
           {
             "name": "Pottery Serving Bowls",
             "images": [
-              "https://loremflickr.com/500/500/Pottery%2CARTISAN?random=269"
+              "http://localhost:8000/artisan_images/pottery_serving_bowls.jpg"
             ]
           },
           {
             "name": "Wooden Serving Trays",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=567"
+              "http://localhost:8000/artisan_images/wooden_serving_trays.jpg"
             ]
           },
           {
             "name": "Hand-Painted Plates",
             "images": [
-              "https://loremflickr.com/500/500/Hand-Painted%2CARTISAN?random=809"
+              "http://localhost:8000/artisan_images/hand-painted_plates.jpg"
             ]
           },
           {
             "name": "Ceramic Mugs & Cups",
             "images": [
-              "https://loremflickr.com/500/500/Ceramic%2CARTISAN?random=720"
+              "http://localhost:8000/artisan_images/ceramic_mugs_and_cups.jpg"
             ]
           },
           {
             "name": "Wooden Cutting Boards",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=196"
+              "http://localhost:8000/artisan_images/wooden_cutting_boards.jpg"
             ]
           },
           {
             "name": "Metal Serveware",
             "images": [
-              "https://loremflickr.com/500/500/Metal%2CARTISAN?random=711"
+              "http://localhost:8000/artisan_images/metal_serveware.jpg"
             ]
           },
           {
             "name": "Table Runners & Placemats",
             "images": [
-              "https://loremflickr.com/500/500/Table%2CARTISAN?random=994"
+              "http://localhost:8000/artisan_images/table_runners_and_placemats.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/kitchen_and_dining.jpg"
       },
       {
         "name": "Textiles & Soft Furnishings",
@@ -2605,46 +2684,47 @@
           {
             "name": "Quilts & Patchwork Quilts",
             "images": [
-              "https://loremflickr.com/500/500/Quilts%2CARTISAN?random=513"
+              "http://localhost:8000/artisan_images/quilts_and_patchwork_quilts.jpg"
             ]
           },
           {
             "name": "Bed Sheets & Bedcovers",
             "images": [
-              "https://loremflickr.com/500/500/Bed%2CARTISAN?random=790"
+              "http://localhost:8000/artisan_images/bed_sheets_and_bedcovers.jpg"
             ]
           },
           {
             "name": "Cushion Covers & Embroidered Cushions",
             "images": [
-              "https://loremflickr.com/500/500/Cushion%2CARTISAN?random=968"
+              "http://localhost:8000/artisan_images/cushion_covers_and_embroidered_cushions.jpg"
             ]
           },
           {
             "name": "Handmade Pillows & Throws",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=76"
+              "http://localhost:8000/artisan_images/handmade_pillows_and_throws.jpg"
             ]
           },
           {
             "name": "Woven Blankets",
             "images": [
-              "https://loremflickr.com/500/500/Woven%2CARTISAN?random=64"
+              "http://localhost:8000/artisan_images/woven_blankets.jpg"
             ]
           },
           {
             "name": "Handwoven Curtains",
             "images": [
-              "https://loremflickr.com/500/500/Handwoven%2CARTISAN?random=608"
+              "http://localhost:8000/artisan_images/handwoven_curtains.png"
             ]
           },
           {
             "name": "Tapestries",
             "images": [
-              "https://loremflickr.com/500/500/Tapestries%2CARTISAN?random=300"
+              "http://localhost:8000/artisan_images/tapestries.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/textiles_and_soft_furnishings.jpg"
       },
       {
         "name": "Gifts & Novelty Items",
@@ -2652,28 +2732,29 @@
           {
             "name": "Gift Boxes & Hampers",
             "images": [
-              "https://loremflickr.com/500/500/Gift%2CARTISAN?random=968"
+              "http://localhost:8000/artisan_images/gift_boxes_and_hampers.jpg"
             ]
           },
           {
             "name": "Decorative Boxes",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=207"
+              "http://localhost:8000/artisan_images/decorative_boxes.jpg"
             ]
           },
           {
             "name": "Souvenir Items",
             "images": [
-              "https://loremflickr.com/500/500/Souvenir%2CARTISAN?random=112"
+              "http://localhost:8000/artisan_images/souvenir_items.webp"
             ]
           },
           {
             "name": "Decorative Handicraft Gift Sets",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CARTISAN?random=611"
+              "http://localhost:8000/artisan_images/decorative_handicraft_gift_sets.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/gifts_and_novelty_items.jpg"
       },
       {
         "name": "Children's Items",
@@ -2681,30 +2762,32 @@
           {
             "name": "Wooden Toys",
             "images": [
-              "https://loremflickr.com/500/500/Wooden%2CARTISAN?random=249"
+              "http://localhost:8000/artisan_images/wooden_toys.jpg"
             ]
           },
           {
             "name": "Handmade Dolls",
             "images": [
-              "https://loremflickr.com/500/500/Handmade%2CARTISAN?random=157"
+              "http://localhost:8000/artisan_images/handmade_dolls.jpg"
             ]
           },
           {
             "name": "Puppets",
             "images": [
-              "https://loremflickr.com/500/500/Puppets%2CARTISAN?random=829"
+              "http://localhost:8000/artisan_images/puppets.jpg"
             ]
           },
           {
             "name": "Educational Crafts",
             "images": [
-              "https://loremflickr.com/500/500/Educational%2CARTISAN?random=234"
+              "http://localhost:8000/artisan_images/educational_crafts.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/artisan_images/childrens_items.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/artisan_images/artisan_home_and_heritage.png"
   },
   {
     "name": "ECO FRIENDLY CLOTHING & APPAREL",
@@ -2715,94 +2798,95 @@
           {
             "name": "Tops & T-Shirts",
             "images": [
-              "https://loremflickr.com/500/500/Tops%2CECO?random=129"
+              "http://localhost:8000/eco_friendly_images/tops_and_t-shirts.jpg"
             ]
           },
           {
             "name": "Blouses & Shirts",
             "images": [
-              "https://loremflickr.com/500/500/Blouses%2CECO?random=380"
+              "http://localhost:8000/eco_friendly_images/blouses_and_shirts.jpg"
             ]
           },
           {
             "name": "Dresses & Jumpsuits",
             "images": [
-              "https://loremflickr.com/500/500/Dresses%2CECO?random=759"
+              "http://localhost:8000/eco_friendly_images/dresses_and_jumpsuits.jpg"
             ]
           },
           {
             "name": "Skirts",
             "images": [
-              "https://loremflickr.com/500/500/Skirts%2CECO?random=610"
+              "http://localhost:8000/eco_friendly_images/skirts.jpg"
             ]
           },
           {
             "name": "Trousers & Pants",
             "images": [
-              "https://loremflickr.com/500/500/Trousers%2CECO?random=935"
+              "http://localhost:8000/eco_friendly_images/trousers_and_pants.jpg"
             ]
           },
           {
             "name": "Shorts",
             "images": [
-              "https://loremflickr.com/500/500/Shorts%2CECO?random=790"
+              "http://localhost:8000/eco_friendly_images/shorts.jpg"
             ]
           },
           {
             "name": "Jeans & Denim",
             "images": [
-              "https://loremflickr.com/500/500/Jeans%2CECO?random=364"
+              "http://localhost:8000/eco_friendly_images/jeans_and_denim.jpg"
             ]
           },
           {
             "name": "Knitwear & Sweaters",
             "images": [
-              "https://loremflickr.com/500/500/Knitwear%2CECO?random=417"
+              "http://localhost:8000/eco_friendly_images/knitwear_and_sweaters.jpg"
             ]
           },
           {
             "name": "Hoodies & Sweatshirts",
             "images": [
-              "https://loremflickr.com/500/500/Hoodies%2CECO?random=453"
+              "http://localhost:8000/eco_friendly_images/hoodies_and_sweatshirts.jpg"
             ]
           },
           {
             "name": "Outerwear & Jackets",
             "images": [
-              "https://loremflickr.com/500/500/Outerwear%2CECO?random=495"
+              "http://localhost:8000/eco_friendly_images/outerwear_and_jackets.png"
             ]
           },
           {
             "name": "Activewear",
             "images": [
-              "https://loremflickr.com/500/500/Activewear%2CECO?random=281"
+              "http://localhost:8000/eco_friendly_images/activewear.jpg"
             ]
           },
           {
             "name": "Swimwear & Beachwear",
             "images": [
-              "https://loremflickr.com/500/500/Swimwear%2CECO?random=708"
+              "http://localhost:8000/eco_friendly_images/swimwear_and_beachwear.webp"
             ]
           },
           {
             "name": "Underwear & Intimates",
             "images": [
-              "https://loremflickr.com/500/500/Underwear%2CECO?random=233"
+              "http://localhost:8000/eco_friendly_images/underwear_and_intimates.png"
             ]
           },
           {
             "name": "Sleepwear & Loungewear",
             "images": [
-              "https://loremflickr.com/500/500/Sleepwear%2CECO?random=391"
+              "http://localhost:8000/eco_friendly_images/sleepwear_and_loungewear.jpg"
             ]
           },
           {
             "name": "Base Layers & Thermals",
             "images": [
-              "https://loremflickr.com/500/500/Base%2CECO?random=132"
+              "http://localhost:8000/eco_friendly_images/base_layers_and_thermals.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/womens_clothing.png"
       },
       {
         "name": "Men's Clothing",
@@ -2810,82 +2894,83 @@
           {
             "name": "T-Shirts & Polos",
             "images": [
-              "https://loremflickr.com/500/500/T-Shirts%2CECO?random=676"
+              "http://localhost:8000/eco_friendly_images/t-shirts_and_polos.jpg"
             ]
           },
           {
             "name": "Shirts",
             "images": [
-              "https://loremflickr.com/500/500/Shirts%2CECO?random=337"
+              "http://localhost:8000/eco_friendly_images/shirts.jpg"
             ]
           },
           {
             "name": "Trousers & Chinos",
             "images": [
-              "https://loremflickr.com/500/500/Trousers%2CECO?random=550"
+              "http://localhost:8000/eco_friendly_images/trousers_and_chinos.png"
             ]
           },
           {
             "name": "Jeans & Denim",
             "images": [
-              "https://loremflickr.com/500/500/Jeans%2CECO?random=792"
+              "http://localhost:8000/eco_friendly_images/jeans_and_denim.jpg"
             ]
           },
           {
             "name": "Shorts",
             "images": [
-              "https://loremflickr.com/500/500/Shorts%2CECO?random=460"
+              "http://localhost:8000/eco_friendly_images/shorts.jpg"
             ]
           },
           {
             "name": "Knitwear & Sweaters",
             "images": [
-              "https://loremflickr.com/500/500/Knitwear%2CECO?random=892"
+              "http://localhost:8000/eco_friendly_images/knitwear_and_sweaters.jpg"
             ]
           },
           {
             "name": "Hoodies & Sweatshirts",
             "images": [
-              "https://loremflickr.com/500/500/Hoodies%2CECO?random=575"
+              "http://localhost:8000/eco_friendly_images/hoodies_and_sweatshirts.jpg"
             ]
           },
           {
             "name": "Outerwear & Jackets",
             "images": [
-              "https://loremflickr.com/500/500/Outerwear%2CECO?random=105"
+              "http://localhost:8000/eco_friendly_images/outerwear_and_jackets.png"
             ]
           },
           {
             "name": "Swimwear",
             "images": [
-              "https://loremflickr.com/500/500/Swimwear%2CECO?random=357"
+              "http://localhost:8000/eco_friendly_images/swimwear.jpg"
             ]
           },
           {
             "name": "Underwear",
             "images": [
-              "https://loremflickr.com/500/500/Underwear%2CECO?random=3"
+              "http://localhost:8000/eco_friendly_images/underwear.jpg"
             ]
           },
           {
             "name": "Sleepwear & Loungewear",
             "images": [
-              "https://loremflickr.com/500/500/Sleepwear%2CECO?random=884"
+              "http://localhost:8000/eco_friendly_images/sleepwear_and_loungewear.jpg"
             ]
           },
           {
             "name": "Base Layers & Thermals",
             "images": [
-              "https://loremflickr.com/500/500/Base%2CECO?random=196"
+              "http://localhost:8000/eco_friendly_images/base_layers_and_thermals.jpg"
             ]
           },
           {
             "name": "Smart Casual & Workwear",
             "images": [
-              "https://loremflickr.com/500/500/Smart%2CECO?random=624"
+              "http://localhost:8000/eco_friendly_images/smart_casual_and_workwear.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/mens_clothing.jpg"
       },
       {
         "name": "Activewear & Sportswear",
@@ -2893,93 +2978,95 @@
           {
             "name": "Leggings & Tights",
             "images": [
-              "https://loremflickr.com/500/500/Leggings%2CECO?random=839"
+              "http://localhost:8000/eco_friendly_images/leggings_and_tights.jpg"
             ]
           },
           {
             "name": "Sports Bras & Crop Tops",
             "images": [
-              "https://loremflickr.com/500/500/Sports%2CECO?random=178"
+              "http://localhost:8000/eco_friendly_images/sports_bras_and_crop_tops.jpg"
             ]
           },
           {
             "name": "Running & Training Tops",
             "images": [
-              "https://loremflickr.com/500/500/Running%2CECO?random=4"
+              "http://localhost:8000/eco_friendly_images/running_and_training_tops.jpg"
             ]
           },
           {
             "name": "Gym Shorts",
             "images": [
-              "https://loremflickr.com/500/500/Gym%2CECO?random=151"
+              "http://localhost:8000/eco_friendly_images/gym_shorts.jpg"
             ]
           },
           {
             "name": "Track Suits & Sets",
             "images": [
-              "https://loremflickr.com/500/500/Track%2CECO?random=341"
+              "http://localhost:8000/eco_friendly_images/track_suits_and_sets.jpg"
             ]
           },
           {
             "name": "Outdoor & Hiking Wear",
             "images": [
-              "https://loremflickr.com/500/500/Outdoor%2CECO?random=817"
+              "http://localhost:8000/eco_friendly_images/outdoor_and_hiking_wear.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/activewear_and_sportswear.jpg"
       },
       {
         "name": "Kids & Baby Clothing",
         "products": [
           {
-            "name": "Baby Clothing (0\u201324 Months)",
+            "name": "Baby Clothing (0–24 Months)",
             "images": [
-              "https://loremflickr.com/500/500/Baby%2CECO?random=574"
+              "http://localhost:8000/eco_friendly_images/baby_clothing_(0–24_months).jpg"
             ]
           },
           {
-            "name": "Girls Clothing (2\u20138 Years)",
+            "name": "Girls Clothing (2–8 Years)",
             "images": [
-              "https://loremflickr.com/500/500/Girls%2CECO?random=293"
+              "http://localhost:8000/eco_friendly_images/girls_clothing_(2–8_years).jpg"
             ]
           },
           {
-            "name": "Boys Clothing (2\u20138 Years)",
+            "name": "Boys Clothing (2–8 Years)",
             "images": [
-              "https://loremflickr.com/500/500/Boys%2CECO?random=817"
+              "http://localhost:8000/eco_friendly_images/boys_clothing_(2–8_years).jpg"
             ]
           },
           {
-            "name": "Teen Girls (8\u201316 Years)",
+            "name": "Teen Girls (8–16 Years)",
             "images": [
-              "https://loremflickr.com/500/500/Teen%2CECO?random=222"
+              "http://localhost:8000/eco_friendly_images/teen_girls_(8–16_years).jpg"
             ]
           },
           {
-            "name": "Teen Boys (8\u201316 Years)",
+            "name": "Teen Boys (8–16 Years)",
             "images": [
-              "https://loremflickr.com/500/500/Teen%2CECO?random=582"
+              "http://localhost:8000/eco_friendly_images/teen_boys_(8–16_years).jpg"
             ]
           },
           {
             "name": "School Uniforms",
             "images": [
-              "https://loremflickr.com/500/500/School%2CECO?random=627"
+              "http://localhost:8000/eco_friendly_images/school_uniforms.jpg"
             ]
           },
           {
             "name": "Kids Sleepwear & Pyjamas",
             "images": [
-              "https://loremflickr.com/500/500/Kids%2CECO?random=777"
+              "http://localhost:8000/eco_friendly_images/kids_sleepwear_and_pyjamas.jpg"
             ]
           },
           {
             "name": "Kids Outerwear",
             "images": [
-              "https://loremflickr.com/500/500/Kids%2CECO?random=980"
+              "http://localhost:8000/eco_friendly_images/kids_outerwear.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/kids_and_baby_clothing.png"
       },
       {
         "name": "Workwear & Uniforms",
@@ -2987,34 +3074,35 @@
           {
             "name": "Corporate & Office Wear",
             "images": [
-              "https://loremflickr.com/500/500/Corporate%2CECO?random=245"
+              "http://localhost:8000/eco_friendly_images/corporate_and_office_wear.png"
             ]
           },
           {
             "name": "Medical Scrubs & Healthcare Uniforms",
             "images": [
-              "https://loremflickr.com/500/500/Medical%2CECO?random=868"
+              "http://localhost:8000/eco_friendly_images/medical_scrubs_and_healthcare_uniforms.jpg"
             ]
           },
           {
             "name": "Hospitality & Restaurant Uniforms",
             "images": [
-              "https://loremflickr.com/500/500/Hospitality%2CECO?random=637"
+              "http://localhost:8000/eco_friendly_images/hospitality_and_restaurant_uniforms.jpg"
             ]
           },
           {
             "name": "Industrial & Hi-Visibility Workwear",
             "images": [
-              "https://loremflickr.com/500/500/Industrial%2CECO?random=308"
+              "http://localhost:8000/eco_friendly_images/industrial_and_hi-visibility_workwear.jpg"
             ]
           },
           {
             "name": "Aprons",
             "images": [
-              "https://loremflickr.com/500/500/Aprons%2CECO?random=547"
+              "http://localhost:8000/eco_friendly_images/aprons.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/workwear_and_uniforms.webp"
       },
       {
         "name": "Unisex & Gender-Neutral Clothing",
@@ -3022,28 +3110,29 @@
           {
             "name": "T-Shirts & Tops",
             "images": [
-              "https://loremflickr.com/500/500/T-Shirts%2CECO?random=886"
+              "http://localhost:8000/eco_friendly_images/t-shirts_and_tops.jpg"
             ]
           },
           {
             "name": "Hoodies & Sweatshirts",
             "images": [
-              "https://loremflickr.com/500/500/Hoodies%2CECO?random=54"
+              "http://localhost:8000/eco_friendly_images/hoodies_and_sweatshirts.jpg"
             ]
           },
           {
             "name": "Joggers & Trousers",
             "images": [
-              "https://loremflickr.com/500/500/Joggers%2CECO?random=890"
+              "http://localhost:8000/eco_friendly_images/joggers_and_trousers.png"
             ]
           },
           {
             "name": "Jackets",
             "images": [
-              "https://loremflickr.com/500/500/Jackets%2CECO?random=342"
+              "http://localhost:8000/eco_friendly_images/jackets.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/unisex_and_gender-neutral_clothing.jpg"
       },
       {
         "name": "Bags & Accessories",
@@ -3051,40 +3140,41 @@
           {
             "name": "Tote & Market Bags",
             "images": [
-              "https://loremflickr.com/500/500/Tote%2CECO?random=123"
+              "http://localhost:8000/eco_friendly_images/tote_and_market_bags.jpg"
             ]
           },
           {
             "name": "Backpacks & Commuter Bags",
             "images": [
-              "https://loremflickr.com/500/500/Backpacks%2CECO?random=914"
+              "http://localhost:8000/eco_friendly_images/backpacks_and_commuter_bags.jpg"
             ]
           },
           {
             "name": "Crossbody Bags, Clutches & Wallets",
             "images": [
-              "https://loremflickr.com/500/500/Crossbody%2CECO?random=896"
+              "http://localhost:8000/eco_friendly_images/crossbody_bags,_clutches_and_wallets.png"
             ]
           },
           {
             "name": "Baseball Caps, Bucket & Knit Hats",
             "images": [
-              "https://loremflickr.com/500/500/Baseball%2CECO?random=301"
+              "http://localhost:8000/eco_friendly_images/baseball_caps,_bucket_and_knit_hats.jpg"
             ]
           },
           {
             "name": "Sun Hats & Straw Hats",
             "images": [
-              "https://loremflickr.com/500/500/Sun%2CECO?random=302"
+              "http://localhost:8000/eco_friendly_images/sun_hats_and_straw_hats.jpg"
             ]
           },
           {
             "name": "Scarves, Wraps & Shawls",
             "images": [
-              "https://loremflickr.com/500/500/Scarves%2C%2CECO?random=699"
+              "http://localhost:8000/eco_friendly_images/scarves,_wraps_and_shawls.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/bags_and_accessories.jpg"
       },
       {
         "name": "Socks & Hosiery",
@@ -3092,28 +3182,29 @@
           {
             "name": "Everyday Socks",
             "images": [
-              "https://loremflickr.com/500/500/Everyday%2CECO?random=990"
+              "http://localhost:8000/eco_friendly_images/everyday_socks.jpg"
             ]
           },
           {
             "name": "Sports & Hiking Socks",
             "images": [
-              "https://loremflickr.com/500/500/Sports%2CECO?random=540"
+              "http://localhost:8000/eco_friendly_images/sports_and_hiking_socks.jpg"
             ]
           },
           {
             "name": "Wool & Bamboo Socks",
             "images": [
-              "https://loremflickr.com/500/500/Wool%2CECO?random=285"
+              "http://localhost:8000/eco_friendly_images/wool_and_bamboo_socks.jpg"
             ]
           },
           {
             "name": "Tights & Hosiery",
             "images": [
-              "https://loremflickr.com/500/500/Tights%2CECO?random=858"
+              "http://localhost:8000/eco_friendly_images/tights_and_hosiery.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/socks_and_hosiery.jpg"
       },
       {
         "name": "Sustainable Materials & Fabrics (Bulk)",
@@ -3121,40 +3212,41 @@
           {
             "name": "Organic Cotton",
             "images": [
-              "https://loremflickr.com/500/500/Organic%2CECO?random=475"
+              "http://localhost:8000/eco_friendly_images/organic_cotton.jpg"
             ]
           },
           {
             "name": "Hemp & Linen",
             "images": [
-              "https://loremflickr.com/500/500/Hemp%2CECO?random=937"
+              "http://localhost:8000/eco_friendly_images/hemp_and_linen.jpg"
             ]
           },
           {
             "name": "Bamboo & TENCEL",
             "images": [
-              "https://loremflickr.com/500/500/Bamboo%2CECO?random=774"
+              "http://localhost:8000/eco_friendly_images/bamboo_and_tencel.png"
             ]
           },
           {
             "name": "Recycled Cotton & Polyester",
             "images": [
-              "https://loremflickr.com/500/500/Recycled%2CECO?random=177"
+              "http://localhost:8000/eco_friendly_images/recycled_cotton_and_polyester.gif"
             ]
           },
           {
             "name": "Recycled Nylon (Econyl)",
             "images": [
-              "https://loremflickr.com/500/500/Recycled%2CECO?random=300"
+              "http://localhost:8000/eco_friendly_images/recycled_nylon_(econyl).webp"
             ]
           },
           {
             "name": "Upcycled & Deadstock Fabrics",
             "images": [
-              "https://loremflickr.com/500/500/Upcycled%2CECO?random=919"
+              "http://localhost:8000/eco_friendly_images/upcycled_and_deadstock_fabrics.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/sustainable_materials_and_fabrics_(bulk).jpg"
       },
       {
         "name": "Wholesale & Stock Lots",
@@ -3162,36 +3254,38 @@
           {
             "name": "Mixed Apparel Stock Lots",
             "images": [
-              "https://loremflickr.com/500/500/Mixed%2CECO?random=891"
+              "http://localhost:8000/eco_friendly_images/mixed_apparel_stock_lots.webp"
             ]
           },
           {
             "name": "Branded Overstock & Surplus Lots",
             "images": [
-              "https://loremflickr.com/500/500/Branded%2CECO?random=596"
+              "http://localhost:8000/eco_friendly_images/branded_overstock_and_surplus_lots.jpg"
             ]
           },
           {
             "name": "End-of-Season Clearance Lots",
             "images": [
-              "https://loremflickr.com/500/500/End-of-Season%2CECO?random=651"
+              "http://localhost:8000/eco_friendly_images/end-of-season_clearance_lots.jpg"
             ]
           },
           {
             "name": "Deadstock & Cancelled Order Lots",
             "images": [
-              "https://loremflickr.com/500/500/Deadstock%2CECO?random=629"
+              "http://localhost:8000/eco_friendly_images/deadstock_and_cancelled_order_lots.jpg"
             ]
           },
           {
             "name": "Factory Seconds & Irregular Stock",
             "images": [
-              "https://loremflickr.com/500/500/Factory%2CECO?random=888"
+              "http://localhost:8000/eco_friendly_images/factory_seconds_and_irregular_stock.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/eco_friendly_images/wholesale_and_stock_lots.png"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/eco_friendly_images/eco_friendly_clothing_and_apparel.jpg"
   },
   {
     "name": "GRAIN & VEGETABLES SEEDS",
@@ -3202,58 +3296,59 @@
           {
             "name": "Basmati Rice Seeds (Long-Grain, Aromatic)",
             "images": [
-              "https://loremflickr.com/500/500/Basmati%2CGRAIN?random=307"
+              "http://localhost:8000/grain_vegitable_images/basmati_rice_seeds_(long-grain,_aromatic).jpg"
             ]
           },
           {
             "name": "Non-Basmati Long-Grain Rice Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Non-Basmati%2CGRAIN?random=607"
+              "http://localhost:8000/grain_vegitable_images/non-basmati_long-grain_rice_seeds.jpg"
             ]
           },
           {
             "name": "Hybrid High-Yield Rice Seeds (Boro, Aman, Aus Varieties)",
             "images": [
-              "https://loremflickr.com/500/500/Hybrid%2CGRAIN?random=8"
+              "http://localhost:8000/grain_vegitable_images/hybrid_high-yield_rice_seeds_(boro,_aman,_aus_varieties).jpg"
             ]
           },
           {
             "name": "Aromatic Short-Grain Rice Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Aromatic%2CGRAIN?random=877"
+              "http://localhost:8000/grain_vegitable_images/aromatic_short-grain_rice_seeds.jpg"
             ]
           },
           {
             "name": "Heirloom & Traditional Rice Varieties",
             "images": [
-              "https://loremflickr.com/500/500/Heirloom%2CGRAIN?random=403"
+              "http://localhost:8000/grain_vegitable_images/heirloom_and_traditional_rice_varieties.png"
             ]
           },
           {
             "name": "Japonica Rice",
             "images": [
-              "https://loremflickr.com/500/500/Japonica%2CGRAIN?random=811"
+              "http://localhost:8000/grain_vegitable_images/japonica_rice.jpg"
             ]
           },
           {
             "name": "Indica Rice",
             "images": [
-              "https://loremflickr.com/500/500/Indica%2CGRAIN?random=800"
+              "http://localhost:8000/grain_vegitable_images/indica_rice.jpg"
             ]
           },
           {
             "name": "Hybrid Rice Varieties",
             "images": [
-              "https://loremflickr.com/500/500/Hybrid%2CGRAIN?random=647"
+              "http://localhost:8000/grain_vegitable_images/hybrid_rice_varieties.jpg"
             ]
           },
           {
             "name": "Specialty Rice (Red, Black, Brown)",
             "images": [
-              "https://loremflickr.com/500/500/Specialty%2CGRAIN?random=477"
+              "http://localhost:8000/grain_vegitable_images/specialty_rice_(red,_black,_brown).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/rice_seeds_(paddy).png"
       },
       {
         "name": "Wheat Seeds",
@@ -3261,34 +3356,35 @@
           {
             "name": "Hard Red Winter Wheat",
             "images": [
-              "https://loremflickr.com/500/500/Hard%2CGRAIN?random=329"
+              "http://localhost:8000/grain_vegitable_images/hard_red_winter_wheat.jpg"
             ]
           },
           {
             "name": "Hard Red Spring Wheat",
             "images": [
-              "https://loremflickr.com/500/500/Hard%2CGRAIN?random=585"
+              "http://localhost:8000/grain_vegitable_images/hard_red_spring_wheat.jpg"
             ]
           },
           {
             "name": "Soft Red Winter Wheat",
             "images": [
-              "https://loremflickr.com/500/500/Soft%2CGRAIN?random=466"
+              "http://localhost:8000/grain_vegitable_images/soft_red_winter_wheat.jpg"
             ]
           },
           {
             "name": "Soft White Wheat",
             "images": [
-              "https://loremflickr.com/500/500/Soft%2CGRAIN?random=188"
+              "http://localhost:8000/grain_vegitable_images/soft_white_wheat.webp"
             ]
           },
           {
             "name": "Durum Wheat",
             "images": [
-              "https://loremflickr.com/500/500/Durum%2CGRAIN?random=870"
+              "http://localhost:8000/grain_vegitable_images/durum_wheat.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/wheat_seeds.jpg"
       },
       {
         "name": "Maize / Corn Seeds",
@@ -3296,46 +3392,47 @@
           {
             "name": "GMO Corn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/GMO%2CGRAIN?random=251"
+              "http://localhost:8000/grain_vegitable_images/gmo_corn_seeds.jpg"
             ]
           },
           {
             "name": "Hybrid Corn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Hybrid%2CGRAIN?random=347"
+              "http://localhost:8000/grain_vegitable_images/hybrid_corn_seeds.jpg"
             ]
           },
           {
             "name": "Open-Pollinated Corn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Open-Pollinated%2CGRAIN?random=237"
+              "http://localhost:8000/grain_vegitable_images/open-pollinated_corn_seeds.jpg"
             ]
           },
           {
             "name": "Heirloom Corn Varieties",
             "images": [
-              "https://loremflickr.com/500/500/Heirloom%2CGRAIN?random=187"
+              "http://localhost:8000/grain_vegitable_images/heirloom_corn_varieties.jpg"
             ]
           },
           {
             "name": "Sweet Corn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Sweet%2CGRAIN?random=661"
+              "http://localhost:8000/grain_vegitable_images/sweet_corn_seeds.jpg"
             ]
           },
           {
             "name": "Field Corn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Field%2CGRAIN?random=906"
+              "http://localhost:8000/grain_vegitable_images/field_corn_seeds.jpg"
             ]
           },
           {
             "name": "Popcorn Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Popcorn%2CGRAIN?random=951"
+              "http://localhost:8000/grain_vegitable_images/popcorn_seeds.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/field_corn_seeds.jpg"
       },
       {
         "name": "Minor Cereals & Ancient Grains",
@@ -3343,52 +3440,53 @@
           {
             "name": "Sorghum Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Sorghum%2CGRAIN?random=980"
+              "http://localhost:8000/grain_vegitable_images/sorghum_seeds.jpg"
             ]
           },
           {
             "name": "Barley Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Barley%2CGRAIN?random=791"
+              "http://localhost:8000/grain_vegitable_images/barley_seeds.jpg"
             ]
           },
           {
             "name": "Millet Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Millet%2CGRAIN?random=381"
+              "http://localhost:8000/grain_vegitable_images/millet_seeds.jpg"
             ]
           },
           {
             "name": "Oats Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Oats%2CGRAIN?random=270"
+              "http://localhost:8000/grain_vegitable_images/oats_seeds.webp"
             ]
           },
           {
             "name": "Triticale Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Triticale%2CGRAIN?random=791"
+              "http://localhost:8000/grain_vegitable_images/triticale_seeds.jpg"
             ]
           },
           {
             "name": "Teff Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Teff%2CGRAIN?random=2"
+              "http://localhost:8000/grain_vegitable_images/teff_seeds.jpg"
             ]
           },
           {
             "name": "Quinoa Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Quinoa%2CGRAIN?random=875"
+              "http://localhost:8000/grain_vegitable_images/quinoa_seeds.png"
             ]
           },
           {
             "name": "Buckwheat Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Buckwheat%2CGRAIN?random=583"
+              "http://localhost:8000/grain_vegitable_images/buckwheat_seeds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/minor_cereals_and_ancient_grains.jpg"
       },
       {
         "name": "Oilseed Crop Seeds",
@@ -3396,34 +3494,35 @@
           {
             "name": "Sesame Seeds (Black, White)",
             "images": [
-              "https://loremflickr.com/500/500/Sesame%2CGRAIN?random=364"
+              "http://localhost:8000/grain_vegitable_images/sesame_seeds_(black,_white).jpg"
             ]
           },
           {
             "name": "Mustard / Rapeseed Seeds (Yellow, Brown, Black)",
             "images": [
-              "https://loremflickr.com/500/500/Mustard%2CGRAIN?random=662"
+              "http://localhost:8000/grain_vegitable_images/oilseed_crop_seeds.webp"
             ]
           },
           {
             "name": "Groundnut / Peanut Seeds (Bold, Virginia, Spanish, Runner)",
             "images": [
-              "https://loremflickr.com/500/500/Groundnut%2CGRAIN?random=898"
+              "http://localhost:8000/grain_vegitable_images/oilseed_crop_seeds.webp"
             ]
           },
           {
             "name": "Soybean Seeds (GMO, Conventional, Organic, Food/Feed Grade)",
             "images": [
-              "https://loremflickr.com/500/500/Soybean%2CGRAIN?random=303"
+              "http://localhost:8000/grain_vegitable_images/oilseed_crop_seeds.webp"
             ]
           },
           {
             "name": "Other Oilseeds (Sunflower, Canola, Flax/Linseed, Safflower, Chia)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CGRAIN?random=623"
+              "http://localhost:8000/grain_vegitable_images/oilseed_crop_seeds.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/oilseed_crop_seeds.webp"
       },
       {
         "name": "Pulses & Legumes Seeds",
@@ -3431,52 +3530,53 @@
           {
             "name": "Lentils",
             "images": [
-              "https://loremflickr.com/500/500/Lentils%2CGRAIN?random=166"
+              "http://localhost:8000/grain_vegitable_images/lentils.jpg"
             ]
           },
           {
             "name": "Chickpeas / Garbanzo Beans",
             "images": [
-              "https://loremflickr.com/500/500/Chickpeas%2CGRAIN?random=365"
+              "http://localhost:8000/grain_vegitable_images/pulses_and_legumes_seeds.jpg"
             ]
           },
           {
             "name": "Beans (Kidney, Black, Pinto, Navy)",
             "images": [
-              "https://loremflickr.com/500/500/Beans%2CGRAIN?random=391"
+              "http://localhost:8000/grain_vegitable_images/beans_(kidney,_black,_pinto,_navy).jpg"
             ]
           },
           {
             "name": "Dry Peas (Yellow, Green)",
             "images": [
-              "https://loremflickr.com/500/500/Dry%2CGRAIN?random=468"
+              "http://localhost:8000/grain_vegitable_images/dry_peas_(yellow,_green).jpg"
             ]
           },
           {
             "name": "Fava Beans / Broad Beans",
             "images": [
-              "https://loremflickr.com/500/500/Fava%2CGRAIN?random=216"
+              "http://localhost:8000/grain_vegitable_images/pulses_and_legumes_seeds.jpg"
             ]
           },
           {
             "name": "Cowpeas / Black-Eyed Peas",
             "images": [
-              "https://loremflickr.com/500/500/Cowpeas%2CGRAIN?random=710"
+              "http://localhost:8000/grain_vegitable_images/pulses_and_legumes_seeds.jpg"
             ]
           },
           {
             "name": "Mung Beans",
             "images": [
-              "https://loremflickr.com/500/500/Mung%2CGRAIN?random=212"
+              "http://localhost:8000/grain_vegitable_images/mung_beans.jpg"
             ]
           },
           {
             "name": "Adzuki Beans",
             "images": [
-              "https://loremflickr.com/500/500/Adzuki%2CGRAIN?random=873"
+              "http://localhost:8000/grain_vegitable_images/adzuki_beans.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/pulses_and_legumes_seeds.jpg"
       },
       {
         "name": "Vegetable Seeds",
@@ -3484,40 +3584,41 @@
           {
             "name": "Solanaceous Seeds (Tomato, Chilli/Capsicum, Eggplant/Brinjal)",
             "images": [
-              "https://loremflickr.com/500/500/Solanaceous%2CGRAIN?random=547"
+              "http://localhost:8000/grain_vegitable_images/vegetable_seeds.jpg"
             ]
           },
           {
             "name": "Cucurbit Seeds (Cucumber, Pumpkin, Zucchini, Watermelon, Squash)",
             "images": [
-              "https://loremflickr.com/500/500/Cucurbit%2CGRAIN?random=911"
+              "http://localhost:8000/grain_vegitable_images/cucurbit_seeds_(cucumber,_pumpkin,_zucchini,_watermelon,_squash).jpg"
             ]
           },
           {
             "name": "Brassica Seeds (Cabbage, Cauliflower, Broccoli, Radish, Turnip)",
             "images": [
-              "https://loremflickr.com/500/500/Brassica%2CGRAIN?random=517"
+              "http://localhost:8000/grain_vegitable_images/brassica_seeds_(cabbage,_cauliflower,_broccoli,_radish,_turnip).jpg"
             ]
           },
           {
             "name": "Root & Bulb Seeds (Onion, Garlic, Carrot, Beetroot)",
             "images": [
-              "https://loremflickr.com/500/500/Root%2CGRAIN?random=101"
+              "http://localhost:8000/grain_vegitable_images/root_and_bulb_seeds_(onion,_garlic,_carrot,_beetroot).jpg"
             ]
           },
           {
             "name": "Leafy & Salad Seeds (Lettuce, Spinach, Swiss Chard, Arugula)",
             "images": [
-              "https://loremflickr.com/500/500/Leafy%2CGRAIN?random=234"
+              "http://localhost:8000/grain_vegitable_images/leafy_and_salad_seeds_(lettuce,_spinach,_swiss_chard,_arugula).jpg"
             ]
           },
           {
             "name": "Tropical Vegetable Seeds (Okra/Lady Finger, Moringa, Water Spinach)",
             "images": [
-              "https://loremflickr.com/500/500/Tropical%2CGRAIN?random=179"
+              "http://localhost:8000/grain_vegitable_images/vegetable_seeds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/vegetable_seeds.jpg"
       },
       {
         "name": "Spice & Condiment Seeds",
@@ -3525,34 +3626,35 @@
           {
             "name": "Cumin & Caraway Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Cumin%2CGRAIN?random=122"
+              "http://localhost:8000/grain_vegitable_images/cumin_and_caraway_seeds.webp"
             ]
           },
           {
             "name": "Coriander / Dhania Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Coriander%2CGRAIN?random=510"
+              "http://localhost:8000/grain_vegitable_images/spice_and_condiment_seeds.jpg"
             ]
           },
           {
             "name": "Fenugreek / Methi Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Fenugreek%2CGRAIN?random=411"
+              "http://localhost:8000/grain_vegitable_images/spice_and_condiment_seeds.jpg"
             ]
           },
           {
             "name": "Fennel / Saunf Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Fennel%2CGRAIN?random=269"
+              "http://localhost:8000/grain_vegitable_images/spice_and_condiment_seeds.jpg"
             ]
           },
           {
             "name": "Chilli / Paprika Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Chilli%2CGRAIN?random=233"
+              "http://localhost:8000/grain_vegitable_images/spice_and_condiment_seeds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/spice_and_condiment_seeds.jpg"
       },
       {
         "name": "Culinary & Medicinal Herb Seeds",
@@ -3560,16 +3662,17 @@
           {
             "name": "Culinary Herbs (Basil, Parsley, Mint, Oregano, Lemongrass, Curry Leaf)",
             "images": [
-              "https://loremflickr.com/500/500/Culinary%2CGRAIN?random=7"
+              "http://localhost:8000/grain_vegitable_images/culinary_herbs_(basil,_parsley,_mint,_oregano,_lemongrass,_curry_leaf).png"
             ]
           },
           {
             "name": "Ayurvedic & Medicinal Herbs (Ashwagandha, Tulsi/Holy Basil, Stevia, Brahmi)",
             "images": [
-              "https://loremflickr.com/500/500/Ayurvedic%2CGRAIN?random=407"
+              "http://localhost:8000/grain_vegitable_images/culinary_and_medicinal_herb_seeds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/culinary_and_medicinal_herb_seeds.jpg"
       },
       {
         "name": "Forage & Cover Crops",
@@ -3577,28 +3680,29 @@
           {
             "name": "Alfalfa / Lucerne",
             "images": [
-              "https://loremflickr.com/500/500/Alfalfa%2CGRAIN?random=743"
+              "http://localhost:8000/grain_vegitable_images/forage_and_cover_crops.webp"
             ]
           },
           {
             "name": "Clover (Red, White, Crimson)",
             "images": [
-              "https://loremflickr.com/500/500/Clover%2CGRAIN?random=700"
+              "http://localhost:8000/grain_vegitable_images/clover_(red,_white,_crimson).jpg"
             ]
           },
           {
             "name": "Grass Seeds (Ryegrass, Fescue, Bermuda, Timothy, Orchard)",
             "images": [
-              "https://loremflickr.com/500/500/Grass%2CGRAIN?random=741"
+              "http://localhost:8000/grain_vegitable_images/grass_seeds_(ryegrass,_fescue,_bermuda,_timothy,_orchard).jpg"
             ]
           },
           {
             "name": "Other Forage (Rye, Vetch, Buckwheat)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CGRAIN?random=841"
+              "http://localhost:8000/grain_vegitable_images/other_forage_(rye,_vetch,_buckwheat).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/forage_and_cover_crops.webp"
       },
       {
         "name": "Fibre Crop Seeds",
@@ -3606,22 +3710,23 @@
           {
             "name": "Jute Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Jute%2CGRAIN?random=976"
+              "http://localhost:8000/grain_vegitable_images/jute_seeds.jpg"
             ]
           },
           {
             "name": "Cotton Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Cotton%2CGRAIN?random=357"
+              "http://localhost:8000/grain_vegitable_images/cotton_seeds.jpg"
             ]
           },
           {
             "name": "Other Natural Fibre Crop Seeds (Flax, Hemp, Ramie, Sisal)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CGRAIN?random=328"
+              "http://localhost:8000/grain_vegitable_images/other_natural_fibre_crop_seeds_(flax,_hemp,_ramie,_sisal).webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/fibre_crop_seeds.jpg"
       },
       {
         "name": "Flower & Ornamental Seeds",
@@ -3629,36 +3734,38 @@
           {
             "name": "Marigold Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Marigold%2CGRAIN?random=179"
+              "http://localhost:8000/grain_vegitable_images/marigold_seeds.jpg"
             ]
           },
           {
             "name": "Gladiolus Corms",
             "images": [
-              "https://loremflickr.com/500/500/Gladiolus%2CGRAIN?random=482"
+              "http://localhost:8000/grain_vegitable_images/gladiolus_corms.jpg"
             ]
           },
           {
             "name": "Anthurium Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Anthurium%2CGRAIN?random=689"
+              "http://localhost:8000/grain_vegitable_images/anthurium_seeds.jpg"
             ]
           },
           {
             "name": "Coneflower / Rudbeckia Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Coneflower%2CGRAIN?random=746"
+              "http://localhost:8000/grain_vegitable_images/cosmos_seeds.jpg"
             ]
           },
           {
             "name": "Cosmos Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Cosmos%2CGRAIN?random=282"
+              "http://localhost:8000/grain_vegitable_images/cosmos_seeds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/grain_vegitable_images/flower_and_ornamental_seeds.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/grain_vegitable_images/grain_and_vegetables_seeds.jpg"
   },
   {
     "name": "SPICES & HERBS",
