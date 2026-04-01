@@ -3776,82 +3776,83 @@
           {
             "name": "Cumin Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Cumin%2CSPICES?random=288"
+              "http://localhost:8000/spices_images/cumin_seeds.jpg"
             ]
           },
           {
             "name": "Coriander Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Coriander%2CSPICES?random=658"
+              "http://localhost:8000/spices_images/coriander_seeds.jpg"
             ]
           },
           {
             "name": "Fennel Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Fennel%2CSPICES?random=951"
+              "http://localhost:8000/spices_images/fennel_seeds.jpg"
             ]
           },
           {
             "name": "Caraway Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Caraway%2CSPICES?random=494"
+              "http://localhost:8000/spices_images/caraway_seeds.jpg"
             ]
           },
           {
             "name": "Fenugreek Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Fenugreek%2CSPICES?random=119"
+              "http://localhost:8000/spices_images/fenugreek_seeds.png"
             ]
           },
           {
             "name": "Anise Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Anise%2CSPICES?random=394"
+              "http://localhost:8000/spices_images/anise_seeds.jpg"
             ]
           },
           {
             "name": "Nigella Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Nigella%2CSPICES?random=749"
+              "http://localhost:8000/spices_images/nigella_seeds.png"
             ]
           },
           {
             "name": "Celery Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Celery%2CSPICES?random=25"
+              "http://localhost:8000/spices_images/celery_seeds.jpg"
             ]
           },
           {
             "name": "Dill Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Dill%2CSPICES?random=877"
+              "http://localhost:8000/spices_images/dill_seeds.jpg"
             ]
           },
           {
             "name": "Mustard Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Mustard%2CSPICES?random=252"
+              "http://localhost:8000/spices_images/mustard_seeds.jpg"
             ]
           },
           {
             "name": "Poppy Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Poppy%2CSPICES?random=589"
+              "http://localhost:8000/spices_images/poppy_seeds.png"
             ]
           },
           {
             "name": "Sesame Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Sesame%2CSPICES?random=824"
+              "http://localhost:8000/spices_images/sesame_seeds.jpg"
             ]
           },
           {
             "name": "Ajwain / Carom Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Ajwain%2CSPICES?random=441"
+              "http://localhost:8000/spices_images/whole_seeds_spices.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/whole_seeds_spices.jpg"
       },
       {
         "name": "Ground Seed Spices",
@@ -3859,28 +3860,29 @@
           {
             "name": "Cumin Powder",
             "images": [
-              "https://loremflickr.com/500/500/Cumin%2CSPICES?random=697"
+              "http://localhost:8000/spices_images/cumin_powder.jpg"
             ]
           },
           {
             "name": "Coriander Powder",
             "images": [
-              "https://loremflickr.com/500/500/Coriander%2CSPICES?random=493"
+              "http://localhost:8000/spices_images/coriander_powder.jpg"
             ]
           },
           {
             "name": "Fennel Powder",
             "images": [
-              "https://loremflickr.com/500/500/Fennel%2CSPICES?random=604"
+              "http://localhost:8000/spices_images/fennel_powder.jpg"
             ]
           },
           {
             "name": "Fenugreek Powder",
             "images": [
-              "https://loremflickr.com/500/500/Fenugreek%2CSPICES?random=922"
+              "http://localhost:8000/spices_images/fenugreek_powder.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/ground_seed_spices.jpg"
       },
       {
         "name": "Bark Spices",
@@ -3888,52 +3890,53 @@
           {
             "name": "Cinnamon Sticks (Indonesian, Ceylon)",
             "images": [
-              "https://loremflickr.com/500/500/Cinnamon%2CSPICES?random=336"
+              "http://localhost:8000/spices_images/cinnamon_sticks_(indonesian,_ceylon).jpg"
             ]
           },
           {
             "name": "Cassia Cinnamon (Chinese Cinnamon)",
             "images": [
-              "https://loremflickr.com/500/500/Cassia%2CSPICES?random=494"
+              "http://localhost:8000/spices_images/cassia_cinnamon_(chinese_cinnamon).jpg"
             ]
           },
           {
             "name": "Ceylon Cinnamon / True Cinnamon",
             "images": [
-              "https://loremflickr.com/500/500/Ceylon%2CSPICES?random=920"
+              "http://localhost:8000/spices_images/cinnamon_sticks_(indonesian,_ceylon).jpg"
             ]
           },
           {
             "name": "Saigon Cinnamon (Vietnamese)",
             "images": [
-              "https://loremflickr.com/500/500/Saigon%2CSPICES?random=280"
+              "http://localhost:8000/spices_images/saigon_cinnamon_(vietnamese).jpg"
             ]
           },
           {
             "name": "Korintje Cinnamon (Indonesian)",
             "images": [
-              "https://loremflickr.com/500/500/Korintje%2CSPICES?random=432"
+              "http://localhost:8000/spices_images/korintje_cinnamon_(indonesian).jpg"
             ]
           },
           {
             "name": "Cinnamon Powder",
             "images": [
-              "https://loremflickr.com/500/500/Cinnamon%2CSPICES?random=598"
+              "http://localhost:8000/spices_images/cinnamon_powder.jpg"
             ]
           },
           {
             "name": "Cinnamon Chips",
             "images": [
-              "https://loremflickr.com/500/500/Cinnamon%2CSPICES?random=912"
+              "http://localhost:8000/spices_images/cinnamon_chips.jpg"
             ]
           },
           {
             "name": "Cassia Buds",
             "images": [
-              "https://loremflickr.com/500/500/Cassia%2CSPICES?random=354"
+              "http://localhost:8000/spices_images/cassia_buds.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/bark_spices.jpg"
       },
       {
         "name": "Root & Rhizome Spices",
@@ -3941,40 +3944,41 @@
           {
             "name": "Ginger (Fresh, Dried Whole, Powder)",
             "images": [
-              "https://loremflickr.com/500/500/Ginger%2CSPICES?random=292"
+              "http://localhost:8000/spices_images/ginger_(fresh,_dried_whole,_powder).png"
             ]
           },
           {
             "name": "Galangal (Greater, Lesser)",
             "images": [
-              "https://loremflickr.com/500/500/Galangal%2CSPICES?random=403"
+              "http://localhost:8000/spices_images/galangal_(greater,_lesser).png"
             ]
           },
           {
             "name": "Turmeric (Whole, Powder)",
             "images": [
-              "https://loremflickr.com/500/500/Turmeric%2CSPICES?random=305"
+              "http://localhost:8000/spices_images/turmeric_(whole,_powder).jpg"
             ]
           },
           {
             "name": "Horseradish (Fresh, Powder)",
             "images": [
-              "https://loremflickr.com/500/500/Horseradish%2CSPICES?random=999"
+              "http://localhost:8000/spices_images/horseradish_(fresh,_powder).png"
             ]
           },
           {
             "name": "Wasabi (Fresh, Powder)",
             "images": [
-              "https://loremflickr.com/500/500/Wasabi%2CSPICES?random=223"
+              "http://localhost:8000/spices_images/wasabi_(fresh,_powder).jpg"
             ]
           },
           {
             "name": "Licorice Root",
             "images": [
-              "https://loremflickr.com/500/500/Licorice%2CSPICES?random=211"
+              "http://localhost:8000/spices_images/licorice_root.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/root_and_rhizome_spices.jpg"
       },
       {
         "name": "Flower & Bud Spices",
@@ -3982,58 +3986,59 @@
           {
             "name": "Cloves (Whole)",
             "images": [
-              "https://loremflickr.com/500/500/Cloves%2CSPICES?random=205"
+              "http://localhost:8000/spices_images/cloves_(whole).jpg"
             ]
           },
           {
             "name": "Saffron (Threads)",
             "images": [
-              "https://loremflickr.com/500/500/Saffron%2CSPICES?random=934"
+              "http://localhost:8000/spices_images/saffron_(threads).jpg"
             ]
           },
           {
             "name": "Rose Buds / Rose Petals",
             "images": [
-              "https://loremflickr.com/500/500/Rose%2CSPICES?random=621"
+              "http://localhost:8000/spices_images/flower_and_bud_spices.jpg"
             ]
           },
           {
             "name": "Lavender Flowers",
             "images": [
-              "https://loremflickr.com/500/500/Lavender%2CSPICES?random=591"
+              "http://localhost:8000/spices_images/lavender_flowers.jpg"
             ]
           },
           {
             "name": "Chamomile Flowers",
             "images": [
-              "https://loremflickr.com/500/500/Chamomile%2CSPICES?random=643"
+              "http://localhost:8000/spices_images/chamomile_flowers.jpg"
             ]
           },
           {
             "name": "Hibiscus Flowers",
             "images": [
-              "https://loremflickr.com/500/500/Hibiscus%2CSPICES?random=30"
+              "http://localhost:8000/spices_images/hibiscus_flowers.png"
             ]
           },
           {
             "name": "Calendula / Marigold Petals",
             "images": [
-              "https://loremflickr.com/500/500/Calendula%2CSPICES?random=125"
+              "http://localhost:8000/spices_images/flower_and_bud_spices.jpg"
             ]
           },
           {
             "name": "Clove Powder",
             "images": [
-              "https://loremflickr.com/500/500/Clove%2CSPICES?random=507"
+              "http://localhost:8000/spices_images/clove_powder.png"
             ]
           },
           {
             "name": "Saffron Powder",
             "images": [
-              "https://loremflickr.com/500/500/Saffron%2CSPICES?random=132"
+              "http://localhost:8000/spices_images/saffron_powder.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/flower_and_bud_spices.jpg"
       },
       {
         "name": "Fruit & Berry Spices",
@@ -4041,58 +4046,59 @@
           {
             "name": "Allspice & Pimento (Whole & Ground)",
             "images": [
-              "https://loremflickr.com/500/500/Allspice%2CSPICES?random=66"
+              "http://localhost:8000/spices_images/allspice_and_pimento_(whole_and_ground).jpg"
             ]
           },
           {
             "name": "Juniper Berries",
             "images": [
-              "https://loremflickr.com/500/500/Juniper%2CSPICES?random=14"
+              "http://localhost:8000/spices_images/juniper_berries.jpg"
             ]
           },
           {
             "name": "Vanilla Beans (Madagascar Bourbon, Tahitian, Mexican, Indonesian)",
             "images": [
-              "https://loremflickr.com/500/500/Vanilla%2CSPICES?random=288"
+              "http://localhost:8000/spices_images/vanilla_beans_(madagascar_bourbon,_tahitian,_mexican,_indonesian).jpg"
             ]
           },
           {
             "name": "Star Anise (Whole)",
             "images": [
-              "https://loremflickr.com/500/500/Star%2CSPICES?random=939"
+              "http://localhost:8000/spices_images/star_anise_(whole).jpg"
             ]
           },
           {
             "name": "Amchur & Mango Powder",
             "images": [
-              "https://loremflickr.com/500/500/Amchur%2CSPICES?random=57"
+              "http://localhost:8000/spices_images/amchur_and_mango_powder.jpg"
             ]
           },
           {
             "name": "Tamarind (Paste, Powder, Concentrate)",
             "images": [
-              "https://loremflickr.com/500/500/Tamarind%2CSPICES?random=978"
+              "http://localhost:8000/spices_images/tamarind_(paste,_powder,_concentrate).jpg"
             ]
           },
           {
             "name": "Sumac",
             "images": [
-              "https://loremflickr.com/500/500/Sumac%2CSPICES?random=317"
+              "http://localhost:8000/spices_images/sumac.jpg"
             ]
           },
           {
             "name": "Kokum",
             "images": [
-              "https://loremflickr.com/500/500/Kokum%2CSPICES?random=81"
+              "http://localhost:8000/spices_images/kokum.jpg"
             ]
           },
           {
             "name": "Schizandra Berry",
             "images": [
-              "https://loremflickr.com/500/500/Schizandra%2CSPICES?random=91"
+              "http://localhost:8000/spices_images/schizandra_berry.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/fruit_and_berry_spices.jpg"
       },
       {
         "name": "Seed Pod Spices",
@@ -4100,28 +4106,29 @@
           {
             "name": "Green Cardamom Pods",
             "images": [
-              "https://loremflickr.com/500/500/Green%2CSPICES?random=575"
+              "http://localhost:8000/spices_images/green_cardamom_pods.jpg"
             ]
           },
           {
             "name": "Black Cardamom Pods",
             "images": [
-              "https://loremflickr.com/500/500/Black%2CSPICES?random=692"
+              "http://localhost:8000/spices_images/black_cardamom_pods.jpg"
             ]
           },
           {
             "name": "Cardamom Seeds",
             "images": [
-              "https://loremflickr.com/500/500/Cardamom%2CSPICES?random=339"
+              "http://localhost:8000/spices_images/cardamom_seeds.jpg"
             ]
           },
           {
             "name": "Cardamom Powder",
             "images": [
-              "https://loremflickr.com/500/500/Cardamom%2CSPICES?random=89"
+              "http://localhost:8000/spices_images/cardamom_powder.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/seed_pod_spices.jpg"
       },
       {
         "name": "Nutmeg & Mace",
@@ -4129,28 +4136,29 @@
           {
             "name": "Nutmeg (Whole)",
             "images": [
-              "https://loremflickr.com/500/500/Nutmeg%2CSPICES?random=458"
+              "http://localhost:8000/spices_images/nutmeg_(whole).png"
             ]
           },
           {
             "name": "Nutmeg (Ground)",
             "images": [
-              "https://loremflickr.com/500/500/Nutmeg%2CSPICES?random=731"
+              "http://localhost:8000/spices_images/nutmeg_(ground).jpg"
             ]
           },
           {
             "name": "Mace Blades (Whole)",
             "images": [
-              "https://loremflickr.com/500/500/Mace%2CSPICES?random=678"
+              "http://localhost:8000/spices_images/mace_blades_(whole).jpg"
             ]
           },
           {
             "name": "Mace Powder",
             "images": [
-              "https://loremflickr.com/500/500/Mace%2CSPICES?random=885"
+              "http://localhost:8000/spices_images/mace_powder.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/nutmeg_and_mace.jpg"
       },
       {
         "name": "Mediterranean Herbs",
@@ -4158,106 +4166,107 @@
           {
             "name": "Basil (Sweet, Thai, Holy/Tulsi)",
             "images": [
-              "https://loremflickr.com/500/500/Basil%2CSPICES?random=468"
+              "http://localhost:8000/spices_images/thai_basil.jpg"
             ]
           },
           {
             "name": "Oregano (Greek, Italian, Mexican)",
             "images": [
-              "https://loremflickr.com/500/500/Oregano%2CSPICES?random=188"
+              "http://localhost:8000/spices_images/oregano_(greek,_italian,_mexican).jpg"
             ]
           },
           {
             "name": "Thyme (Common, Lemon)",
             "images": [
-              "https://loremflickr.com/500/500/Thyme%2CSPICES?random=484"
+              "http://localhost:8000/spices_images/thyme_(common,_lemon).webp"
             ]
           },
           {
             "name": "Rosemary",
             "images": [
-              "https://loremflickr.com/500/500/Rosemary%2CSPICES?random=790"
+              "http://localhost:8000/spices_images/rosemary.jpg"
             ]
           },
           {
             "name": "Parsley (Curly, Flat-Leaf/Italian)",
             "images": [
-              "https://loremflickr.com/500/500/Parsley%2CSPICES?random=927"
+              "http://localhost:8000/spices_images/dried_parsley.webp"
             ]
           },
           {
             "name": "Sage",
             "images": [
-              "https://loremflickr.com/500/500/Sage%2CSPICES?random=16"
+              "http://localhost:8000/spices_images/sage.jpg"
             ]
           },
           {
             "name": "Bay Leaves (Turkish, California, Indian)",
             "images": [
-              "https://loremflickr.com/500/500/Bay%2CSPICES?random=774"
+              "http://localhost:8000/spices_images/bay_leaves_(turkish,_california,_indian).png"
             ]
           },
           {
             "name": "Marjoram (Sweet Marjoram)",
             "images": [
-              "https://loremflickr.com/500/500/Marjoram%2CSPICES?random=859"
+              "http://localhost:8000/spices_images/marjoram_(sweet_marjoram).jpg"
             ]
           },
           {
             "name": "Savory (Summer, Winter)",
             "images": [
-              "https://loremflickr.com/500/500/Savory%2CSPICES?random=760"
+              "http://localhost:8000/spices_images/savory_(summer,_winter).gif"
             ]
           },
           {
             "name": "Tarragon (French, Russian)",
             "images": [
-              "https://loremflickr.com/500/500/Tarragon%2CSPICES?random=98"
+              "http://localhost:8000/spices_images/tarragon_(french,_russian).png"
             ]
           },
           {
             "name": "Chervil",
             "images": [
-              "https://loremflickr.com/500/500/Chervil%2CSPICES?random=591"
+              "http://localhost:8000/spices_images/chervil.jpg"
             ]
           },
           {
             "name": "Lavender",
             "images": [
-              "https://loremflickr.com/500/500/Lavender%2CSPICES?random=78"
+              "http://localhost:8000/spices_images/lavender.jpg"
             ]
           },
           {
             "name": "Dill (Weed, Seeds)",
             "images": [
-              "https://loremflickr.com/500/500/Dill%2CSPICES?random=961"
+              "http://localhost:8000/spices_images/dill_(weed,_seeds).png"
             ]
           },
           {
             "name": "Mint (Peppermint, Spearmint)",
             "images": [
-              "https://loremflickr.com/500/500/Mint%2CSPICES?random=547"
+              "http://localhost:8000/spices_images/mint_(peppermint,_spearmint).jpg"
             ]
           },
           {
             "name": "Chives",
             "images": [
-              "https://loremflickr.com/500/500/Chives%2CSPICES?random=166"
+              "http://localhost:8000/spices_images/chives.png"
             ]
           },
           {
             "name": "Lovage",
             "images": [
-              "https://loremflickr.com/500/500/Lovage%2CSPICES?random=167"
+              "http://localhost:8000/spices_images/lovage.jpg"
             ]
           },
           {
             "name": "Fennel (Fronds, Pollen)",
             "images": [
-              "https://loremflickr.com/500/500/Fennel%2CSPICES?random=968"
+              "http://localhost:8000/spices_images/fennel_(fronds,_pollen).png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/mediterranean_herbs.png"
       },
       {
         "name": "Asian Herbs",
@@ -4265,70 +4274,71 @@
           {
             "name": "Lemongrass",
             "images": [
-              "https://loremflickr.com/500/500/Lemongrass%2CSPICES?random=353"
+              "http://localhost:8000/spices_images/lemongrass.jpg"
             ]
           },
           {
             "name": "Kaffir Lime Leaves",
             "images": [
-              "https://loremflickr.com/500/500/Kaffir%2CSPICES?random=123"
+              "http://localhost:8000/spices_images/kaffir_lime_leaves.jpg"
             ]
           },
           {
             "name": "Thai Basil",
             "images": [
-              "https://loremflickr.com/500/500/Thai%2CSPICES?random=602"
+              "http://localhost:8000/spices_images/thai_basil.jpg"
             ]
           },
           {
             "name": "Vietnamese Coriander / Rau Ram",
             "images": [
-              "https://loremflickr.com/500/500/Vietnamese%2CSPICES?random=294"
+              "http://localhost:8000/spices_images/asian_herbs.jpg"
             ]
           },
           {
             "name": "Pandan Leaves",
             "images": [
-              "https://loremflickr.com/500/500/Pandan%2CSPICES?random=816"
+              "http://localhost:8000/spices_images/pandan_leaves.jpg"
             ]
           },
           {
             "name": "Curry Leaves (Fresh, Dried)",
             "images": [
-              "https://loremflickr.com/500/500/Curry%2CSPICES?random=928"
+              "http://localhost:8000/spices_images/curry_leaves_(fresh,_dried).jpg"
             ]
           },
           {
             "name": "Holy Basil / Tulsi",
             "images": [
-              "https://loremflickr.com/500/500/Holy%2CSPICES?random=681"
+              "http://localhost:8000/spices_images/thai_basil.jpg"
             ]
           },
           {
             "name": "Shiso / Perilla Leaves",
             "images": [
-              "https://loremflickr.com/500/500/Shiso%2CSPICES?random=18"
+              "http://localhost:8000/spices_images/asian_herbs.jpg"
             ]
           },
           {
             "name": "Chinese Five-Spice Herbs",
             "images": [
-              "https://loremflickr.com/500/500/Chinese%2CSPICES?random=778"
+              "http://localhost:8000/spices_images/chinese_five-spice_herbs.jpg"
             ]
           },
           {
             "name": "Gotu Kola",
             "images": [
-              "https://loremflickr.com/500/500/Gotu%2CSPICES?random=464"
+              "http://localhost:8000/spices_images/gotu_kola.jpg"
             ]
           },
           {
             "name": "Fenugreek Leaves / Kasuri Methi",
             "images": [
-              "https://loremflickr.com/500/500/Fenugreek%2CSPICES?random=637"
+              "http://localhost:8000/spices_images/fenugreek_seeds.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/asian_herbs.jpg"
       },
       {
         "name": "Latin American & Caribbean Herbs",
@@ -4336,34 +4346,35 @@
           {
             "name": "Cilantro / Coriander Leaves (Dried)",
             "images": [
-              "https://loremflickr.com/500/500/Cilantro%2CSPICES?random=619"
+              "http://localhost:8000/spices_images/coriander_seeds.jpg"
             ]
           },
           {
             "name": "Epazote",
             "images": [
-              "https://loremflickr.com/500/500/Epazote%2CSPICES?random=551"
+              "http://localhost:8000/spices_images/epazote.jpg"
             ]
           },
           {
             "name": "Mexican Oregano",
             "images": [
-              "https://loremflickr.com/500/500/Mexican%2CSPICES?random=980"
+              "http://localhost:8000/spices_images/mexican_oregano.jpg"
             ]
           },
           {
             "name": "Culantro / Recao",
             "images": [
-              "https://loremflickr.com/500/500/Culantro%2CSPICES?random=816"
+              "http://localhost:8000/spices_images/latin_american_and_caribbean_herbs.jpg"
             ]
           },
           {
             "name": "Annatto / Achiote",
             "images": [
-              "https://loremflickr.com/500/500/Annatto%2CSPICES?random=116"
+              "http://localhost:8000/spices_images/latin_american_and_caribbean_herbs.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/latin_american_and_caribbean_herbs.jpg"
       },
       {
         "name": "Middle Eastern & North African Herbs",
@@ -4371,28 +4382,29 @@
           {
             "name": "Za'atar (Herb & Blend)",
             "images": [
-              "https://loremflickr.com/500/500/Za%27atar%2CSPICES?random=866"
+              "http://localhost:8000/spices_images/zaatar_(herb_and_blend).jpg"
             ]
           },
           {
             "name": "Sumac",
             "images": [
-              "https://loremflickr.com/500/500/Sumac%2CSPICES?random=711"
+              "http://localhost:8000/spices_images/sumac.jpg"
             ]
           },
           {
             "name": "Dried Mint",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CSPICES?random=396"
+              "http://localhost:8000/spices_images/dried_mint.jpg"
             ]
           },
           {
             "name": "Dried Parsley",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CSPICES?random=679"
+              "http://localhost:8000/spices_images/dried_parsley.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/middle_eastern_and_north_african_herbs.jpg"
       },
       {
         "name": "Indian Spice Blends",
@@ -4400,64 +4412,65 @@
           {
             "name": "Garam Masala",
             "images": [
-              "https://loremflickr.com/500/500/Garam%2CSPICES?random=424"
+              "http://localhost:8000/spices_images/garam_masala.jpg"
             ]
           },
           {
             "name": "Curry Powder (Mild, Medium, Hot, Madras)",
             "images": [
-              "https://loremflickr.com/500/500/Curry%2CSPICES?random=321"
+              "http://localhost:8000/spices_images/curry_powder_(mild,_medium,_hot,_madras).jpg"
             ]
           },
           {
             "name": "Tandoori Masala",
             "images": [
-              "https://loremflickr.com/500/500/Tandoori%2CSPICES?random=663"
+              "http://localhost:8000/spices_images/tandoori_masala.jpg"
             ]
           },
           {
             "name": "Chaat Masala",
             "images": [
-              "https://loremflickr.com/500/500/Chaat%2CSPICES?random=728"
+              "http://localhost:8000/spices_images/chaat_masala.jpg"
             ]
           },
           {
             "name": "Sambar Powder",
             "images": [
-              "https://loremflickr.com/500/500/Sambar%2CSPICES?random=529"
+              "http://localhost:8000/spices_images/sambar_powder.jpg"
             ]
           },
           {
             "name": "Rasam Powder",
             "images": [
-              "https://loremflickr.com/500/500/Rasam%2CSPICES?random=130"
+              "http://localhost:8000/spices_images/rasam_powder.png"
             ]
           },
           {
             "name": "Panch Phoron (Bengali Five-Spice)",
             "images": [
-              "https://loremflickr.com/500/500/Panch%2CSPICES?random=881"
+              "http://localhost:8000/spices_images/panch_phoron_(bengali_five-spice).jpg"
             ]
           },
           {
             "name": "Biryani Masala",
             "images": [
-              "https://loremflickr.com/500/500/Biryani%2CSPICES?random=200"
+              "http://localhost:8000/spices_images/biryani_masala.png"
             ]
           },
           {
             "name": "Tikka Masala Blend",
             "images": [
-              "https://loremflickr.com/500/500/Tikka%2CSPICES?random=36"
+              "http://localhost:8000/spices_images/tikka_masala_blend.jpg"
             ]
           },
           {
             "name": "Vindaloo Spice Mix",
             "images": [
-              "https://loremflickr.com/500/500/Vindaloo%2CSPICES?random=738"
+              "http://localhost:8000/spices_images/vindaloo_spice_mix.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/indian_spice_blends.jpg"
       },
       {
         "name": "Middle Eastern & North African Blends",
@@ -4465,46 +4478,47 @@
           {
             "name": "Za'atar Blend",
             "images": [
-              "https://loremflickr.com/500/500/Za%27atar%2CSPICES?random=396"
+              "http://localhost:8000/spices_images/zaatar_blend.jpg"
             ]
           },
           {
             "name": "Dukkah / Duqqa",
             "images": [
-              "https://loremflickr.com/500/500/Dukkah%2CSPICES?random=947"
+              "http://localhost:8000/spices_images/middle_eastern_and_north_african_blends.jpg"
             ]
           },
           {
             "name": "Ras el Hanout",
             "images": [
-              "https://loremflickr.com/500/500/Ras%2CSPICES?random=633"
+              "http://localhost:8000/spices_images/ras_el_hanout.jpg"
             ]
           },
           {
             "name": "Baharat",
             "images": [
-              "https://loremflickr.com/500/500/Baharat%2CSPICES?random=520"
+              "http://localhost:8000/spices_images/baharat.jpg"
             ]
           },
           {
             "name": "Harissa Spice Blend",
             "images": [
-              "https://loremflickr.com/500/500/Harissa%2CSPICES?random=306"
+              "http://localhost:8000/spices_images/harissa_spice_blend.jpg"
             ]
           },
           {
             "name": "Berbere (Ethiopian)",
             "images": [
-              "https://loremflickr.com/500/500/Berbere%2CSPICES?random=94"
+              "http://localhost:8000/spices_images/berbere_(ethiopian).jpg"
             ]
           },
           {
             "name": "Shichimi Togarashi (Japanese Seven-Spice)",
             "images": [
-              "https://loremflickr.com/500/500/Shichimi%2CSPICES?random=629"
+              "http://localhost:8000/spices_images/shichimi_togarashi_(japanese_seven-spice).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/middle_eastern_and_north_african_blends.jpg"
       },
       {
         "name": "European & American Blends",
@@ -4512,88 +4526,89 @@
           {
             "name": "Herbes de Provence",
             "images": [
-              "https://loremflickr.com/500/500/Herbes%2CSPICES?random=186"
+              "http://localhost:8000/spices_images/herbes_de_provence.jpg"
             ]
           },
           {
             "name": "Italian Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Italian%2CSPICES?random=875"
+              "http://localhost:8000/spices_images/italian_seasoning.jpg"
             ]
           },
           {
             "name": "Fines Herbes",
             "images": [
-              "https://loremflickr.com/500/500/Fines%2CSPICES?random=125"
+              "http://localhost:8000/spices_images/fines_herbes.jpg"
             ]
           },
           {
             "name": "Bouquet Garni",
             "images": [
-              "https://loremflickr.com/500/500/Bouquet%2CSPICES?random=692"
+              "http://localhost:8000/spices_images/bouquet_garni.png"
             ]
           },
           {
             "name": "Poultry Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Poultry%2CSPICES?random=570"
+              "http://localhost:8000/spices_images/poultry_seasoning.jpg"
             ]
           },
           {
             "name": "Pumpkin Pie Spice",
             "images": [
-              "https://loremflickr.com/500/500/Pumpkin%2CSPICES?random=596"
+              "http://localhost:8000/spices_images/pumpkin_pie_spice.jpg"
             ]
           },
           {
             "name": "Apple Pie Spice",
             "images": [
-              "https://loremflickr.com/500/500/Apple%2CSPICES?random=888"
+              "http://localhost:8000/spices_images/apple_pie_spice.jpg"
             ]
           },
           {
             "name": "Cajun Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Cajun%2CSPICES?random=973"
+              "http://localhost:8000/spices_images/cajun_seasoning.jpg"
             ]
           },
           {
             "name": "Creole Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Creole%2CSPICES?random=427"
+              "http://localhost:8000/spices_images/creole_seasoning.jpg"
             ]
           },
           {
             "name": "Old Bay Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Old%2CSPICES?random=122"
+              "http://localhost:8000/spices_images/old_bay_seasoning.jpg"
             ]
           },
           {
             "name": "Taco Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Taco%2CSPICES?random=415"
+              "http://localhost:8000/spices_images/taco_seasoning.png"
             ]
           },
           {
             "name": "Chili Powder Blend",
             "images": [
-              "https://loremflickr.com/500/500/Chili%2CSPICES?random=148"
+              "http://localhost:8000/spices_images/chili_powder_blend.jpg"
             ]
           },
           {
             "name": "BBQ Rubs (Various Regional Styles)",
             "images": [
-              "https://loremflickr.com/500/500/BBQ%2CSPICES?random=865"
+              "http://localhost:8000/spices_images/bbq_rubs_(various_regional_styles).webp"
             ]
           },
           {
             "name": "Jerk Seasoning (Caribbean)",
             "images": [
-              "https://loremflickr.com/500/500/Jerk%2CSPICES?random=173"
+              "http://localhost:8000/spices_images/jerk_seasoning_(caribbean).png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/european_and_american_blends.jpg"
       },
       {
         "name": "Asian Blends",
@@ -4601,40 +4616,41 @@
           {
             "name": "Chinese Five-Spice Powder",
             "images": [
-              "https://loremflickr.com/500/500/Chinese%2CSPICES?random=392"
+              "http://localhost:8000/spices_images/chinese_five-spice_powder.png"
             ]
           },
           {
             "name": "Japanese Curry Powder",
             "images": [
-              "https://loremflickr.com/500/500/Japanese%2CSPICES?random=17"
+              "http://localhost:8000/spices_images/japanese_curry_powder.jpg"
             ]
           },
           {
             "name": "Thai Curry Paste Powders (Red, Green, Yellow)",
             "images": [
-              "https://loremflickr.com/500/500/Thai%2CSPICES?random=564"
+              "http://localhost:8000/spices_images/thai_curry_paste_powders_(red,_green,_yellow).jpg"
             ]
           },
           {
             "name": "Gochugaru (Korean Chili Flakes)",
             "images": [
-              "https://loremflickr.com/500/500/Gochugaru%2CSPICES?random=196"
+              "http://localhost:8000/spices_images/gochugaru_(korean_chili_flakes).jpg"
             ]
           },
           {
             "name": "Shichimi Togarashi",
             "images": [
-              "https://loremflickr.com/500/500/Shichimi%2CSPICES?random=50"
+              "http://localhost:8000/spices_images/shichimi_togarashi.jpg"
             ]
           },
           {
             "name": "Furikake Seasonings",
             "images": [
-              "https://loremflickr.com/500/500/Furikake%2CSPICES?random=2"
+              "http://localhost:8000/spices_images/furikake_seasonings.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/asian_blends.jpg"
       },
       {
         "name": "Salt Blends & Seasonings",
@@ -4642,54 +4658,56 @@
           {
             "name": "Garlic Salt",
             "images": [
-              "https://loremflickr.com/500/500/Garlic%2CSPICES?random=36"
+              "http://localhost:8000/spices_images/garlic_salt.jpg"
             ]
           },
           {
             "name": "Onion Salt",
             "images": [
-              "https://loremflickr.com/500/500/Onion%2CSPICES?random=356"
+              "http://localhost:8000/spices_images/onion_salt.jpg"
             ]
           },
           {
             "name": "Celery Salt",
             "images": [
-              "https://loremflickr.com/500/500/Celery%2CSPICES?random=269"
+              "http://localhost:8000/spices_images/celery_salt.jpg"
             ]
           },
           {
             "name": "Seasoned Salt",
             "images": [
-              "https://loremflickr.com/500/500/Seasoned%2CSPICES?random=162"
+              "http://localhost:8000/spices_images/seasoned_salt.jpg"
             ]
           },
           {
             "name": "Lemon Pepper",
             "images": [
-              "https://loremflickr.com/500/500/Lemon%2CSPICES?random=144"
+              "http://localhost:8000/spices_images/lemon_pepper.jpg"
             ]
           },
           {
             "name": "Everything Bagel Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Everything%2CSPICES?random=440"
+              "http://localhost:8000/spices_images/everything_bagel_seasoning.jpg"
             ]
           },
           {
             "name": "Ranch Seasoning",
             "images": [
-              "https://loremflickr.com/500/500/Ranch%2CSPICES?random=333"
+              "http://localhost:8000/spices_images/ranch_seasoning.jpg"
             ]
           },
           {
             "name": "Truffle Salt",
             "images": [
-              "https://loremflickr.com/500/500/Truffle%2CSPICES?random=453"
+              "http://localhost:8000/spices_images/truffle_salt.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/spices_images/salt_blends_and_seasonings.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/spices_images/spices_and_herbs.jpg"
   },
   {
     "name": "INTERIOR DECOR & FURNISHINGS",
@@ -4700,28 +4718,29 @@
           {
             "name": "Wall Art & Prints (Posters, Canvas, Framed Art, Paintings)",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CINTERIOR?random=831"
+              "http://localhost:8000/interior_images/wall_art_and_prints_(posters,_canvas,_framed_art,_paintings).jpg"
             ]
           },
           {
             "name": "Mirrors (Decorative, Full-Length, Round, Arched, LED)",
             "images": [
-              "https://loremflickr.com/500/500/Mirrors%2CINTERIOR?random=647"
+              "http://localhost:8000/interior_images/mirrors_(decorative,_full-length,_round,_arched,_led).png"
             ]
           },
           {
             "name": "Wall Stickers, Decals & Murals",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CINTERIOR?random=783"
+              "http://localhost:8000/interior_images/wall_stickers,_decals_and_murals.jpg"
             ]
           },
           {
             "name": "Removable Wallpaper & Peel-and-Stick Tiles",
             "images": [
-              "https://loremflickr.com/500/500/Removable%2CINTERIOR?random=400"
+              "http://localhost:8000/interior_images/removable_wallpaper_and_peel-and-stick_tiles.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/wall_decor.jpg"
       },
       {
         "name": "Lighting",
@@ -4729,40 +4748,41 @@
           {
             "name": "Table & Bedside Lamps",
             "images": [
-              "https://loremflickr.com/500/500/Table%2CINTERIOR?random=275"
+              "http://localhost:8000/interior_images/table_and_bedside_lamps.jpg"
             ]
           },
           {
             "name": "Floor Lamps (Arc, Tripod, Torchiere)",
             "images": [
-              "https://loremflickr.com/500/500/Floor%2CINTERIOR?random=851"
+              "http://localhost:8000/interior_images/floor_lamps_(arc,_tripod,_torchiere).jpg"
             ]
           },
           {
             "name": "Pendant Lights & Chandeliers",
             "images": [
-              "https://loremflickr.com/500/500/Pendant%2CINTERIOR?random=874"
+              "http://localhost:8000/interior_images/pendant_lights_and_chandeliers.jpg"
             ]
           },
           {
             "name": "Wall Sconces & Accent Lights",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CINTERIOR?random=823"
+              "http://localhost:8000/interior_images/wall_sconces_and_accent_lights.jpg"
             ]
           },
           {
             "name": "String Lights & Fairy Lights",
             "images": [
-              "https://loremflickr.com/500/500/String%2CINTERIOR?random=511"
+              "http://localhost:8000/interior_images/string_lights_and_fairy_lights.jpg"
             ]
           },
           {
             "name": "Candles, Candle Holders & Lanterns",
             "images": [
-              "https://loremflickr.com/500/500/Candles%2C%2CINTERIOR?random=504"
+              "http://localhost:8000/interior_images/candles,_candle_holders_and_lanterns.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/lighting.jpg"
       },
       {
         "name": "Decorative Accessories",
@@ -4770,46 +4790,47 @@
           {
             "name": "Vases & Vessels (Ceramic, Glass, Tall Floor, Geometric)",
             "images": [
-              "https://loremflickr.com/500/500/Vases%2CINTERIOR?random=507"
+              "http://localhost:8000/interior_images/vases_and_vessels_(ceramic,_glass,_tall_floor,_geometric).jpg"
             ]
           },
           {
             "name": "Bowls, Trays & Catchalls (Marble, Brass, Nesting Sets)",
             "images": [
-              "https://loremflickr.com/500/500/Bowls%2C%2CINTERIOR?random=5"
+              "http://localhost:8000/interior_images/bowls,_trays_and_catchalls_(marble,_brass,_nesting_sets).jpg"
             ]
           },
           {
             "name": "Figurines, Sculptures & Bookends",
             "images": [
-              "https://loremflickr.com/500/500/Figurines%2C%2CINTERIOR?random=292"
+              "http://localhost:8000/interior_images/figurines,_sculptures_and_bookends.jpg"
             ]
           },
           {
             "name": "Wall & Table Clocks",
             "images": [
-              "https://loremflickr.com/500/500/Wall%2CINTERIOR?random=148"
+              "http://localhost:8000/interior_images/wall_and_table_clocks.jpg"
             ]
           },
           {
             "name": "Artificial Flower Arrangements",
             "images": [
-              "https://loremflickr.com/500/500/Artificial%2CINTERIOR?random=408"
+              "http://localhost:8000/interior_images/artificial_flower_arrangements.jpg"
             ]
           },
           {
             "name": "Pampas Grass",
             "images": [
-              "https://loremflickr.com/500/500/Pampas%2CINTERIOR?random=26"
+              "http://localhost:8000/interior_images/pampas_grass.jpg"
             ]
           },
           {
             "name": "Artificial Wreaths & Decorative Branches",
             "images": [
-              "https://loremflickr.com/500/500/Artificial%2CINTERIOR?random=410"
+              "http://localhost:8000/interior_images/artificial_wreaths_and_decorative_branches.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/decorative_accessories.png"
       },
       {
         "name": "Textiles & Soft Furnishings",
@@ -4817,28 +4838,29 @@
           {
             "name": "Cushions & Throw Pillows (Embroidered, Printed, Velvet)",
             "images": [
-              "https://loremflickr.com/500/500/Cushions%2CINTERIOR?random=32"
+              "http://localhost:8000/interior_images/cushions_and_throw_pillows_(embroidered,_printed,_velvet).jpg"
             ]
           },
           {
             "name": "Throw Blankets, Quilts & Bed Runners",
             "images": [
-              "https://loremflickr.com/500/500/Throw%2CINTERIOR?random=251"
+              "http://localhost:8000/interior_images/throw_blankets,_quilts_and_bed_runners.jpg"
             ]
           },
           {
             "name": "Table Linens (Tablecloths, Runners, Placemats)",
             "images": [
-              "https://loremflickr.com/500/500/Table%2CINTERIOR?random=787"
+              "http://localhost:8000/interior_images/table_linens_(tablecloths,_runners,_placemats).jpg"
             ]
           },
           {
             "name": "Curtains & Window Treatments (Sheer, Blackout, Patterned)",
             "images": [
-              "https://loremflickr.com/500/500/Curtains%2CINTERIOR?random=862"
+              "http://localhost:8000/interior_images/curtains_and_window_treatments_(sheer,_blackout,_patterned).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/textiles_and_soft_furnishings.jpg"
       },
       {
         "name": "Accent Tables & Seating",
@@ -4846,40 +4868,41 @@
           {
             "name": "Side Tables & Small Stools",
             "images": [
-              "https://loremflickr.com/500/500/Side%2CINTERIOR?random=572"
+              "http://localhost:8000/interior_images/side_tables_and_small_stools.jpg"
             ]
           },
           {
             "name": "Coffee Tables",
             "images": [
-              "https://loremflickr.com/500/500/Coffee%2CINTERIOR?random=732"
+              "http://localhost:8000/interior_images/coffee_tables.jpg"
             ]
           },
           {
             "name": "C-Tables & Laptop Tables",
             "images": [
-              "https://loremflickr.com/500/500/C-Tables%2CINTERIOR?random=207"
+              "http://localhost:8000/interior_images/c-tables_and_laptop_tables.jpg"
             ]
           },
           {
             "name": "Poufs & Ottomans",
             "images": [
-              "https://loremflickr.com/500/500/Poufs%2CINTERIOR?random=759"
+              "http://localhost:8000/interior_images/poufs_and_ottomans.png"
             ]
           },
           {
             "name": "Accent Chairs",
             "images": [
-              "https://loremflickr.com/500/500/Accent%2CINTERIOR?random=867"
+              "http://localhost:8000/interior_images/accent_chairs.jpg"
             ]
           },
           {
             "name": "Bar Stools",
             "images": [
-              "https://loremflickr.com/500/500/Bar%2CINTERIOR?random=301"
+              "http://localhost:8000/interior_images/accent_chairs_and_bar_stools.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/accent_tables_and_seating.jpg"
       },
       {
         "name": "Shelving & Display",
@@ -4887,28 +4910,29 @@
           {
             "name": "Floating Wall Shelves",
             "images": [
-              "https://loremflickr.com/500/500/Floating%2CINTERIOR?random=420"
+              "http://localhost:8000/interior_images/floating_wall_shelves.jpg"
             ]
           },
           {
             "name": "Ladder & Cube Shelves",
             "images": [
-              "https://loremflickr.com/500/500/Ladder%2CINTERIOR?random=987"
+              "http://localhost:8000/interior_images/ladder_and_cube_shelves.jpg"
             ]
           },
           {
             "name": "Display Cabinets & Shadow Boxes",
             "images": [
-              "https://loremflickr.com/500/500/Display%2CINTERIOR?random=746"
+              "http://localhost:8000/interior_images/display_cabinets_and_shadow_boxes.jpg"
             ]
           },
           {
             "name": "Book Stands & Display Easels",
             "images": [
-              "https://loremflickr.com/500/500/Book%2CINTERIOR?random=638"
+              "http://localhost:8000/interior_images/book_stands_and_display_easels.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/shelving_and_display.jpg"
       },
       {
         "name": "Storage & Organizers",
@@ -4916,34 +4940,35 @@
           {
             "name": "Storage Boxes & Decorative Crates",
             "images": [
-              "https://loremflickr.com/500/500/Storage%2CINTERIOR?random=258"
+              "http://localhost:8000/interior_images/storage_boxes_and_decorative_crates.jpg"
             ]
           },
           {
             "name": "Fabric Storage Bins",
             "images": [
-              "https://loremflickr.com/500/500/Fabric%2CINTERIOR?random=422"
+              "http://localhost:8000/interior_images/fabric_storage_bins.jpg"
             ]
           },
           {
             "name": "Decorative Crates",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CINTERIOR?random=343"
+              "http://localhost:8000/interior_images/decorative_crates.jpg"
             ]
           },
           {
             "name": "Hat Boxes & Display Boxes",
             "images": [
-              "https://loremflickr.com/500/500/Hat%2CINTERIOR?random=82"
+              "http://localhost:8000/interior_images/hat_boxes_and_display_boxes.jpg"
             ]
           },
           {
             "name": "Magazine Holders & File Organizers",
             "images": [
-              "https://loremflickr.com/500/500/Magazine%2CINTERIOR?random=698"
+              "http://localhost:8000/interior_images/magazine_holders_and_file_organizers.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/storage_and_organizers.png"
       },
       {
         "name": "Indoor Plants & Planters",
@@ -4951,22 +4976,23 @@
           {
             "name": "Indoor Planters & Pots (Terracotta, Hanging, Geometric)",
             "images": [
-              "https://loremflickr.com/500/500/Indoor%2CINTERIOR?random=506"
+              "http://localhost:8000/interior_images/indoor_planters_and_pots_(terracotta,_hanging,_geometric).jpg"
             ]
           },
           {
             "name": "Plant Stands & Pedestals",
             "images": [
-              "https://loremflickr.com/500/500/Plant%2CINTERIOR?random=198"
+              "http://localhost:8000/interior_images/plant_stands_and_pedestals.jpg"
             ]
           },
           {
             "name": "Artificial Plants, Succulents & Terrariums",
             "images": [
-              "https://loremflickr.com/500/500/Artificial%2CINTERIOR?random=481"
+              "http://localhost:8000/interior_images/artificial_plants,_succulents_and_terrariums.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/indoor_plant_and_planters.jpg"
       },
       {
         "name": "Kitchen Decor",
@@ -4974,34 +5000,35 @@
           {
             "name": "Kitchen Wall Art",
             "images": [
-              "https://loremflickr.com/500/500/Kitchen%2CINTERIOR?random=543"
+              "http://localhost:8000/interior_images/kitchen_wall_art.jpg"
             ]
           },
           {
             "name": "Decorative Canisters & Jars",
             "images": [
-              "https://loremflickr.com/500/500/Decorative%2CINTERIOR?random=293"
+              "http://localhost:8000/interior_images/decorative_canisters_and_jars.jpg"
             ]
           },
           {
             "name": "Spice Rack Sets",
             "images": [
-              "https://loremflickr.com/500/500/Spice%2CINTERIOR?random=472"
+              "http://localhost:8000/interior_images/spice_rack_sets.jpg"
             ]
           },
           {
             "name": "Hanging Herb Planters",
             "images": [
-              "https://loremflickr.com/500/500/Hanging%2CINTERIOR?random=707"
+              "http://localhost:8000/interior_images/hanging_herb_planter.jpg"
             ]
           },
           {
             "name": "Bread Bins & Counter Storage",
             "images": [
-              "https://loremflickr.com/500/500/Bread%2CINTERIOR?random=288"
+              "http://localhost:8000/interior_images/bread_bins_and_counter_storage.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/kitchen_decor.jpg"
       },
       {
         "name": "Bathroom Accessories",
@@ -5009,34 +5036,35 @@
           {
             "name": "Soap Dispensers",
             "images": [
-              "https://loremflickr.com/500/500/Soap%2CINTERIOR?random=842"
+              "http://localhost:8000/interior_images/soap_dispensers.png"
             ]
           },
           {
             "name": "Toothbrush Holders",
             "images": [
-              "https://loremflickr.com/500/500/Toothbrush%2CINTERIOR?random=539"
+              "http://localhost:8000/interior_images/toothbrush_holders.jpg"
             ]
           },
           {
             "name": "Bathroom Trays & Vanity Sets",
             "images": [
-              "https://loremflickr.com/500/500/Bathroom%2CINTERIOR?random=136"
+              "http://localhost:8000/interior_images/bathroom_trays_and_vanity_sets.jpg"
             ]
           },
           {
             "name": "Towel Rings & Hooks",
             "images": [
-              "https://loremflickr.com/500/500/Towel%2CINTERIOR?random=175"
+              "http://localhost:8000/interior_images/towel_rings_and_hooks.jpg"
             ]
           },
           {
             "name": "Bathroom Wall Art",
             "images": [
-              "https://loremflickr.com/500/500/Bathroom%2CINTERIOR?random=44"
+              "http://localhost:8000/interior_images/bathroom_wall_art.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/bathroom_accessories.jpg"
       },
       {
         "name": "Bedroom Decorative Accessories",
@@ -5044,18 +5072,20 @@
           {
             "name": "Bedside Organizers",
             "images": [
-              "https://loremflickr.com/500/500/Bedside%2CINTERIOR?random=972"
+              "http://localhost:8000/interior_images/bedside_organizers.jpg"
             ]
           },
           {
             "name": "Trinket Boxes & Keepsake Items",
             "images": [
-              "https://loremflickr.com/500/500/Trinket%2CINTERIOR?random=310"
+              "http://localhost:8000/interior_images/trinket_boxes_and_keepsake_items.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/interior_images/bedroom_decorative_accessories.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/interior_images/interior_decor_and_furnishings.webp"
   },
   {
     "name": "FASHION & LIFESTYLE",
@@ -5066,16 +5096,17 @@
           {
             "name": "Fashion Jewellery (Necklaces, Earrings, Bracelets, Rings, Sets)",
             "images": [
-              "https://loremflickr.com/500/500/Fashion%2CFASHION?random=363"
+              "http://localhost:8000/fashion_images/fashion_jewellery_(necklaces,_earrings,_bracelets,_rings,_sets).jpg"
             ]
           },
           {
             "name": "Fine Jewellery (Rings, Necklaces & Pendants, Earrings, Bracelets, Sets)",
             "images": [
-              "https://loremflickr.com/500/500/Fine%2CFASHION?random=475"
+              "http://localhost:8000/fashion_images/fine_jewellery_(rings,_necklaces_and_pendants,_earrings,_bracelets,_sets).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/jewellery.jpg"
       },
       {
         "name": "Watches",
@@ -5083,28 +5114,29 @@
           {
             "name": "Men's Watches",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CFASHION?random=645"
+              "http://localhost:8000/fashion_images/mens_watches.jpg"
             ]
           },
           {
             "name": "Women's Watches",
             "images": [
-              "https://loremflickr.com/500/500/Women%27s%2CFASHION?random=88"
+              "http://localhost:8000/fashion_images/womens_watches.jpg"
             ]
           },
           {
             "name": "Smartwatches & Fitness Trackers",
             "images": [
-              "https://loremflickr.com/500/500/Smartwatches%2CFASHION?random=337"
+              "http://localhost:8000/fashion_images/smartwatches_and_fitness_trackers.jpg"
             ]
           },
           {
             "name": "Watch Straps & Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Watch%2CFASHION?random=674"
+              "http://localhost:8000/fashion_images/watch_straps_and_accessories.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/watches.jpg"
       },
       {
         "name": "Eyewear",
@@ -5112,22 +5144,23 @@
           {
             "name": "Sunglasses",
             "images": [
-              "https://loremflickr.com/500/500/Sunglasses%2CFASHION?random=798"
+              "http://localhost:8000/fashion_images/sunglasses.png"
             ]
           },
           {
             "name": "Blue Light & Reading Glasses",
             "images": [
-              "https://loremflickr.com/500/500/Blue%2CFASHION?random=364"
+              "http://localhost:8000/fashion_images/blue_light_and_reading_glasses.jpg"
             ]
           },
           {
             "name": "Eyewear Cases & Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Eyewear%2CFASHION?random=779"
+              "http://localhost:8000/fashion_images/eyewear_cases_and_accessories.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/eyewear.jpg"
       },
       {
         "name": "Men's Grooming",
@@ -5135,28 +5168,29 @@
           {
             "name": "Shaving & Beard Care",
             "images": [
-              "https://loremflickr.com/500/500/Shaving%2CFASHION?random=781"
+              "http://localhost:8000/fashion_images/shaving_and_beard_care.jpg"
             ]
           },
           {
             "name": "Men's Skincare",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CFASHION?random=186"
+              "http://localhost:8000/fashion_images/mens_skincare.png"
             ]
           },
           {
             "name": "Men's Haircare",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CFASHION?random=303"
+              "http://localhost:8000/fashion_images/mens_haircare.jpg"
             ]
           },
           {
             "name": "Men's Fragrance & Body Care",
             "images": [
-              "https://loremflickr.com/500/500/Men%27s%2CFASHION?random=22"
+              "http://localhost:8000/fashion_images/mens_fragrance_and_body_care.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/mens_grooming.jpg"
       },
       {
         "name": "Travel Accessories",
@@ -5164,28 +5198,29 @@
           {
             "name": "Water Bottles & Travel Cups",
             "images": [
-              "https://loremflickr.com/500/500/Water%2CFASHION?random=122"
+              "http://localhost:8000/fashion_images/water_bottles_and_travel_cups.jpg"
             ]
           },
           {
             "name": "Travel Pillows & Organisers",
             "images": [
-              "https://loremflickr.com/500/500/Travel%2CFASHION?random=473"
+              "http://localhost:8000/fashion_images/travel_pillows_and_organisers.jpg"
             ]
           },
           {
             "name": "Portable Chargers & Power Banks",
             "images": [
-              "https://loremflickr.com/500/500/Portable%2CFASHION?random=720"
+              "http://localhost:8000/fashion_images/portable_chargers_and_power_banks.png"
             ]
           },
           {
             "name": "Reusable Bags",
             "images": [
-              "https://loremflickr.com/500/500/Reusable%2CFASHION?random=353"
+              "http://localhost:8000/fashion_images/reusable_bags.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/travel_accessories.jpg"
       },
       {
         "name": "Hats & Headwear",
@@ -5193,22 +5228,23 @@
           {
             "name": "Baseball Caps & Bucket Hats",
             "images": [
-              "https://loremflickr.com/500/500/Baseball%2CFASHION?random=346"
+              "http://localhost:8000/fashion_images/baseball_caps_and_bucket_hats.jpg"
             ]
           },
           {
             "name": "Beanies & Knit Hats",
             "images": [
-              "https://loremflickr.com/500/500/Beanies%2CFASHION?random=595"
+              "http://localhost:8000/fashion_images/beanies_and_knit_hats.jpg"
             ]
           },
           {
             "name": "Wide-Brim Hats & Fedoras",
             "images": [
-              "https://loremflickr.com/500/500/Wide-Brim%2CFASHION?random=518"
+              "http://localhost:8000/fashion_images/wide-brim_hats_and_fedoras.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/hats_and_headwear.jpg"
       },
       {
         "name": "Home Fragrance",
@@ -5216,22 +5252,23 @@
           {
             "name": "Candles",
             "images": [
-              "https://loremflickr.com/500/500/Candles%2CFASHION?random=39"
+              "http://localhost:8000/fashion_images/candles.jpg"
             ]
           },
           {
             "name": "Reed Diffusers & Room Sprays",
             "images": [
-              "https://loremflickr.com/500/500/Reed%2CFASHION?random=763"
+              "http://localhost:8000/fashion_images/reed_diffusers_and_room_sprays.jpg"
             ]
           },
           {
             "name": "Incense & Essential Oils",
             "images": [
-              "https://loremflickr.com/500/500/Incense%2CFASHION?random=513"
+              "http://localhost:8000/fashion_images/incense_and_essential_oils.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/home_fragrance.png"
       },
       {
         "name": "Stationery & Gifts",
@@ -5239,24 +5276,26 @@
           {
             "name": "Notebooks & Journals",
             "images": [
-              "https://loremflickr.com/500/500/Notebooks%2CFASHION?random=490"
+              "http://localhost:8000/fashion_images/notebooks_and_journals.png"
             ]
           },
           {
             "name": "Pens & Desk Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Pens%2CFASHION?random=811"
+              "http://localhost:8000/fashion_images/pens_and_desk_accessories.jpg"
             ]
           },
           {
             "name": "Greeting Cards & Gift Wrap",
             "images": [
-              "https://loremflickr.com/500/500/Greeting%2CFASHION?random=373"
+              "http://localhost:8000/fashion_images/greeting_cards_and_gift_wrap.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/fashion_images/stationery_and_gifts.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/fashion_images/fashion_and_lifestyle.jpg"
   },
   {
     "name": "HEALTH & WELLNESS",
@@ -5267,34 +5306,35 @@
           {
             "name": "Multivitamins & Minerals",
             "images": [
-              "https://loremflickr.com/500/500/Multivitamins%2CHEALTH?random=87"
+              "http://localhost:8000/health_images/multivitamins_and_minerals.jpg"
             ]
           },
           {
             "name": "Vitamin Singles (A, B-Complex, C, D, E, etc.)",
             "images": [
-              "https://loremflickr.com/500/500/Vitamin%2CHEALTH?random=234"
+              "http://localhost:8000/health_images/vitamin_singles_(a,_b-complex,_c,_d,_e,_etc.).jpg"
             ]
           },
           {
             "name": "Calcium, Magnesium & Bone Health",
             "images": [
-              "https://loremflickr.com/500/500/Calcium%2C%2CHEALTH?random=771"
+              "http://localhost:8000/health_images/calcium,_magnesium_and_bone_health.jpg"
             ]
           },
           {
             "name": "Iron & Specialty Minerals",
             "images": [
-              "https://loremflickr.com/500/500/Iron%2CHEALTH?random=231"
+              "http://localhost:8000/health_images/iron_and_specialty_minerals.jpg"
             ]
           },
           {
             "name": "Prenatal, Postnatal & Gender-Specific",
             "images": [
-              "https://loremflickr.com/500/500/Prenatal%2C%2CHEALTH?random=440"
+              "http://localhost:8000/health_images/prenatal,_postnatal_and_gender-specific.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/vitamins_and_supplements.jpg"
       },
       {
         "name": "Protein & Sports Nutrition",
@@ -5302,34 +5342,35 @@
           {
             "name": "Whey & Plant-Based Protein Powders",
             "images": [
-              "https://loremflickr.com/500/500/Whey%2CHEALTH?random=302"
+              "http://localhost:8000/health_images/whey_and_plant-based_protein_powders.jpg"
             ]
           },
           {
             "name": "Collagen & Specialty Proteins",
             "images": [
-              "https://loremflickr.com/500/500/Collagen%2CHEALTH?random=155"
+              "http://localhost:8000/health_images/collagen_and_specialty_proteins.jpg"
             ]
           },
           {
             "name": "BCAAs, Creatine & Amino Acids",
             "images": [
-              "https://loremflickr.com/500/500/BCAAs%2C%2CHEALTH?random=102"
+              "http://localhost:8000/health_images/bcaas,_creatine_and_amino_acids.jpg"
             ]
           },
           {
             "name": "Pre-Workout & Energy Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Pre-Workout%2CHEALTH?random=120"
+              "http://localhost:8000/health_images/pre-workout_and_energy_supplements.png"
             ]
           },
           {
             "name": "Post-Workout & Recovery Blends",
             "images": [
-              "https://loremflickr.com/500/500/Post-Workout%2CHEALTH?random=545"
+              "http://localhost:8000/health_images/post-workout_and_recovery_blends.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/protein_and_sports_nutrition.jpg"
       },
       {
         "name": "Omega & Specialty Oils",
@@ -5337,16 +5378,17 @@
           {
             "name": "Omega-3 (Fish Oil, Krill, Algae)",
             "images": [
-              "https://loremflickr.com/500/500/Omega-3%2CHEALTH?random=129"
+              "http://localhost:8000/health_images/omega-3_(fish_oil,_krill,_algae).jpg"
             ]
           },
           {
             "name": "Flaxseed, Evening Primrose & CLA",
             "images": [
-              "https://loremflickr.com/500/500/Flaxseed%2C%2CHEALTH?random=990"
+              "http://localhost:8000/health_images/flaxseed,_evening_primrose_and_cla.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/omega_and_specialty_oils.jpg"
       },
       {
         "name": "Gut Health & Digestion",
@@ -5354,28 +5396,29 @@
           {
             "name": "Probiotics & Prebiotics",
             "images": [
-              "https://loremflickr.com/500/500/Probiotics%2CHEALTH?random=347"
+              "http://localhost:8000/health_images/probiotics_and_prebiotics.jpg"
             ]
           },
           {
             "name": "Digestive Enzymes",
             "images": [
-              "https://loremflickr.com/500/500/Digestive%2CHEALTH?random=679"
+              "http://localhost:8000/health_images/digestive_enzymes.png"
             ]
           },
           {
             "name": "Fibre Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Fibre%2CHEALTH?random=197"
+              "http://localhost:8000/health_images/fibre_supplements.png"
             ]
           },
           {
             "name": "Gut Health Blends",
             "images": [
-              "https://loremflickr.com/500/500/Gut%2CHEALTH?random=128"
+              "http://localhost:8000/health_images/gut_health_blends.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/gut_health_and_digestion.png"
       },
       {
         "name": "Herbal & Adaptogen Supplements",
@@ -5383,34 +5426,35 @@
           {
             "name": "Ashwagandha, Rhodiola & Stress Support",
             "images": [
-              "https://loremflickr.com/500/500/Ashwagandha%2C%2CHEALTH?random=781"
+              "http://localhost:8000/health_images/ashwagandha,_rhodiola_and_stress_support.jpg"
             ]
           },
           {
             "name": "Ginseng, Maca & Energy Herbs",
             "images": [
-              "https://loremflickr.com/500/500/Ginseng%2C%2CHEALTH?random=561"
+              "http://localhost:8000/health_images/ginseng,_maca_and_energy_herbs.jpg"
             ]
           },
           {
             "name": "Medicinal Mushrooms",
             "images": [
-              "https://loremflickr.com/500/500/Medicinal%2CHEALTH?random=959"
+              "http://localhost:8000/health_images/medicinal_mushrooms.jpg"
             ]
           },
           {
             "name": "Turmeric, Curcumin & Anti-Inflammatory",
             "images": [
-              "https://loremflickr.com/500/500/Turmeric%2C%2CHEALTH?random=100"
+              "http://localhost:8000/health_images/turmeric,_curcumin_and_anti-inflammatory.jpg"
             ]
           },
           {
             "name": "Sleep & Mood Herbs (Melatonin, Valerian, etc.)",
             "images": [
-              "https://loremflickr.com/500/500/Sleep%2CHEALTH?random=452"
+              "http://localhost:8000/health_images/sleep_and_mood_herbs_(melatonin,_valerian,_etc.).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/herbal_and_adaptogen_supplements.jpg"
       },
       {
         "name": "Weight Management & Functional Foods",
@@ -5418,28 +5462,29 @@
           {
             "name": "Fat Burners & Metabolism Support",
             "images": [
-              "https://loremflickr.com/500/500/Fat%2CHEALTH?random=934"
+              "http://localhost:8000/health_images/fat_burners_and_metabolism_support.jpg"
             ]
           },
           {
             "name": "Meal Replacements & Protein Bars",
             "images": [
-              "https://loremflickr.com/500/500/Meal%2CHEALTH?random=339"
+              "http://localhost:8000/health_images/meal_replacements_and_protein_bars.webp"
             ]
           },
           {
             "name": "Greens Powders & Superfood Drinks",
             "images": [
-              "https://loremflickr.com/500/500/Greens%2CHEALTH?random=775"
+              "http://localhost:8000/health_images/greens_powders_and_superfood_drinks.jpg"
             ]
           },
           {
             "name": "Electrolyte & Hydration Powders",
             "images": [
-              "https://loremflickr.com/500/500/Electrolyte%2CHEALTH?random=716"
+              "http://localhost:8000/health_images/electrolyte_and_hydration_powders.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/weight_management_and_functional_foods.jpg"
       },
       {
         "name": "Cardio & Fitness Equipment",
@@ -5447,22 +5492,23 @@
           {
             "name": "Treadmills & Exercise Bikes",
             "images": [
-              "https://loremflickr.com/500/500/Treadmills%2CHEALTH?random=669"
+              "http://localhost:8000/health_images/treadmills_and_exercise_bikes.jpg"
             ]
           },
           {
             "name": "Ellipticals & Rowers",
             "images": [
-              "https://loremflickr.com/500/500/Ellipticals%2CHEALTH?random=788"
+              "http://localhost:8000/health_images/ellipticals_and_rowers.jpg"
             ]
           },
           {
             "name": "Jump Ropes & Cardio Accessories",
             "images": [
-              "https://loremflickr.com/500/500/Jump%2CHEALTH?random=93"
+              "http://localhost:8000/health_images/jump_ropes_and_cardio_accessories.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/cardio_and_fitness_equipment.jpg"
       },
       {
         "name": "Strength & Resistance Training",
@@ -5470,28 +5516,29 @@
           {
             "name": "Dumbbells & Kettlebells",
             "images": [
-              "https://loremflickr.com/500/500/Dumbbells%2CHEALTH?random=597"
+              "http://localhost:8000/health_images/dumbbells_and_kettlebells.jpg"
             ]
           },
           {
             "name": "Barbells & Weight Plates",
             "images": [
-              "https://loremflickr.com/500/500/Barbells%2CHEALTH?random=202"
+              "http://localhost:8000/health_images/barbells_and_weight_plates.webp"
             ]
           },
           {
             "name": "Resistance Bands & Pull-Up Bars",
             "images": [
-              "https://loremflickr.com/500/500/Resistance%2CHEALTH?random=9"
+              "http://localhost:8000/health_images/resistance_bands_and_pull-up_bars.jpg"
             ]
           },
           {
             "name": "Benches & Racks",
             "images": [
-              "https://loremflickr.com/500/500/Benches%2CHEALTH?random=781"
+              "http://localhost:8000/health_images/benches_and_racks.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/strength_and_resistance_training.jpg"
       },
       {
         "name": "Yoga & Flexibility Equipment",
@@ -5499,22 +5546,23 @@
           {
             "name": "Yoga Mats & Blocks",
             "images": [
-              "https://loremflickr.com/500/500/Yoga%2CHEALTH?random=722"
+              "http://localhost:8000/health_images/yoga_mats_and_blocks.jpg"
             ]
           },
           {
             "name": "Bolsters, Straps & Wheels",
             "images": [
-              "https://loremflickr.com/500/500/Bolsters%2C%2CHEALTH?random=229"
+              "http://localhost:8000/health_images/bolsters,_straps_and_wheels.jpg"
             ]
           },
           {
             "name": "Foam Rollers & Balance Tools",
             "images": [
-              "https://loremflickr.com/500/500/Foam%2CHEALTH?random=844"
+              "http://localhost:8000/health_images/foam_rollers_and_balance_tools.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/yoga_and_flexibility_equipment.jpg"
       },
       {
         "name": "Recovery & Therapy Devices",
@@ -5522,34 +5570,35 @@
           {
             "name": "Massage Guns & Electric Massagers",
             "images": [
-              "https://loremflickr.com/500/500/Massage%2CHEALTH?random=200"
+              "http://localhost:8000/health_images/massage_guns_and_electric_massagers.jpg"
             ]
           },
           {
             "name": "Foam Rollers & Massage Balls",
             "images": [
-              "https://loremflickr.com/500/500/Foam%2CHEALTH?random=2"
+              "http://localhost:8000/health_images/foam_rollers_and_massage_balls.jpg"
             ]
           },
           {
             "name": "Hot & Cold Therapy Packs",
             "images": [
-              "https://loremflickr.com/500/500/Hot%2CHEALTH?random=784"
+              "http://localhost:8000/health_images/hot_and_cold_therapy_packs.jpg"
             ]
           },
           {
             "name": "Compression Gear & Boots",
             "images": [
-              "https://loremflickr.com/500/500/Compression%2CHEALTH?random=960"
+              "http://localhost:8000/health_images/compression_gear_and_boots.jpg"
             ]
           },
           {
             "name": "TENS/EMS Units",
             "images": [
-              "https://loremflickr.com/500/500/TENS/EMS%2CHEALTH?random=985"
+              "http://localhost:8000/health_images/recovery_and_therapy_devices.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/recovery_and_therapy_devices.webp"
       },
       {
         "name": "Wearables & Monitoring Devices",
@@ -5557,28 +5606,29 @@
           {
             "name": "Fitness Trackers & Smartwatches",
             "images": [
-              "https://loremflickr.com/500/500/Fitness%2CHEALTH?random=744"
+              "http://localhost:8000/health_images/fitness_trackers_and_smartwatches.jpg"
             ]
           },
           {
             "name": "Blood Pressure & Glucose Monitors",
             "images": [
-              "https://loremflickr.com/500/500/Blood%2CHEALTH?random=156"
+              "http://localhost:8000/health_images/blood_pressure_and_glucose_monitors.jpg"
             ]
           },
           {
             "name": "Pulse Oximeters & Thermometers",
             "images": [
-              "https://loremflickr.com/500/500/Pulse%2CHEALTH?random=852"
+              "http://localhost:8000/health_images/pulse_oximeters_and_thermometers.jpg"
             ]
           },
           {
             "name": "Smart Scales & Body Composition",
             "images": [
-              "https://loremflickr.com/500/500/Smart%2CHEALTH?random=152"
+              "http://localhost:8000/health_images/smart_scales_and_body_composition.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/wearables_and_monitoring_devices.jpg"
       },
       {
         "name": "Sleep Aids & Products",
@@ -5586,28 +5636,29 @@
           {
             "name": "Sleep Supplements (Melatonin, Magnesium)",
             "images": [
-              "https://loremflickr.com/500/500/Sleep%2CHEALTH?random=45"
+              "http://localhost:8000/health_images/sleep_supplements_(melatonin,_magnesium).png"
             ]
           },
           {
             "name": "Eye Masks & Earplugs",
             "images": [
-              "https://loremflickr.com/500/500/Eye%2CHEALTH?random=574"
+              "http://localhost:8000/health_images/eye_masks_and_earplugs.jpg"
             ]
           },
           {
             "name": "White Noise & Sunrise Alarms",
             "images": [
-              "https://loremflickr.com/500/500/White%2CHEALTH?random=967"
+              "http://localhost:8000/health_images/white_noise_and_sunrise_alarms.jpg"
             ]
           },
           {
             "name": "Sleep Trackers & Pillows",
             "images": [
-              "https://loremflickr.com/500/500/Sleep%2CHEALTH?random=187"
+              "http://localhost:8000/health_images/sleep_trackers_and_pillows.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/sleep_aids_and_products.jpg"
       },
       {
         "name": "Mental Wellness & Stress Relief",
@@ -5615,28 +5666,29 @@
           {
             "name": "Mood & Anxiety Supplements",
             "images": [
-              "https://loremflickr.com/500/500/Mood%2CHEALTH?random=151"
+              "http://localhost:8000/health_images/mood_and_anxiety_supplements.png"
             ]
           },
           {
             "name": "Adaptogen Blends",
             "images": [
-              "https://loremflickr.com/500/500/Adaptogen%2CHEALTH?random=230"
+              "http://localhost:8000/health_images/adaptogen_blends.jpg"
             ]
           },
           {
             "name": "Aromatherapy Diffusers & Essential Oils",
             "images": [
-              "https://loremflickr.com/500/500/Aromatherapy%2CHEALTH?random=166"
+              "http://localhost:8000/health_images/aromatherapy_diffusers_and_essential_oils.jpg"
             ]
           },
           {
             "name": "Meditation Cushions & Acupressure Mats",
             "images": [
-              "https://loremflickr.com/500/500/Meditation%2CHEALTH?random=277"
+              "http://localhost:8000/health_images/meditation_cushions_and_acupressure_mats.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/mental_wellness_and_stress_relief.jpg"
       },
       {
         "name": "Home Health & Diagnostic",
@@ -5644,28 +5696,29 @@
           {
             "name": "Air Purifiers & Humidifiers",
             "images": [
-              "https://loremflickr.com/500/500/Air%2CHEALTH?random=284"
+              "http://localhost:8000/health_images/air_purifiers_and_humidifiers.jpg"
             ]
           },
           {
             "name": "Nebulizers & Nasal Care",
             "images": [
-              "https://loremflickr.com/500/500/Nebulizers%2CHEALTH?random=547"
+              "http://localhost:8000/health_images/nebulizers_and_nasal_care.jpg"
             ]
           },
           {
             "name": "First Aid Kits & Wound Care",
             "images": [
-              "https://loremflickr.com/500/500/First%2CHEALTH?random=311"
+              "http://localhost:8000/health_images/first_aid_kits_and_wound_care.jpg"
             ]
           },
           {
             "name": "Braces, Supports & Mobility Aids",
             "images": [
-              "https://loremflickr.com/500/500/Braces%2C%2CHEALTH?random=862"
+              "http://localhost:8000/health_images/braces,_supports_and_mobility_aids.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/home_health_and_diagnostic.jpg"
       },
       {
         "name": "Personal Care & Wellness Devices",
@@ -5673,30 +5726,32 @@
           {
             "name": "Oral Health (Electric Toothbrushes, Water Flossers)",
             "images": [
-              "https://loremflickr.com/500/500/Oral%2CHEALTH?random=99"
+              "http://localhost:8000/health_images/oral_health_(electric_toothbrushes,_water_flossers).jpg"
             ]
           },
           {
             "name": "Facial & Skin Devices (LED Masks, Steamers)",
             "images": [
-              "https://loremflickr.com/500/500/Facial%2CHEALTH?random=645"
+              "http://localhost:8000/health_images/facial_and_skin_devices_(led_masks,_steamers).jpg"
             ]
           },
           {
             "name": "Hair & Scalp Massagers",
             "images": [
-              "https://loremflickr.com/500/500/Hair%2CHEALTH?random=166"
+              "http://localhost:8000/health_images/hair_and_scalp_massagers.jpg"
             ]
           },
           {
             "name": "Foot & Eye Massagers",
             "images": [
-              "https://loremflickr.com/500/500/Foot%2CHEALTH?random=659"
+              "http://localhost:8000/health_images/foot_and_eye_massagers.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/health_images/personal_care_and_wellness_devices.png"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/health_images/health_and_wellness.png"
   },
   {
     "name": "VEGETABLES",
@@ -5707,46 +5762,47 @@
           {
             "name": "Spinach",
             "images": [
-              "https://loremflickr.com/500/500/Spinach%2CVEGETABLES?random=78"
+              "http://localhost:8000/vegitable_images/spinach.jpg"
             ]
           },
           {
             "name": "Lettuce (Romaine, Leaf, Butterhead, Iceberg)",
             "images": [
-              "https://loremflickr.com/500/500/Lettuce%2CVEGETABLES?random=508"
+              "http://localhost:8000/vegitable_images/lettuce_(romaine,_leaf,_butterhead,_iceberg).jpg"
             ]
           },
           {
             "name": "Kale & Collard Greens",
             "images": [
-              "https://loremflickr.com/500/500/Kale%2CVEGETABLES?random=54"
+              "http://localhost:8000/vegitable_images/kale_and_collard_greens.jpg"
             ]
           },
           {
             "name": "Swiss Chard",
             "images": [
-              "https://loremflickr.com/500/500/Swiss%2CVEGETABLES?random=497"
+              "http://localhost:8000/vegitable_images/swiss_chard.jpg"
             ]
           },
           {
             "name": "Coriander / Cilantro",
             "images": [
-              "https://loremflickr.com/500/500/Coriander%2CVEGETABLES?random=209"
+              "http://localhost:8000/vegitable_images/leafy_and_green_vegetables.jpg"
             ]
           },
           {
             "name": "Rocket / Arugula",
             "images": [
-              "https://loremflickr.com/500/500/Rocket%2CVEGETABLES?random=915"
+              "http://localhost:8000/vegitable_images/leafy_and_green_vegetables.jpg"
             ]
           },
           {
             "name": "Microgreens & Sprouts",
             "images": [
-              "https://loremflickr.com/500/500/Microgreens%2CVEGETABLES?random=802"
+              "http://localhost:8000/vegitable_images/microgreens_and_sprouts.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/leafy_and_green_vegetables.jpg"
       },
       {
         "name": "Root & Tuber Vegetables",
@@ -5754,46 +5810,47 @@
           {
             "name": "Carrot",
             "images": [
-              "https://loremflickr.com/500/500/Carrot%2CVEGETABLES?random=655"
+              "http://localhost:8000/vegitable_images/carrot.jpg"
             ]
           },
           {
             "name": "Beetroot",
             "images": [
-              "https://loremflickr.com/500/500/Beetroot%2CVEGETABLES?random=437"
+              "http://localhost:8000/vegitable_images/beetroot.jpg"
             ]
           },
           {
             "name": "Radish",
             "images": [
-              "https://loremflickr.com/500/500/Radish%2CVEGETABLES?random=620"
+              "http://localhost:8000/vegitable_images/radish.jpg"
             ]
           },
           {
             "name": "Turnip",
             "images": [
-              "https://loremflickr.com/500/500/Turnip%2CVEGETABLES?random=636"
+              "http://localhost:8000/vegitable_images/turnip.jpg"
             ]
           },
           {
             "name": "Sweet Potato",
             "images": [
-              "https://loremflickr.com/500/500/Sweet%2CVEGETABLES?random=322"
+              "http://localhost:8000/vegitable_images/sweet_potato.jpg"
             ]
           },
           {
             "name": "Potato (Russet, Red, Yellow)",
             "images": [
-              "https://loremflickr.com/500/500/Potato%2CVEGETABLES?random=50"
+              "http://localhost:8000/vegitable_images/potato_(russet,_red,_yellow).jpg"
             ]
           },
           {
             "name": "Yam",
             "images": [
-              "https://loremflickr.com/500/500/Yam%2CVEGETABLES?random=160"
+              "http://localhost:8000/vegitable_images/yam.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/root_and_tuber_vegetables.jpg"
       },
       {
         "name": "Cruciferous & Brassica Vegetables",
@@ -5801,34 +5858,35 @@
           {
             "name": "Cabbage (Green, Red, Savoy)",
             "images": [
-              "https://loremflickr.com/500/500/Cabbage%2CVEGETABLES?random=3"
+              "http://localhost:8000/vegitable_images/cabbage_(green,_red,_savoy).jpg"
             ]
           },
           {
             "name": "Cauliflower",
             "images": [
-              "https://loremflickr.com/500/500/Cauliflower%2CVEGETABLES?random=989"
+              "http://localhost:8000/vegitable_images/cauliflower.jpg"
             ]
           },
           {
             "name": "Broccoli",
             "images": [
-              "https://loremflickr.com/500/500/Broccoli%2CVEGETABLES?random=818"
+              "http://localhost:8000/vegitable_images/broccoli.jpg"
             ]
           },
           {
             "name": "Brussels Sprouts",
             "images": [
-              "https://loremflickr.com/500/500/Brussels%2CVEGETABLES?random=651"
+              "http://localhost:8000/vegitable_images/brussels_sprouts.jpg"
             ]
           },
           {
             "name": "Kohlrabi",
             "images": [
-              "https://loremflickr.com/500/500/Kohlrabi%2CVEGETABLES?random=167"
+              "http://localhost:8000/vegitable_images/kohlrabi.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/cruciferous_and_brassica_vegetables.jpg"
       },
       {
         "name": "Fruit Vegetables",
@@ -5836,52 +5894,53 @@
           {
             "name": "Tomato (Field & Greenhouse)",
             "images": [
-              "https://loremflickr.com/500/500/Tomato%2CVEGETABLES?random=518"
+              "http://localhost:8000/vegitable_images/tomato_(field_and_greenhouse).jpg"
             ]
           },
           {
             "name": "Cucumber",
             "images": [
-              "https://loremflickr.com/500/500/Cucumber%2CVEGETABLES?random=992"
+              "http://localhost:8000/vegitable_images/cucumber.jpg"
             ]
           },
           {
             "name": "Eggplant / Aubergine",
             "images": [
-              "https://loremflickr.com/500/500/Eggplant%2CVEGETABLES?random=194"
+              "http://localhost:8000/vegitable_images/fruit_vegetables.jpg"
             ]
           },
           {
             "name": "Bell Pepper / Capsicum",
             "images": [
-              "https://loremflickr.com/500/500/Bell%2CVEGETABLES?random=141"
+              "http://localhost:8000/vegitable_images/chilli_peppers.jpg"
             ]
           },
           {
             "name": "Chilli Peppers",
             "images": [
-              "https://loremflickr.com/500/500/Chilli%2CVEGETABLES?random=771"
+              "http://localhost:8000/vegitable_images/chilli_peppers.jpg"
             ]
           },
           {
             "name": "Zucchini / Courgette",
             "images": [
-              "https://loremflickr.com/500/500/Zucchini%2CVEGETABLES?random=796"
+              "http://localhost:8000/vegitable_images/fruit_vegetables.jpg"
             ]
           },
           {
             "name": "Okra / Lady's Finger",
             "images": [
-              "https://loremflickr.com/500/500/Okra%2CVEGETABLES?random=892"
+              "http://localhost:8000/vegitable_images/fruit_vegetables.jpg"
             ]
           },
           {
             "name": "Pumpkin & Squash",
             "images": [
-              "https://loremflickr.com/500/500/Pumpkin%2CVEGETABLES?random=496"
+              "http://localhost:8000/vegitable_images/pumpkin_and_squash.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/fruit_vegetables.jpg"
       },
       {
         "name": "Bulb & Allium Vegetables",
@@ -5889,34 +5948,35 @@
           {
             "name": "Onion (White, Red, Yellow)",
             "images": [
-              "https://loremflickr.com/500/500/Onion%2CVEGETABLES?random=392"
+              "http://localhost:8000/vegitable_images/onion_(white,_red,_yellow).jpg"
             ]
           },
           {
             "name": "Garlic",
             "images": [
-              "https://loremflickr.com/500/500/Garlic%2CVEGETABLES?random=818"
+              "http://localhost:8000/vegitable_images/garlic.jpg"
             ]
           },
           {
             "name": "Leek",
             "images": [
-              "https://loremflickr.com/500/500/Leek%2CVEGETABLES?random=234"
+              "http://localhost:8000/vegitable_images/leek.jpg"
             ]
           },
           {
             "name": "Shallot",
             "images": [
-              "https://loremflickr.com/500/500/Shallot%2CVEGETABLES?random=875"
+              "http://localhost:8000/vegitable_images/shallot.jpg"
             ]
           },
           {
             "name": "Spring Onion / Scallion",
             "images": [
-              "https://loremflickr.com/500/500/Spring%2CVEGETABLES?random=81"
+              "http://localhost:8000/vegitable_images/bulb_and_allium_vegetables.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/bulb_and_allium_vegetables.jpg"
       },
       {
         "name": "Legumes & Pods",
@@ -5924,28 +5984,29 @@
           {
             "name": "Green Beans / French Beans",
             "images": [
-              "https://loremflickr.com/500/500/Green%2CVEGETABLES?random=687"
+              "http://localhost:8000/vegitable_images/legumes_and_pods.jpg"
             ]
           },
           {
             "name": "Peas (Garden & Snow Peas)",
             "images": [
-              "https://loremflickr.com/500/500/Peas%2CVEGETABLES?random=330"
+              "http://localhost:8000/vegitable_images/peas_(garden_and_snow_peas).jpg"
             ]
           },
           {
             "name": "Broad Beans / Fava Beans",
             "images": [
-              "https://loremflickr.com/500/500/Broad%2CVEGETABLES?random=748"
+              "http://localhost:8000/vegitable_images/legumes_and_pods.jpg"
             ]
           },
           {
             "name": "Edamame",
             "images": [
-              "https://loremflickr.com/500/500/Edamame%2CVEGETABLES?random=515"
+              "http://localhost:8000/vegitable_images/edamame.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/legumes_and_pods.jpg"
       },
       {
         "name": "Specialty & Exotic Vegetables",
@@ -5953,58 +6014,59 @@
           {
             "name": "Asparagus",
             "images": [
-              "https://loremflickr.com/500/500/Asparagus%2CVEGETABLES?random=636"
+              "http://localhost:8000/vegitable_images/asparagus.jpg"
             ]
           },
           {
             "name": "Artichoke",
             "images": [
-              "https://loremflickr.com/500/500/Artichoke%2CVEGETABLES?random=978"
+              "http://localhost:8000/vegitable_images/artichoke.png"
             ]
           },
           {
             "name": "Bitter Gourd / Bitter Melon",
             "images": [
-              "https://loremflickr.com/500/500/Bitter%2CVEGETABLES?random=401"
+              "http://localhost:8000/vegitable_images/specialty_and_exotic_vegetables.jpg"
             ]
           },
           {
             "name": "Baby Corn",
             "images": [
-              "https://loremflickr.com/500/500/Baby%2CVEGETABLES?random=162"
+              "http://localhost:8000/vegitable_images/baby_corn.png"
             ]
           },
           {
             "name": "Fennel",
             "images": [
-              "https://loremflickr.com/500/500/Fennel%2CVEGETABLES?random=683"
+              "http://localhost:8000/vegitable_images/fennel.jpg"
             ]
           },
           {
             "name": "Celery",
             "images": [
-              "https://loremflickr.com/500/500/Celery%2CVEGETABLES?random=583"
+              "http://localhost:8000/vegitable_images/celery.jpg"
             ]
           },
           {
             "name": "Water Chestnut",
             "images": [
-              "https://loremflickr.com/500/500/Water%2CVEGETABLES?random=317"
+              "http://localhost:8000/vegitable_images/water_chestnut.jpg"
             ]
           },
           {
             "name": "Lotus Root",
             "images": [
-              "https://loremflickr.com/500/500/Lotus%2CVEGETABLES?random=801"
+              "http://localhost:8000/vegitable_images/lotus_root.jpg"
             ]
           },
           {
             "name": "Taro",
             "images": [
-              "https://loremflickr.com/500/500/Taro%2CVEGETABLES?random=650"
+              "http://localhost:8000/vegitable_images/taro.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/specialty_and_exotic_vegetables.jpg"
       },
       {
         "name": "Mushrooms & Fungi",
@@ -6012,40 +6074,41 @@
           {
             "name": "Button / White Mushrooms",
             "images": [
-              "https://loremflickr.com/500/500/Button%2CVEGETABLES?random=947"
+              "http://localhost:8000/vegitable_images/mushrooms_and_fungi.jpg"
             ]
           },
           {
             "name": "Portobello & Cremini",
             "images": [
-              "https://loremflickr.com/500/500/Portobello%2CVEGETABLES?random=333"
+              "http://localhost:8000/vegitable_images/portobello_and_cremini.png"
             ]
           },
           {
             "name": "Shiitake",
             "images": [
-              "https://loremflickr.com/500/500/Shiitake%2CVEGETABLES?random=398"
+              "http://localhost:8000/vegitable_images/shiitake.jpg"
             ]
           },
           {
             "name": "Oyster Mushrooms",
             "images": [
-              "https://loremflickr.com/500/500/Oyster%2CVEGETABLES?random=492"
+              "http://localhost:8000/vegitable_images/oyster_mushrooms.jpg"
             ]
           },
           {
             "name": "Specialty Mushrooms (Enoki, Maitake, Lion's Mane)",
             "images": [
-              "https://loremflickr.com/500/500/Specialty%2CVEGETABLES?random=395"
+              "http://localhost:8000/vegitable_images/specialty_mushrooms_(enoki,_maitake,_lions_mane).png"
             ]
           },
           {
             "name": "Dried Mushrooms",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CVEGETABLES?random=152"
+              "http://localhost:8000/vegitable_images/dried_mushrooms.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/mushrooms_and_fungi.jpg"
       },
       {
         "name": "Frozen Vegetables",
@@ -6053,34 +6116,35 @@
           {
             "name": "IQF (Individually Quick Frozen) Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/IQF%2CVEGETABLES?random=734"
+              "http://localhost:8000/vegitable_images/iqf_(individually_quick_frozen)_vegetables.png"
             ]
           },
           {
             "name": "Frozen Vegetable Mixes",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CVEGETABLES?random=154"
+              "http://localhost:8000/vegitable_images/frozen_vegetable_mixes.jpg"
             ]
           },
           {
             "name": "Blanched Frozen Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Blanched%2CVEGETABLES?random=227"
+              "http://localhost:8000/vegitable_images/blanched_frozen_vegetables.webp"
             ]
           },
           {
             "name": "Frozen Leafy Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CVEGETABLES?random=990"
+              "http://localhost:8000/vegitable_images/frozen_leafy_vegetables.jpg"
             ]
           },
           {
             "name": "Frozen Peas & Corn",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CVEGETABLES?random=990"
+              "http://localhost:8000/vegitable_images/frozen_peas_and_corn.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/frozen_vegetables.jpg"
       },
       {
         "name": "Dehydrated & Dried Vegetables",
@@ -6088,34 +6152,35 @@
           {
             "name": "Air-Dried Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Air-Dried%2CVEGETABLES?random=775"
+              "http://localhost:8000/vegitable_images/air-dried_vegetables.jpg"
             ]
           },
           {
             "name": "Freeze-Dried Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Freeze-Dried%2CVEGETABLES?random=193"
+              "http://localhost:8000/vegitable_images/freeze-dried_vegetables.png"
             ]
           },
           {
             "name": "Sun-Dried Tomatoes & Peppers",
             "images": [
-              "https://loremflickr.com/500/500/Sun-Dried%2CVEGETABLES?random=329"
+              "http://localhost:8000/vegitable_images/sun-dried_tomatoes_and_peppers.jpg"
             ]
           },
           {
             "name": "Vegetable Flakes (Onion, Garlic, Carrot)",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=907"
+              "http://localhost:8000/vegitable_images/vegetable_flakes_(onion,_garlic,_carrot).jpg"
             ]
           },
           {
             "name": "Dried Mushrooms & Fungi",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CVEGETABLES?random=852"
+              "http://localhost:8000/vegitable_images/dried_mushrooms_and_fungi.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/dehydrated_and_dried_vegetables.png"
       },
       {
         "name": "Canned & Preserved Vegetables",
@@ -6123,34 +6188,35 @@
           {
             "name": "Canned in Brine (Tomatoes, Beans, Corn)",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CVEGETABLES?random=14"
+              "http://localhost:8000/vegitable_images/canned_in_brine_(tomatoes,_beans,_corn).jpg"
             ]
           },
           {
             "name": "Canned in Sauce",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CVEGETABLES?random=36"
+              "http://localhost:8000/vegitable_images/canned_in_sauce.jpg"
             ]
           },
           {
             "name": "Canned in Oil",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CVEGETABLES?random=290"
+              "http://localhost:8000/vegitable_images/canned_in_oil.jpg"
             ]
           },
           {
             "name": "Pickled Vegetables (Cucumbers, Peppers, Mixed)",
             "images": [
-              "https://loremflickr.com/500/500/Pickled%2CVEGETABLES?random=424"
+              "http://localhost:8000/vegitable_images/pickled_vegetables_(cucumbers,_peppers,_mixed).webp"
             ]
           },
           {
             "name": "Fermented Vegetables (Kimchi, Sauerkraut)",
             "images": [
-              "https://loremflickr.com/500/500/Fermented%2CVEGETABLES?random=382"
+              "http://localhost:8000/vegitable_images/fermented_vegetables_(kimchi,_sauerkraut).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/canned_and_preserved_vegetables.jpg"
       },
       {
         "name": "Pre-Cut & Ready-to-Cook Vegetables",
@@ -6158,28 +6224,29 @@
           {
             "name": "Pre-Cut Salad Mixes",
             "images": [
-              "https://loremflickr.com/500/500/Pre-Cut%2CVEGETABLES?random=452"
+              "http://localhost:8000/vegitable_images/pre-cut_salad_mixes.jpg"
             ]
           },
           {
             "name": "Stir-Fry Vegetable Mixes",
             "images": [
-              "https://loremflickr.com/500/500/Stir-Fry%2CVEGETABLES?random=561"
+              "http://localhost:8000/vegitable_images/stir-fry_vegetable_mixes.jpg"
             ]
           },
           {
             "name": "Sliced & Peeled Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Sliced%2CVEGETABLES?random=857"
+              "http://localhost:8000/vegitable_images/sliced_and_peeled_vegetables.jpg"
             ]
           },
           {
             "name": "Washed & Packaged Ready-to-Cook Vegetables",
             "images": [
-              "https://loremflickr.com/500/500/Washed%2CVEGETABLES?random=845"
+              "http://localhost:8000/vegitable_images/washed_and_packaged_ready-to-cook_vegetables.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/pre-cut_and_ready-to-cook_vegetables.jpg"
       },
       {
         "name": "Vegetable Powders & Concentrates",
@@ -6187,28 +6254,29 @@
           {
             "name": "Vegetable Powders (Beet, Carrot, Spinach, Tomato, Onion, Garlic)",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=545"
+              "http://localhost:8000/vegitable_images/vegetable_powders_(beet,_carrot,_spinach,_tomato,_onion,_garlic).jpg"
             ]
           },
           {
             "name": "Tomato Paste & Puree",
             "images": [
-              "https://loremflickr.com/500/500/Tomato%2CVEGETABLES?random=183"
+              "http://localhost:8000/vegitable_images/tomato_paste_and_puree.jpg"
             ]
           },
           {
             "name": "Vegetable Juice Concentrates",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=453"
+              "http://localhost:8000/vegitable_images/vegetable_powders_and_concentrates.jpg"
             ]
           },
           {
             "name": "Garlic & Onion Paste",
             "images": [
-              "https://loremflickr.com/500/500/Garlic%2CVEGETABLES?random=225"
+              "http://localhost:8000/vegitable_images/garlic_and_onion_paste.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/vegetable_powders_and_concentrates.jpg"
       },
       {
         "name": "Vegetable By-Products & Extracts",
@@ -6216,36 +6284,38 @@
           {
             "name": "Vegetable Fibre & Pomace",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=45"
+              "http://localhost:8000/vegitable_images/vegetable_fibre_and_pomace.jpg"
             ]
           },
           {
             "name": "Vegetable Starch (Potato, Corn)",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=738"
+              "http://localhost:8000/vegitable_images/vegetable_starch_(potato,_corn).jpg"
             ]
           },
           {
             "name": "Natural Food Colorants (Beet Red, Spinach Green, Turmeric)",
             "images": [
-              "https://loremflickr.com/500/500/Natural%2CVEGETABLES?random=413"
+              "http://localhost:8000/vegitable_images/natural_food_colorants_(beet_red,_spinach_green,_turmeric).jpg"
             ]
           },
           {
             "name": "Vegetable Extracts & Flavours",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=362"
+              "http://localhost:8000/vegitable_images/vegetable_extracts_and_flavours.jpg"
             ]
           },
           {
             "name": "Vegetable Oils (Extracted from seeds & produce)",
             "images": [
-              "https://loremflickr.com/500/500/Vegetable%2CVEGETABLES?random=240"
+              "http://localhost:8000/vegitable_images/vegetable_oils_(extracted_from_seeds_and_produce).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/vegitable_images/vegetable_by-products_and_extracts.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/vegitable_images/vegetables.png"
   },
   {
     "name": "ORGANIC BEAUTY ESSENTIALS",
