@@ -6326,22 +6326,23 @@
           {
             "name": "Foundations & Tinted Moisturisers (Liquid, Serum, BB/CC Creams, Mineral Powder, Pressed, Stick)",
             "images": [
-              "https://loremflickr.com/500/500/Foundations%2CORGANIC?random=306"
+              "http://localhost:8000/organic_images/face_makeup.webp"
             ]
           },
           {
             "name": "Concealer & Colour Corrector",
             "images": [
-              "https://loremflickr.com/500/500/Concealer%2CORGANIC?random=311"
+              "http://localhost:8000/organic_images/concealer_and_colour_corrector.png"
             ]
           },
           {
             "name": "Primers & Setting Products (Primers, Setting Powders, Setting Sprays)",
             "images": [
-              "https://loremflickr.com/500/500/Primers%2CORGANIC?random=697"
+              "http://localhost:8000/organic_images/primers_and_setting_products_(primers,_setting_powders,_setting_sprays).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/organic_images/face_makeup.webp"
       },
       {
         "name": "LIP MAKEUP",
@@ -6349,22 +6350,23 @@
           {
             "name": "Lipsticks (Satin, Matte, Sheer, Crayons)",
             "images": [
-              "https://loremflickr.com/500/500/Lipsticks%2CORGANIC?random=793"
+              "http://localhost:8000/organic_images/lipsticks_(satin,_matte,_sheer,_crayons).jpg"
             ]
           },
           {
             "name": "Lip Gloss & Lip Oils",
             "images": [
-              "https://loremflickr.com/500/500/Lip%2CORGANIC?random=939"
+              "http://localhost:8000/organic_images/lip_gloss_and_lip_oils.jpg"
             ]
           },
           {
             "name": "Lip Liners",
             "images": [
-              "https://loremflickr.com/500/500/Lip%2CORGANIC?random=224"
+              "http://localhost:8000/organic_images/lip_liners.png"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/organic_images/lip_makeup.jpg"
       },
       {
         "name": "EYE MAKEUP",
@@ -6372,34 +6374,35 @@
           {
             "name": "Mascara (Lengthening, Volumising, Tubing, Waterproof)",
             "images": [
-              "https://loremflickr.com/500/500/Mascara%2CORGANIC?random=885"
+              "http://localhost:8000/organic_images/mascara_(lengthening,_volumising,_tubing,_waterproof).jpg"
             ]
           },
           {
             "name": "Eyeliner (Pencils, Liquid, Gel, Kajal/Kohl)",
             "images": [
-              "https://loremflickr.com/500/500/Eyeliner%2CORGANIC?random=623"
+              "http://localhost:8000/organic_images/eye_makeup.jpg"
             ]
           },
           {
             "name": "Eyeshadow (Palettes, Singles, Loose Mineral, Cream, Matte/Shimmer)",
             "images": [
-              "https://loremflickr.com/500/500/Eyeshadow%2CORGANIC?random=552"
+              "http://localhost:8000/organic_images/eye_makeup.jpg"
             ]
           },
           {
             "name": "Brow Products (Pencils, Gels, Pomades, Powders, Serums)",
             "images": [
-              "https://loremflickr.com/500/500/Brow%2CORGANIC?random=916"
+              "http://localhost:8000/organic_images/brow_products_(pencils,_gels,_pomades,_powders,_serums).jpg"
             ]
           },
           {
             "name": "False Lashes & Accessories",
             "images": [
-              "https://loremflickr.com/500/500/False%2CORGANIC?random=116"
+              "http://localhost:8000/organic_images/false_lashes_and_accessories.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/organic_images/eye_makeup.jpg"
       },
       {
         "name": "CHEEK MAKEUP",
@@ -6407,22 +6410,23 @@
           {
             "name": "Blush (Powder, Cream, Liquid, Multi-Use)",
             "images": [
-              "https://loremflickr.com/500/500/Blush%2CORGANIC?random=944"
+              "http://localhost:8000/organic_images/blush_(powder,_cream,_liquid,_multi-use).jpg"
             ]
           },
           {
             "name": "Bronzer & Contour (Powder, Cream, Liquid, Palettes)",
             "images": [
-              "https://loremflickr.com/500/500/Bronzer%2CORGANIC?random=811"
+              "http://localhost:8000/organic_images/bronzer_and_contour_(powder,_cream,_liquid,_palettes).png"
             ]
           },
           {
             "name": "Highlighters (Pressed, Liquid, Sticks, Glow Drops)",
             "images": [
-              "https://loremflickr.com/500/500/Highlighters%2CORGANIC?random=301"
+              "http://localhost:8000/organic_images/highlighters_(pressed,_liquid,_sticks,_glow_drops).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/organic_images/cheek_makeup.jpg"
       },
       {
         "name": "NAIL CARE & POLISH",
@@ -6430,24 +6434,26 @@
           {
             "name": "Nail Polish (Non-Toxic, Water-Based, Full Shades)",
             "images": [
-              "https://loremflickr.com/500/500/Nail%2CORGANIC?random=375"
+              "http://localhost:8000/organic_images/nail_polish_(non-toxic,_water-based,_full_shades).webp"
             ]
           },
           {
             "name": "Nail Treatments (Base/Top Coats, Strengtheners)",
             "images": [
-              "https://loremflickr.com/500/500/Nail%2CORGANIC?random=291"
+              "http://localhost:8000/organic_images/nail_care_and_polish.jpg"
             ]
           },
           {
             "name": "Cuticle Oils & Hand Care",
             "images": [
-              "https://loremflickr.com/500/500/Cuticle%2CORGANIC?random=521"
+              "http://localhost:8000/organic_images/cuticle_oils_and_hand_care.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/organic_images/nail_care_and_polish.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/organic_images/organic_beauty_essentials.jpg"
   },
   {
     "name": "SEAFOODS",
@@ -6458,28 +6464,29 @@
           {
             "name": "Shrimp & Prawns (Vannamei, Black Tiger, Freshwater, Spot, Pink, Brown)",
             "images": [
-              "https://loremflickr.com/500/500/Shrimp%2CSEAFOODS?random=731"
+              "http://localhost:8000/seafood_images/shrimp_and_prawns_(vannamei,_black_tiger,_freshwater,_spot,_pink,_brown).jpg"
             ]
           },
           {
             "name": "Crab (Mud, Blue, King, Snow, Dungeness, Stone)",
             "images": [
-              "https://loremflickr.com/500/500/Crab%2CSEAFOODS?random=985"
+              "http://localhost:8000/seafood_images/crab_(mud,_blue,_king,_snow,_dungeness,_stone).jpg"
             ]
           },
           {
             "name": "Lobster (American/Maine, Spiny/Rock, Slipper)",
             "images": [
-              "https://loremflickr.com/500/500/Lobster%2CSEAFOODS?random=631"
+              "http://localhost:8000/seafood_images/crustaceans.jpg"
             ]
           },
           {
             "name": "Krill & Crayfish",
             "images": [
-              "https://loremflickr.com/500/500/Krill%2CSEAFOODS?random=105"
+              "http://localhost:8000/seafood_images/krill_and_crayfish.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/crustaceans.jpg"
       },
       {
         "name": "Saltwater Fish",
@@ -6487,52 +6494,53 @@
           {
             "name": "Tuna (Yellowfin, Skipjack, Albacore, Bigeye, Bluefin)",
             "images": [
-              "https://loremflickr.com/500/500/Tuna%2CSEAFOODS?random=923"
+              "http://localhost:8000/seafood_images/tuna_(yellowfin,_skipjack,_albacore,_bigeye,_bluefin).jpg"
             ]
           },
           {
             "name": "Salmon (Atlantic, Sockeye, Coho, Chinook, Pink, Chum)",
             "images": [
-              "https://loremflickr.com/500/500/Salmon%2CSEAFOODS?random=414"
+              "http://localhost:8000/seafood_images/salmon_(atlantic,_sockeye,_coho,_chinook,_pink,_chum).jpg"
             ]
           },
           {
             "name": "Mackerel (Atlantic, Pacific, Spanish, Horse)",
             "images": [
-              "https://loremflickr.com/500/500/Mackerel%2CSEAFOODS?random=564"
+              "http://localhost:8000/seafood_images/mackerel_(atlantic,_pacific,_spanish,_horse).jpg"
             ]
           },
           {
             "name": "Sardines, Anchovies & Herring",
             "images": [
-              "https://loremflickr.com/500/500/Sardines%2C%2CSEAFOODS?random=90"
+              "http://localhost:8000/seafood_images/sardines,_anchovies_and_herring.jpg"
             ]
           },
           {
             "name": "Flatfish (Flounder, Sole, Plaice, Turbot, Halibut)",
             "images": [
-              "https://loremflickr.com/500/500/Flatfish%2CSEAFOODS?random=420"
+              "http://localhost:8000/seafood_images/flatfish_(flounder,_sole,_plaice,_turbot,_halibut).jpg"
             ]
           },
           {
             "name": "Premium White Fish (Sea Bass, Grouper, Snapper, Barramundi, Sablefish)",
             "images": [
-              "https://loremflickr.com/500/500/Premium%2CSEAFOODS?random=551"
+              "http://localhost:8000/seafood_images/premium_white_fish_(sea_bass,_grouper,_snapper,_barramundi,_sablefish).jpg"
             ]
           },
           {
             "name": "Cod, Haddock & Pollock",
             "images": [
-              "https://loremflickr.com/500/500/Cod%2C%2CSEAFOODS?random=348"
+              "http://localhost:8000/seafood_images/cod,_haddock_and_pollock.jpg"
             ]
           },
           {
             "name": "Other Marine Fish (Mahi-Mahi, Swordfish, Monkfish, Pomfret, John Dory)",
             "images": [
-              "https://loremflickr.com/500/500/Other%2CSEAFOODS?random=828"
+              "http://localhost:8000/seafood_images/other_marine_fish_(mahi-mahi,_swordfish,_monkfish,_pomfret,_john_dory).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/saltwater_fish.jpg"
       },
       {
         "name": "Freshwater Fish",
@@ -6540,40 +6548,41 @@
           {
             "name": "Tilapia",
             "images": [
-              "https://loremflickr.com/500/500/Tilapia%2CSEAFOODS?random=225"
+              "http://localhost:8000/seafood_images/tilapia.webp"
             ]
           },
           {
             "name": "Catfish & Pangasius (Basa)",
             "images": [
-              "https://loremflickr.com/500/500/Catfish%2CSEAFOODS?random=629"
+              "http://localhost:8000/seafood_images/catfish_and_pangasius_(basa).png"
             ]
           },
           {
             "name": "Carp (Common, Grass, Silver, Bighead)",
             "images": [
-              "https://loremflickr.com/500/500/Carp%2CSEAFOODS?random=172"
+              "http://localhost:8000/seafood_images/carp_(common,_grass,_silver,_bighead).jpg"
             ]
           },
           {
             "name": "Asian Freshwater Fish (Rohu, Katla, Hilsa, Snakehead)",
             "images": [
-              "https://loremflickr.com/500/500/Asian%2CSEAFOODS?random=761"
+              "http://localhost:8000/seafood_images/asian_freshwater_fish_(rohu,_katla,_hilsa,_snakehead).jpg"
             ]
           },
           {
             "name": "Freshwater Trout & Salmon",
             "images": [
-              "https://loremflickr.com/500/500/Freshwater%2CSEAFOODS?random=732"
+              "http://localhost:8000/seafood_images/freshwater_trout_and_salmon.jpg"
             ]
           },
           {
             "name": "Eel & Specialty Freshwater Fish",
             "images": [
-              "https://loremflickr.com/500/500/Eel%2CSEAFOODS?random=72"
+              "http://localhost:8000/seafood_images/eel_and_specialty_freshwater_fish.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/freshwater_fish.jpg"
       },
       {
         "name": "Mollusks & Cephalopods",
@@ -6581,58 +6590,59 @@
           {
             "name": "Squid (Whole, Tubes, Rings, Tentacles)",
             "images": [
-              "https://loremflickr.com/500/500/Squid%2CSEAFOODS?random=86"
+              "http://localhost:8000/seafood_images/squid_(whole,_tubes,_rings,_tentacles).jpg"
             ]
           },
           {
             "name": "Cuttlefish",
             "images": [
-              "https://loremflickr.com/500/500/Cuttlefish%2CSEAFOODS?random=940"
+              "http://localhost:8000/seafood_images/cuttlefish.jpg"
             ]
           },
           {
             "name": "Octopus",
             "images": [
-              "https://loremflickr.com/500/500/Octopus%2CSEAFOODS?random=598"
+              "http://localhost:8000/seafood_images/octopus.png"
             ]
           },
           {
             "name": "Oysters (Pacific, Eastern, Kumamoto)",
             "images": [
-              "https://loremflickr.com/500/500/Oysters%2CSEAFOODS?random=694"
+              "http://localhost:8000/seafood_images/oysters_(pacific,_eastern,_kumamoto).jpg"
             ]
           },
           {
             "name": "Mussels",
             "images": [
-              "https://loremflickr.com/500/500/Mussels%2CSEAFOODS?random=373"
+              "http://localhost:8000/seafood_images/mussels.jpg"
             ]
           },
           {
             "name": "Scallops",
             "images": [
-              "https://loremflickr.com/500/500/Scallops%2CSEAFOODS?random=318"
+              "http://localhost:8000/seafood_images/scallops.jpg"
             ]
           },
           {
             "name": "Clams & Cockles",
             "images": [
-              "https://loremflickr.com/500/500/Clams%2CSEAFOODS?random=309"
+              "http://localhost:8000/seafood_images/clams_and_cockles.jpg"
             ]
           },
           {
             "name": "Abalone",
             "images": [
-              "https://loremflickr.com/500/500/Abalone%2CSEAFOODS?random=609"
+              "http://localhost:8000/seafood_images/abalone.jpg"
             ]
           },
           {
             "name": "Conch & Whelk",
             "images": [
-              "https://loremflickr.com/500/500/Conch%2CSEAFOODS?random=113"
+              "http://localhost:8000/seafood_images/conch_and_whelk.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/mollusks_and_cephalopods.jpg"
       },
       {
         "name": "Caviar, Roe & Premium Products",
@@ -6640,40 +6650,41 @@
           {
             "name": "Sturgeon Caviar (Ossetra, Sevruga)",
             "images": [
-              "https://loremflickr.com/500/500/Sturgeon%2CSEAFOODS?random=113"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Salmon Roe (Ikura)",
             "images": [
-              "https://loremflickr.com/500/500/Salmon%2CSEAFOODS?random=438"
+              "http://localhost:8000/seafood_images/salmon_(atlantic,_sockeye,_coho,_chinook,_pink,_chum).jpg"
             ]
           },
           {
             "name": "Flying Fish Roe (Tobiko)",
             "images": [
-              "https://loremflickr.com/500/500/Flying%2CSEAFOODS?random=421"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Capelin Roe (Masago)",
             "images": [
-              "https://loremflickr.com/500/500/Capelin%2CSEAFOODS?random=778"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Sea Urchin Roe (Uni)",
             "images": [
-              "https://loremflickr.com/500/500/Sea%2CSEAFOODS?random=855"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Sea Cucumber",
             "images": [
-              "https://loremflickr.com/500/500/Sea%2CSEAFOODS?random=215"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Seaweed & Algae",
@@ -6681,22 +6692,23 @@
           {
             "name": "Edible Seaweed (Nori, Kombu, Wakame, Dulse)",
             "images": [
-              "https://loremflickr.com/500/500/Edible%2CSEAFOODS?random=529"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Sea Grapes",
             "images": [
-              "https://loremflickr.com/500/500/Sea%2CSEAFOODS?random=327"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Spirulina & Chlorella",
             "images": [
-              "https://loremflickr.com/500/500/Spirulina%2CSEAFOODS?random=338"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Frozen Seafood",
@@ -6704,46 +6716,47 @@
           {
             "name": "Whole Round",
             "images": [
-              "https://loremflickr.com/500/500/Whole%2CSEAFOODS?random=561"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Headed & Gutted (H&G)",
             "images": [
-              "https://loremflickr.com/500/500/Headed%2CSEAFOODS?random=258"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Fillets (Skin-On, Skinless, Boneless)",
             "images": [
-              "https://loremflickr.com/500/500/Fillets%2CSEAFOODS?random=608"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Steaks, Loins & Portions",
             "images": [
-              "https://loremflickr.com/500/500/Steaks%2C%2CSEAFOODS?random=241"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "IQF Shrimp & Fish",
             "images": [
-              "https://loremflickr.com/500/500/IQF%2CSEAFOODS?random=198"
+              "http://localhost:8000/seafood_images/shrimp_and_prawns_(vannamei,_black_tiger,_freshwater,_spot,_pink,_brown).jpg"
             ]
           },
           {
             "name": "Block Frozen",
             "images": [
-              "https://loremflickr.com/500/500/Block%2CSEAFOODS?random=24"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Frozen Crab & Lobster (Whole, Split, Clusters, Meat)",
             "images": [
-              "https://loremflickr.com/500/500/Frozen%2CSEAFOODS?random=409"
+              "http://localhost:8000/seafood_images/crab_(mud,_blue,_king,_snow,_dungeness,_stone).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Fresh & Chilled Seafood",
@@ -6751,34 +6764,35 @@
           {
             "name": "Whole Fish (Ice-Packed)",
             "images": [
-              "https://loremflickr.com/500/500/Whole%2CSEAFOODS?random=396"
+              "http://localhost:8000/seafood_images/freshwater_fish.jpg"
             ]
           },
           {
             "name": "Fillets (Skin-On, Skinless)",
             "images": [
-              "https://loremflickr.com/500/500/Fillets%2CSEAFOODS?random=699"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Steaks & Loins",
             "images": [
-              "https://loremflickr.com/500/500/Steaks%2CSEAFOODS?random=534"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Live Seafood (Lobster, Crab, Shellfish)",
             "images": [
-              "https://loremflickr.com/500/500/Live%2CSEAFOODS?random=334"
+              "http://localhost:8000/seafood_images/crustaceans.jpg"
             ]
           },
           {
             "name": "Sashimi-Grade Fish",
             "images": [
-              "https://loremflickr.com/500/500/Sashimi-Grade%2CSEAFOODS?random=239"
+              "http://localhost:8000/seafood_images/tuna_(yellowfin,_skipjack,_albacore,_bigeye,_bluefin).jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Canned & Preserved Seafood",
@@ -6786,40 +6800,41 @@
           {
             "name": "Canned Tuna (Oil, Water, Brine)",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CSEAFOODS?random=62"
+              "http://localhost:8000/seafood_images/tuna_(yellowfin,_skipjack,_albacore,_bigeye,_bluefin).jpg"
             ]
           },
           {
             "name": "Canned Salmon",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CSEAFOODS?random=769"
+              "http://localhost:8000/seafood_images/salmon_(atlantic,_sockeye,_coho,_chinook,_pink,_chum).jpg"
             ]
           },
           {
             "name": "Canned Sardines & Mackerel",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CSEAFOODS?random=334"
+              "http://localhost:8000/seafood_images/sardines,_anchovies_and_herring.jpg"
             ]
           },
           {
             "name": "Canned Crab, Oysters & Clams",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CSEAFOODS?random=628"
+              "http://localhost:8000/seafood_images/clams_and_cockles.jpg"
             ]
           },
           {
             "name": "Canned Anchovies",
             "images": [
-              "https://loremflickr.com/500/500/Canned%2CSEAFOODS?random=494"
+              "http://localhost:8000/seafood_images/sardines,_anchovies_and_herring.jpg"
             ]
           },
           {
             "name": "Pickled Herring & Fish Sauce",
             "images": [
-              "https://loremflickr.com/500/500/Pickled%2CSEAFOODS?random=563"
+              "http://localhost:8000/seafood_images/sardines,_anchovies_and_herring.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Value-Added & Ready-to-Cook",
@@ -6827,28 +6842,29 @@
           {
             "name": "Breaded & Battered (Fish Fillets, Fish Fingers, Shrimp, Squid Rings)",
             "images": [
-              "https://loremflickr.com/500/500/Breaded%2CSEAFOODS?random=741"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Marinated & Seasoned Seafood",
             "images": [
-              "https://loremflickr.com/500/500/Marinated%2CSEAFOODS?random=991"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Pre-Cut & Portioned (HORECA)",
             "images": [
-              "https://loremflickr.com/500/500/Pre-Cut%2CSEAFOODS?random=384"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Surimi & Imitation Products (Crab Sticks, Fish Balls, Fish Cakes)",
             "images": [
-              "https://loremflickr.com/500/500/Surimi%2CSEAFOODS?random=912"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Dried & Dehydrated Seafood",
@@ -6856,40 +6872,41 @@
           {
             "name": "Dried Anchovies & Shrimp",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CSEAFOODS?random=509"
+              "http://localhost:8000/seafood_images/sardines,_anchovies_and_herring.jpg"
             ]
           },
           {
             "name": "Dried & Salted Fish",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CSEAFOODS?random=732"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Dried Squid & Cuttlefish",
             "images": [
-              "https://loremflickr.com/500/500/Dried%2CSEAFOODS?random=300"
+              "http://localhost:8000/seafood_images/squid_(whole,_tubes,_rings,_tentacles).jpg"
             ]
           },
           {
             "name": "Smoked Fish (Salmon, Mackerel, Herring, Eel)",
             "images": [
-              "https://loremflickr.com/500/500/Smoked%2CSEAFOODS?random=565"
+              "http://localhost:8000/seafood_images/salmon_(atlantic,_sockeye,_coho,_chinook,_pink,_chum).jpg"
             ]
           },
           {
             "name": "Fish Jerky",
             "images": [
-              "https://loremflickr.com/500/500/Fish%2CSEAFOODS?random=551"
+              "http://localhost:8000/seafood_images/saltwater_fish.jpg"
             ]
           },
           {
             "name": "Fish Maw & Dried Scallops",
             "images": [
-              "https://loremflickr.com/500/500/Fish%2CSEAFOODS?random=369"
+              "http://localhost:8000/seafood_images/scallops.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Industrial & Processing Inputs",
@@ -6897,46 +6914,47 @@
           {
             "name": "Fish Meal & Fish Oil",
             "images": [
-              "https://loremflickr.com/500/500/Fish%2CSEAFOODS?random=704"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Omega-3 Concentrates (EPA/DHA)",
             "images": [
-              "https://loremflickr.com/500/500/Omega-3%2CSEAFOODS?random=191"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Fish Trimmings & Minced Fish",
             "images": [
-              "https://loremflickr.com/500/500/Fish%2CSEAFOODS?random=769"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Fish Skin, Scales & Bones (Collagen/Gelatin)",
             "images": [
-              "https://loremflickr.com/500/500/Fish%2CSEAFOODS?random=125"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Seafood By-Products (Pet Food Grade)",
             "images": [
-              "https://loremflickr.com/500/500/Seafood%2CSEAFOODS?random=400"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Chitosan & Glucosamine",
             "images": [
-              "https://loremflickr.com/500/500/Chitosan%2CSEAFOODS?random=373"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           },
           {
             "name": "Seafood Extracts & Stocks",
             "images": [
-              "https://loremflickr.com/500/500/Seafood%2CSEAFOODS?random=123"
+              "http://localhost:8000/seafood_images/seafoods.jpg"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       },
       {
         "name": "Regional Seafood Collections",
@@ -6944,54 +6962,56 @@
           {
             "name": "Bangladeshi Seafood (Hilsa, Rohu, Black Tiger Prawns, Mud Crab)",
             "images": [
-              "https://loremflickr.com/500/500/Bangladeshi%2CSEAFOODS?random=730"
+              "http://localhost:8000/seafood_images/asian_freshwater_fish_(rohu,_katla,_hilsa,_snakehead).jpg"
             ]
           },
           {
             "name": "Vietnamese Seafood (Pangasius, Tilapia, Freshwater Prawns)",
             "images": [
-              "https://loremflickr.com/500/500/Vietnamese%2CSEAFOODS?random=962"
+              "http://localhost:8000/seafood_images/catfish_and_pangasius_(basa).png"
             ]
           },
           {
             "name": "Indonesian Seafood (Tuna, Snapper, Grouper, Octopus)",
             "images": [
-              "https://loremflickr.com/500/500/Indonesian%2CSEAFOODS?random=422"
+              "http://localhost:8000/seafood_images/tuna_(yellowfin,_skipjack,_albacore,_bigeye,_bluefin).jpg"
             ]
           },
           {
             "name": "Norwegian Seafood (Salmon, Cod, Mackerel, King Crab)",
             "images": [
-              "https://loremflickr.com/500/500/Norwegian%2CSEAFOODS?random=21"
+              "http://localhost:8000/seafood_images/salmon_(atlantic,_sockeye,_coho,_chinook,_pink,_chum).jpg"
             ]
           },
           {
             "name": "Alaskan Seafood (Pollock, Sockeye Salmon, King & Snow Crab)",
             "images": [
-              "https://loremflickr.com/500/500/Alaskan%2CSEAFOODS?random=113"
+              "http://localhost:8000/seafood_images/crab_(mud,_blue,_king,_snow,_dungeness,_stone).jpg"
             ]
           },
           {
             "name": "Chilean Seafood (Sea Bass, Mussels, Abalone)",
             "images": [
-              "https://loremflickr.com/500/500/Chilean%2CSEAFOODS?random=337"
+              "http://localhost:8000/seafood_images/abalone.jpg"
             ]
           },
           {
             "name": "Thai Seafood (Vannamei Shrimp, Tuna, Squid)",
             "images": [
-              "https://loremflickr.com/500/500/Thai%2CSEAFOODS?random=71"
+              "http://localhost:8000/seafood_images/shrimp_and_prawns_(vannamei,_black_tiger,_freshwater,_spot,_pink,_brown).jpg"
             ]
           },
           {
             "name": "African Lake Fish (Nile Perch, Tilapia, Catfish)",
             "images": [
-              "https://loremflickr.com/500/500/African%2CSEAFOODS?random=691"
+              "http://localhost:8000/seafood_images/tilapia.webp"
             ]
           }
-        ]
+        ],
+        "image": "http://localhost:8000/seafood_images/seafoods.jpg"
       }
-    ]
+    ],
+    "image": "http://localhost:8000/seafood_images/seafoods.jpg"
   },
   {
     "name": "ECO-FRIENDLY COOKWARE & KITCHEN PRODUCTS",
