@@ -1,3 +1,4 @@
+from email.mime import image
 import json
 import os
 import random
@@ -43,6 +44,7 @@ class InitialDataImportSeeder:
                 main_category = Categories(
                     name=main_cat_data["name"],
                     slug=generate_slug(main_cat_data["name"]),
+                    image=main_cat_data["image"],
                     description=f"Explore our wide range of {main_cat_data['name']}",
                     is_active=True,
                     parent_id=None  # Top level
@@ -60,6 +62,7 @@ class InitialDataImportSeeder:
                     subcategory = Categories(
                         name=sub_cat_data["name"],
                         slug=slug,
+                        image=sub_cat_data["image"],
                         description=f"High quality {sub_cat_data['name']}",
                         is_active=True,
                         parent_id=main_category.id  # Link to Main Category

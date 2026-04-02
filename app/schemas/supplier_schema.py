@@ -68,6 +68,7 @@ class CreateSupplierSchema(BaseModel):
     company_site: Optional[str] = None
     company_phone_number: Optional[str] = None
     company_email: Optional[str] = None
+    is_accept_terms: bool
 
     @field_validator('name')
     @classmethod
@@ -116,6 +117,7 @@ class CreateSupplierSchema(BaseModel):
         company_site: Optional[str] = Form(None),
         company_phone_number: Optional[str] = Form(None),
         company_email: Optional[str] = Form(None),
+        is_accept_terms: bool = Form(...)
     ) -> "CreateSupplierSchema":
         try:
             return cls(
@@ -137,6 +139,7 @@ class CreateSupplierSchema(BaseModel):
                 company_site=company_site,
                 company_phone_number=company_phone_number,
                 company_email=company_email,
+                is_accept_terms=is_accept_terms
             )
         except ValidationError as e:
             raise HTTPException(

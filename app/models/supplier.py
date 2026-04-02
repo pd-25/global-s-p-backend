@@ -24,6 +24,7 @@ class Supplier(Base):
     supplier_type_id = Column(Integer, ForeignKey("supplier_types.id"), nullable=True)
     business_sector = Column(String(255), nullable=True)
     is_verified = Column(Boolean, default=False)
+    is_accept_terms = Column(Boolean, default=True)
     vat_number = Column(String(100), nullable=True)
     company_site = Column(String(255), nullable=True)
     company_phone_number = Column(String(50), nullable=True)

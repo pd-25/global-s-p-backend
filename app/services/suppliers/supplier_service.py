@@ -101,6 +101,7 @@ def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session):
             company_site=supplier_data.company_site,
             company_phone_number=supplier_data.company_phone_number,
             company_email=supplier_data.company_email,
+            is_accept_terms=supplier_data.is_accept_terms
         )
 
         db.add(new_supplier)
