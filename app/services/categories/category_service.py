@@ -201,10 +201,10 @@ def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcateg
         else:
             parent.children = parent_children
 
-    # 5. Collect category IDs (only the sliced children) to count products efficiently
+    # 5. Collect all category IDs (parents and all their children) to count products accurately
     all_category_ids = parent_ids.copy()
     for parent in parents:
-        all_category_ids.extend([c.id for c in parent.children])
+        all_category_ids.extend([c.id for c in child_map.get(parent.id, [])])
 
     # 6. Fetch product counts
     product_counts = dict(
@@ -219,7 +219,12 @@ def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcateg
 
     # 7. Assign product counts
     for parent in parents:
-        parent.total_products = product_counts.get(parent.id, 0)
+        parent_total = product_counts.get(parent.id, 0)
+        for child in child_map.get(parent.id, []):
+            parent_total += product_counts.get(child.id, 0)
+            
+        parent.total_products = parent_total
+        
         for child in parent.children:
             child.total_products = product_counts.get(child.id, 0)
 
