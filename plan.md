@@ -20,34 +20,8 @@
  7. For common helper function we will create a file in helpers.helper.py 
 
 
+dashboard/kpis
+quote-list
 
-# Admin API LIST
 
-## Category
  
- 1. /categories ->list all the categories with text search, pagination
- 2. /categories/{slug} -> fetch single category by slug
- 3. /categories -> create {name, image, description}
- 4. /categories/{slug} -> update {name, image, description}
- 5. /categories/{slug} -> delete softdelete
-
-
- ## Auth
- 1. admin/token
- 2. admin/refresh-token
- 3. admin/forgot-password
-
-
-
-
-
-
- # Frontend API List
- ## Home page
- 1. search/q=
- 2. products/q=
- 1. /recomended-products
- 2. /category-wise-products
- 3. /valuable-partners
- 4. /blogs
- 5. /ratings

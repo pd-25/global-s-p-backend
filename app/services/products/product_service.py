@@ -699,3 +699,9 @@ def fetch_similar_products(page: int, per_page: int, db: Session):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not fetch similar products.",
         )
+        
+
+def fetch_total_products(db: Session):
+    # time.sleep(3)
+    # print('111111111111')
+    return db.query(Product).count()

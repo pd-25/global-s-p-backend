@@ -160,3 +160,7 @@ def fetch_product_supplier_data_service(db: Session, slug: str, req_type: str):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Internal Server Error: Could not fetch product/supplier data."
         )
+        
+def fetch_active_leads(db: Session):
+    # print('2222222222222')
+    return db.query(Enquiry).count()

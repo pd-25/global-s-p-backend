@@ -223,3 +223,8 @@ def fetch_valuable_partners(db: Session):
         .filter(Supplier.deleted_at.is_(None))
         .all()
     )
+    
+    
+def fetch_active_suppliers(db: Session):
+    # print('3333333333333')
+    return db.query(Supplier).count()

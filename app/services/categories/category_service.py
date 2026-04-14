@@ -1,6 +1,6 @@
 import os
 from fastapi import HTTPException, status
-from sqlalchemy import asc, desc
+from sqlalchemy import Case, asc, desc, func
 from sqlalchemy.orm import Session, joinedload
 from app.enums.enums import CategoryOrderBy, SortOrder
 from app.models.category import Categories
@@ -229,3 +229,15 @@ def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcateg
             child.total_products = product_counts.get(child.id, 0)
 
     return parents
+
+def fetch_total_categories(db: Session):
+    result = db.query(
+        func.count(Case((Categories.parent_id.is_(None), 1))).label("main_categories"),
+        func.count(Case((Categories.parent_id.is_not(None), 1))).label("sub_categories")
+    ).first()
+    
+    # result will be a named tuple: (main_categories=X, sub_categories=Y)
+    return {
+        "total_main_categories": result.main_categories or 0,
+        "total_sub_categories": result.sub_categories or 0
+    }
