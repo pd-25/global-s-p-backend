@@ -21,7 +21,11 @@
 
 
 dashboard/kpis
-quote-list
+ Quote - 
+ 1. inquiry/list (where isquote form 0)
+ 2. quote/list (where isquote form 1)
+ 2. Add status coloms to enquiry table
+ 3. edit and view details api
 
 
  
