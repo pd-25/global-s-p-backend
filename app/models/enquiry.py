@@ -1,3 +1,4 @@
+from app.enums.enums import EnquiryStatus
 from sqlalchemy.orm import relationship
 
 from app.database.base_class import Base
@@ -8,6 +9,11 @@ class Enquiry(Base):
     __tablename__ = 'enquiries'
 
     id = Column(Integer, primary_key=True)
+    enquiry_number = Column(String(255), unique=True, nullable=True, server_default=None)
+    name = Column(String(255), nullable=True, server_default=None)
+    email = Column(String(255), nullable=True, server_default=None)
+    phone = Column(String(255), nullable=True, server_default=None)
+    status = Column(String(255), nullable=True, default=EnquiryStatus.pending, server_default=EnquiryStatus.pending)
     reason_for_contacting = Column(Text, nullable=True)
     request_title = Column(Text, nullable=True)
     delivery_location = Column(Text, nullable=True)

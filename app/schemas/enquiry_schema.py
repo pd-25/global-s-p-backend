@@ -1,6 +1,6 @@
-from datetime import datetime
+from datetime import datetime, date
 from typing import List, Optional
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel, Field, ValidationError
 from fastapi import UploadFile, File, Form, HTTPException, status
 from app.schemas.supplier_schema import SupplierResponseSchema
 
@@ -49,6 +49,53 @@ class EnquiryResponseSchema(BaseModel):
 
     class Config:
         from_attributes = True
+
+class EnquiryListResponseSchema(BaseModel):
+    id: int
+    enquiry_number: Optional[str] = None
+    name: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    status: Optional[str] = None
+    product_name: Optional[str] = None
+    product_slug: Optional[str] = None
+    product_image: Optional[str] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+class EnquiryDetailResponseSchema(BaseModel):
+    id: int
+    enquiry_number: Optional[str] = None
+    name: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    status: Optional[str] = None
+    reason_for_contacting: Optional[str] = None
+    request_title: Optional[str] = None
+    delivery_location: Optional[str] = None
+    quantity: Optional[str] = None
+    request_type: Optional[str] = None
+    message: Optional[str] = None
+    business_email: Optional[str] = None
+    company_name: Optional[str] = None
+    forward_to_other: Optional[bool] = False
+    supplier_id: Optional[int] = None
+    product_id: Optional[int] = None
+    product_name: Optional[str] = None
+    product_slug: Optional[str] = None
+    product_image: Optional[str] = None
+    supplier_name: Optional[str] = None
+    supplier_slug: Optional[str] = None
+    created_at: Optional[datetime] = None
+    updated_at: Optional[datetime] = None
+
+class EnquiryFilterSchema(BaseModel):
+    search_string: Optional[str] = None
+    per_page: int = Field(default=10, ge=1, le=100)
+    page: int = Field(default=1, ge=1)
+    sort_order: str = Field(default="desc", pattern="^(asc|desc)$")
+    start_date: Optional[date] = None
+    end_date: Optional[date] = None
 
 class CreateEnquirySchema(BaseModel):
     reason_for_contacting: Optional[str] = None

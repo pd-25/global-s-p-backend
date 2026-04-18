@@ -9,6 +9,7 @@ from app.routes.v1.admin.route_supplier import supplier_router
 from app.routes.v1.admin.route_product import product_router
 from app.routes.v1.admin.route_general import general_router
 from app.services.auth.auth_service import get_current_user
+from app.routes.v1.admin.route_quotes_inquiries import quotes_inquiries_router
 
 admin_router = APIRouter()
 
@@ -22,3 +23,4 @@ admin_router.include_router(supplier_type_router, prefix="/supplier-types", tags
 admin_router.include_router(product_type_router, prefix="/product-types", tags=["Admin - product types"])
 admin_router.include_router(supplier_router, prefix="/suppliers", tags=["Admin - suppliers"])
 admin_router.include_router(product_router, prefix="/products", tags=["Admin - products"])
+admin_router.include_router(quotes_inquiries_router, prefix="/quotes-inquiries", tags=["Admin - quotes inquiries"], dependencies=[Depends(get_current_user)])
