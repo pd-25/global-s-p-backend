@@ -160,3 +160,73 @@ class CreateEnquirySchema(BaseModel):
                     ],
                 },
             )
+
+class EnquiryUpdateSchema(BaseModel):
+    name: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    reason_for_contacting: Optional[str] = None
+    request_title: Optional[str] = None
+    delivery_location: Optional[str] = None
+    quantity: Optional[str] = None
+    request_type: Optional[str] = None
+    message: Optional[str] = None
+    business_email: Optional[str] = None
+    company_name: Optional[str] = None
+    forward_to_other: Optional[bool] = False
+    supplier_id: Optional[int] = None
+    product_id: Optional[int] = None
+    status: Optional[str] = None
+    
+    @classmethod
+    def as_form(
+        cls,
+        name: Optional[str] = Form(None),
+        email: Optional[str] = Form(None),
+        phone: Optional[str] = Form(None),
+        reason_for_contacting: Optional[str] = Form(None),
+        request_title: Optional[str] = Form(None),
+        delivery_location: Optional[str] = Form(None),
+        quantity: Optional[str] = Form(None),
+        request_type: Optional[str] = Form(None),
+        message: Optional[str] = Form(None),
+        business_email: Optional[str] = Form(None),
+        company_name: Optional[str] = Form(None),
+        forward_to_other: Optional[bool] = Form(False),
+        supplier_id: Optional[int] = Form(None),
+        product_id: Optional[int] = Form(None),
+        status: Optional[str] = Form(None),
+    ) -> "EnquiryUpdateSchema":
+        try:
+            return cls(
+                name=name,
+                email=email,
+                phone=phone,
+                reason_for_contacting=reason_for_contacting,
+                request_title=request_title,
+                delivery_location=delivery_location,
+                quantity=quantity,
+                request_type=request_type,
+                message=message,
+                business_email=business_email,
+                company_name=company_name,
+                forward_to_other=forward_to_other,
+                supplier_id=supplier_id,
+                product_id=product_id,
+                status=status,
+            )
+        except ValidationError as e:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+                detail={
+                    "message": "Validation error",
+                    "errors": [
+                        {
+                            "loc": error["loc"],
+                            "msg": error["msg"],
+                            "type": error["type"],
+                        }
+                        for error in e.errors()
+                    ],
+                },
+            )

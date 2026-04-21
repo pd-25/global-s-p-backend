@@ -1,3 +1,4 @@
+from app.schemas.enquiry_schema import EnquiryUpdateSchema
 from app.enums.enums import EnquiryStatus
 from app.utils.string_utils import generate_enquiry_number
 import logging
@@ -346,3 +347,32 @@ def retrieve_enquiry_by_enquiry_number(enquiry_number: str, enquiry_type: str, d
     #     "created_at": getattr(query, 'created_at', None),
     #     "updated_at": getattr(query, 'updated_at', None)
     # }
+
+
+def update_enquiry_by_enquiry_number(enquiry_number: str, db: Session, enquiry_update_schema: EnquiryUpdateSchema):
+    try:
+        query = db.query(Enquiry).filter(
+            Enquiry.enquiry_number == enquiry_number
+        ).first()
+        if not query:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Enquiry not found"
+            )
+        
+        update_data = enquiry_update_schema.model_dump(exclude_unset=True) if hasattr(enquiry_update_schema, 'model_dump') else enquiry_update_schema.dict(exclude_unset=True)
+        for key, value in update_data.items():
+            setattr(query, key, value)
+        
+        db.commit()
+        db.refresh(query)
+        return query
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        logger.error(f"Error updating enquiry: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Internal Server Error: Could not update enquiry."
+        )
+        

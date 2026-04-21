@@ -1,13 +1,14 @@
+from app.services.enquiries.enquiry_service import update_enquiry_by_enquiry_number
+from fastapi import Body
+from app.schemas.enquiry_schema import EnquiryUpdateSchema
 from app.enums.enums import EnquiryType
 from typing import List
 from fastapi import APIRouter, Depends, status, Path
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
-from app.models.admin import Admin
 from app.schemas.enquiry_schema import EnquiryListResponseSchema, EnquiryFilterSchema, EnquiryDetailResponseSchema
 from app.schemas.response import APIResponse
-from app.services.auth.auth_service import get_current_user
 from app.services.enquiries.enquiry_service import retrieve_all_enquiries, retrieve_enquiry_by_enquiry_number
 
 
@@ -81,5 +82,24 @@ def get_enquiry_by_enquiry_number(
     return APIResponse(
         success=True,
         message="Enquiry fetched successfully",
+        data=enquiry,
+    )
+
+
+@quotes_inquiries_router.patch(
+    "/{enquiry_number}",
+    response_model=APIResponse[EnquiryDetailResponseSchema],
+    status_code=status.HTTP_200_OK,
+    description="Updates an enquiry by enquiry_number",
+)
+def update_enquiry(
+    enquiry_number: str = Path(..., description="The unique enquiry number"),
+    enquiry_update: EnquiryUpdateSchema = Body(..., description="The enquiry update payload"),
+    db: Session = Depends(get_db),
+):
+    enquiry = update_enquiry_by_enquiry_number(enquiry_number=enquiry_number, enquiry_update_schema=enquiry_update, db=db)
+    return APIResponse(
+        success=True,
+        message="Enquiry updated successfully",
         data=enquiry,
     )
