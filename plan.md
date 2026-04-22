@@ -27,7 +27,6 @@ dashboard/kpis
  2. Add status coloms to enquiry table
  3. edit and view details api
 
- fetchapi test
 
 
  

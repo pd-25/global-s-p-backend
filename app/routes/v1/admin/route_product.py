@@ -1,6 +1,8 @@
+import asyncio
 from typing import List
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.orm import Session
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database.session import get_db
 from app.models.admin import Admin
@@ -9,6 +11,7 @@ from app.schemas.product_schema import (
     ProductResponseSchema,
     CreateProductSchema,
     UpdateProductSchema,
+    ProductKpisResponseSchema,
 )
 from app.schemas.response import APIResponse
 from app.services.auth.auth_service import get_current_user
@@ -19,6 +22,9 @@ from app.services.products.product_service import (
     retrieve_all_products,
     retrieve_single_product,
     update_product_service,
+    get_total_products_stats,
+    get_top_visited_products,
+    get_top_quoted_products,
 )
 from app.utils.file_utils import validate_image_file
 
@@ -52,6 +58,36 @@ def get_products(
 
 
 @product_router.get(
+    "/product-kpis",
+    response_model=APIResponse[ProductKpisResponseSchema],
+    status_code=status.HTTP_200_OK,
+    description="Returns product KPIs including total active products, top visited products, and top quoted products",
+)
+async def get_product_kpis(
+    db: Session = Depends(get_db),
+    current_user: Admin = Depends(get_current_user),
+):
+    # Define your three logic functions/queries
+    # asyncio.gather runs them in parallel
+    total_stats_task = get_total_products_stats(db)
+    top_visited_task = get_top_visited_products(db)
+    top_quoted_task = get_top_quoted_products(db)
+
+    total_stats, top_visited, top_quoted = await asyncio.gather(
+        total_stats_task, top_visited_task, top_quoted_task
+    )
+    return APIResponse(
+        success=True,
+        message="Kpi fetched successfully",
+        data=ProductKpisResponseSchema(
+            summary=total_stats,
+            top_visited=top_visited,
+            top_quoted=top_quoted,
+        ),
+    )
+
+
+@product_router.get(
     "/{slug}",
     response_model=APIResponse[ProductResponseSchema],
     status_code=status.HTTP_200_OK,
@@ -69,6 +105,7 @@ def get_product(
         message="Product fetched successfully",
         data=product,
     )
+
 
 
 @product_router.post(
@@ -113,9 +150,7 @@ async def update_product(
         for image in product_data.images:
             validate_image_file(image)
 
-    response = update_product_service(
-        slug=slug, product_data=product_data, db=db
-    )
+    response = update_product_service(slug=slug, product_data=product_data, db=db)
 
     return APIResponse(
         success=True,
@@ -160,3 +195,4 @@ def delete_image(
         success=True,
         message="Product image deleted successfully",
     )
+

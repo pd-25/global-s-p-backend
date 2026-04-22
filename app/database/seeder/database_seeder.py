@@ -1,3 +1,4 @@
+
 import sys
 import os
 
@@ -14,6 +15,7 @@ from app.database.seeder.product_type_seeder import ProductTypeSeeder
 from app.database.seeder.product_seeder import ProductSeeder
 from app.database.seeder.product_image_seeder import ProductImageSeeder
 from app.database.seeder.initial_data_import_seeder import InitialDataImportSeeder
+from app.database.seeder.product_view_seeder import ProductViewSeeder
 from app.database.session import get_db
 
 class DatabaseSeeder:
@@ -31,7 +33,8 @@ class DatabaseSeeder:
             # ProductTypeSeeder().run(db=db)
             # ProductSeeder().run(db=db)
             # ProductImageSeeder().run(db=db)
-            InitialDataImportSeeder().run(db=db)
+            # InitialDataImportSeeder().run(db=db)
+            ProductViewSeeder().run(db=db)
             print("✅ Database Seeding Completed Successfully!")
         finally:
             try:

@@ -31,6 +31,7 @@ class Product(Base):
     product_type = relationship("ProductType", backref="products")
     category = relationship("Categories", backref="products")
     images = relationship("ProductImage", back_populates="product", cascade="all, delete-orphan")
+    views = relationship("ProductView", back_populates="product", cascade="all, delete-orphan")
     primary_image = relationship(
         "ProductImage",
         primaryjoin="and_(Product.id==ProductImage.product_id)",

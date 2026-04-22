@@ -364,3 +364,26 @@ class SimilarProductSchema(BaseModel):
 class SimilarProductsFilterSchema(BaseModel):
     perPage: int = Field(default=12, ge=1, le=100)
     page: int = Field(default=1, ge=1)
+
+
+# ---- KPIs ----
+
+class ProductKpiSummarySchema(BaseModel):
+    total_active_products: int
+
+class TopVisitedProductSchema(BaseModel):
+    id: int
+    slug: str
+    title: str
+    total_views: int
+
+class TopQuotedProductSchema(BaseModel):
+    id: int
+    slug: str
+    title: str
+    total_quotes: int
+
+class ProductKpisResponseSchema(BaseModel):
+    summary: ProductKpiSummarySchema
+    top_visited: List[TopVisitedProductSchema]
+    top_quoted: List[TopQuotedProductSchema]
