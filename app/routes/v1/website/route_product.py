@@ -1,6 +1,6 @@
 from typing import List
 
-from fastapi import APIRouter, Depends, status
+from fastapi import APIRouter, Depends, status, BackgroundTasks, Query
 from sqlalchemy.orm import Session
 
 from app.database.session import get_db
@@ -126,8 +126,13 @@ def get_products(filters: ProductFilterSchema = Depends(), db: Session = Depends
     status_code=status.HTTP_200_OK,
     description="Fetch single product details by slug",
 )
-def get_product_detail(slug: str, db: Session = Depends(get_db)):
-    product = retrieve_single_product(slug=slug, db=db)
+def get_product_detail(
+    slug: str, 
+    background_tasks: BackgroundTasks,
+    client_ip: str = Query(None, description="Client IP address"),
+    db: Session = Depends(get_db)
+):
+    product = retrieve_single_product(slug=slug, db=db, client_ip=client_ip, background_tasks=background_tasks)
     return APIResponse(
         success=True,
         message="Product details fetched successfully",

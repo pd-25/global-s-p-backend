@@ -1,7 +1,7 @@
 import os
 import time
 from datetime import datetime
-from fastapi import HTTPException, status
+from fastapi import HTTPException, status, BackgroundTasks
 from sqlalchemy import asc, desc, func
 from sqlalchemy.orm import Session, joinedload, load_only, selectinload
 from sqlalchemy.exc import SQLAlchemyError
@@ -25,6 +25,8 @@ from app.schemas.product_schema import (
 )
 from app.utils.file_utils import save_upload_file
 from app.utils.string_utils import generate_slug
+
+from app.database.session import SESSIONLOCAL
 
 logger = logging.getLogger(__name__)
 
@@ -401,7 +403,24 @@ def create_product_service(product_data: CreateProductSchema, db: Session):
         )
 
 
-def retrieve_single_product(slug: str, db: Session):
+def add_product_view(product_id: int, client_ip: str):
+    db = SESSIONLOCAL()
+    try:
+        new_view = ProductView(product_id=product_id, client_ip_address=client_ip)
+        db.add(new_view)
+        db.commit()
+    except Exception as e:
+        logger.error(f"Error adding product view: {str(e)}")
+        db.rollback()
+    finally:
+        db.close()
+
+def retrieve_single_product(
+    slug: str, 
+    db: Session, 
+    client_ip: str = None, 
+    background_tasks: BackgroundTasks = None
+):
     """Retrieve a single product by slug with all relations."""
     product = (
         db.query(Product)
@@ -425,6 +444,9 @@ def retrieve_single_product(slug: str, db: Session):
             status_code=status.HTTP_404_NOT_FOUND,
             detail="Product not found",
         )
+
+    if client_ip and background_tasks:
+        background_tasks.add_task(add_product_view, product.id, client_ip)
 
     return product
 
