@@ -57,6 +57,8 @@ def get_products(
     )
 
 
+from app.database.session import SESSIONLOCAL
+
 @product_router.get(
     "/product-kpis",
     response_model=APIResponse[ProductKpisResponseSchema],
@@ -64,18 +66,23 @@ def get_products(
     description="Returns product KPIs including total active products, top visited products, and top quoted products",
 )
 async def get_product_kpis(
-    db: Session = Depends(get_db),
     current_user: Admin = Depends(get_current_user),
 ):
-    # Define your three logic functions/queries
-    # asyncio.gather runs them in parallel
-    total_stats_task = get_total_products_stats(db)
-    top_visited_task = get_top_visited_products(db)
-    top_quoted_task = get_top_quoted_products(db)
+    # To run parallel queries safely with synchronous SQLAlchemy, 
+    # we MUST use a separate session for each thread to avoid connection corruption.
+    def run_in_new_session(func):
+        local_db = SESSIONLOCAL()
+        try:
+            return func(local_db)
+        finally:
+            local_db.close()
 
     total_stats, top_visited, top_quoted = await asyncio.gather(
-        total_stats_task, top_visited_task, top_quoted_task
+        asyncio.to_thread(run_in_new_session, get_total_products_stats),
+        asyncio.to_thread(run_in_new_session, get_top_visited_products),
+        asyncio.to_thread(run_in_new_session, get_top_quoted_products),
     )
+    
     return APIResponse(
         success=True,
         message="Kpi fetched successfully",

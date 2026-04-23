@@ -5,6 +5,7 @@ from fastapi import HTTPException, status
 from sqlalchemy import asc, desc, func
 from sqlalchemy.orm import Session, joinedload, load_only, selectinload
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.ext.asyncio import AsyncSession
 import logging
 
 from app.models.category import Categories
@@ -708,56 +709,48 @@ def fetch_total_products(db: Session):
     # print('111111111111')
     return db.query(Product).count()
 
-import asyncio
+def get_total_products_stats(db: Session):
+    total = db.query(Product).filter(Product.deleted_at == None).count()
+    return {"total_active_products": total}
 
-async def get_total_products_stats(db: Session):
-    def fetch():
-        total = db.query(Product).filter(Product.deleted_at == None).count()
-        return {"total_active_products": total}
-    return await asyncio.to_thread(fetch)
+def get_top_visited_products(db: Session):
+    results = db.query(
+        Product.id,
+        Product.slug,
+        Product.title,
+        func.count(ProductView.id).label("total_views")
+    ).join(ProductView, Product.id == ProductView.product_id)\
+     .filter(Product.deleted_at == None)\
+     .group_by(Product.id)\
+     .order_by(desc("total_views"))\
+     .limit(5).all()
+     
+    return [
+        {
+            "id": r.id,
+            "slug": r.slug,
+            "title": r.title,
+            "total_views": r.total_views
+        } for r in results
+    ]
 
-async def get_top_visited_products(db: Session):
-    def fetch():
-        results = db.query(
-            Product.id,
-            Product.slug,
-            Product.title,
-            func.count(ProductView.id).label("total_views")
-        ).join(ProductView, Product.id == ProductView.product_id)\
-         .filter(Product.deleted_at == None)\
-         .group_by(Product.id)\
-         .order_by(desc("total_views"))\
-         .limit(5).all()
-         
-        return [
-            {
-                "id": r.id,
-                "slug": r.slug,
-                "title": r.title,
-                "total_views": r.total_views
-            } for r in results
-        ]
-    return await asyncio.to_thread(fetch)
-
-async def get_top_quoted_products(db: Session):
-    def fetch():
-        results = db.query(
-            Product.id,
-            Product.slug,
-            Product.title,
-            func.count(Enquiry.id).label("total_quotes")
-        ).join(Enquiry, Product.id == Enquiry.product_id)\
-         .filter(Product.deleted_at == None, Enquiry.is_quote_form == 1)\
-         .group_by(Product.id)\
-         .order_by(desc("total_quotes"))\
-         .limit(5).all()
-         
-        return [
-            {
-                "id": r.id,
-                "slug": r.slug,
-                "title": r.title,
-                "total_quotes": r.total_quotes
-            } for r in results
-        ]
-    return await asyncio.to_thread(fetch)
+def get_top_quoted_products(db: Session):
+    results = db.query(
+        Product.id,
+        Product.slug,
+        Product.title,
+        func.count(Enquiry.id).label("total_quotes")
+    ).join(Enquiry, Product.id == Enquiry.product_id)\
+     .filter(Product.deleted_at == None, Enquiry.is_quote_form == 0)\
+     .group_by(Enquiry.product_id)\
+     .order_by(desc("total_quotes"))\
+     .limit(5).all()
+     
+    return [
+        {
+            "id": r.id,
+            "slug": r.slug,
+            "title": r.title,
+            "total_quotes": r.total_quotes
+        } for r in results
+    ]
