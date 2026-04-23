@@ -246,7 +246,7 @@ class ProductFilterSchema(BaseModel):
     supplier_type_slug: Optional[str] = None    # slug-style, e.g. "raw-material"
     supplier_slug: Optional[str] = None    # slug-style, e.g. "raw-material"
     min_price: Optional[int] = None    # slug-style, e.g. "raw-material"
-    max_price: Optional[int] = None    # slug-style, e.g. "raw-material"
+    max_price: Optional[int] = None 
 
 
 # ---- Products by Supplier ----

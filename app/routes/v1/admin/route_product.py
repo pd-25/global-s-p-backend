@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.database.session import get_db
 from app.models.admin import Admin
 from app.schemas.product_schema import (
-    ProductFilterSchema,
+    AdminProductFilterSchema,
     ProductResponseSchema,
     CreateProductSchema,
     UpdateProductSchema,
@@ -38,7 +38,7 @@ product_router = APIRouter()
     description="Returns a paginated list of products with all relations (country, supplier, product_type, category, images)",
 )
 def get_products(
-    filters: ProductFilterSchema = Depends(),
+    filters: AdminProductFilterSchema = Depends(),
     db: Session = Depends(get_db),
     current_user: Admin = Depends(get_current_user),
 ):
