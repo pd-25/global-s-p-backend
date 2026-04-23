@@ -1,4 +1,4 @@
-import os
+
 from fastapi import HTTPException, status
 from sqlalchemy import Case, asc, desc, func
 from sqlalchemy.orm import Session, joinedload
@@ -60,9 +60,11 @@ def fetch_categories(filters: CategoryFilterSchema, db: Session):
 
     return categories, total_count
 
-from app.utils.file_utils import save_upload_file
+from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
 from app.utils.string_utils import generate_slug
 import time
+
+S3_CATEGORY_FOLDER = "categories"
 
 
 async def create_category_service(category_data: CreateCategorySchema, db: Session):
@@ -74,7 +76,7 @@ async def create_category_service(category_data: CreateCategorySchema, db: Sessi
              timestamp = int(time.time())
              slug = f"{slug}-{timestamp}"
             
-        image_path = save_upload_file(category_data.image, "app/static/uploads/categories")
+        image_path = upload_file_to_s3(category_data.image, S3_CATEGORY_FOLDER)
         
         # Remove 'app/' from the path to store relative path if needed, 
         # or keep as is depending on how it's served. 
@@ -123,16 +125,13 @@ async def update_single_category(slug: str, category_data: UpdateCategorySchema,
         
         # Handle image update if a new image is provided
         if category_data.image:
-            # Delete old image
+            # Delete old image from S3
             if existing_category.image:
-                try:
-                    os.remove(existing_category.image)
-                except OSError:
-                    pass  # Ignore if file doesn't exist
+                delete_file_from_s3(existing_category.image)
             
-            # Save new image
-            image_path = save_upload_file(category_data.image, "app/static/uploads/categories")
-            existing_category.image = image_path
+            # Upload new image to S3
+            image_url = upload_file_to_s3(category_data.image, S3_CATEGORY_FOLDER)
+            existing_category.image = image_url
         
         db.commit()
         db.refresh(existing_category)

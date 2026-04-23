@@ -43,6 +43,8 @@ class CategoryNestedSchema(BaseModel):
     id: int
     name: str
     slug: str
+    parent_id: Optional[int] = None
+    parent: Optional["CategoryNestedSchema"] = None
 
     class Config:
         from_attributes = True

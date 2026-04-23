@@ -14,14 +14,14 @@ from app.models.product import Product
 from app.models.supplier import Supplier
 from app.models.product_image import ProductImage
 from app.schemas.enquiry_schema import CreateEnquirySchema, EnquiryFilterSchema
-from app.utils.file_utils import save_upload_file
+from app.utils.s3_utils import upload_file_to_s3
 from app.models.enquiry_supplier_types import EnquirySupplierType
 import json
 from sqlalchemy import select, and_
 
 logger = logging.getLogger(__name__)
 
-ENQUIRY_FILE_DIR = "app/static/uploads/enquiries"
+S3_ENQUIRY_FOLDER = "enquiries"
 
 def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
     try:
@@ -89,7 +89,7 @@ def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
         if enquiry_data.files:
             for index, file in enumerate(enquiry_data.files):
                 if file.filename:  # skip empty file elements if explicitly parsed
-                    file_path = save_upload_file(file, ENQUIRY_FILE_DIR)
+                    file_path = upload_file_to_s3(file, S3_ENQUIRY_FOLDER)
                     enquiry_file = EnquiryFiles(
                         enquiry_id=new_enquiry.id,
                         file=file_path,

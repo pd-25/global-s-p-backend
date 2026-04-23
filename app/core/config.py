@@ -16,4 +16,14 @@ class Settings:
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 120
 
+
+class S3Config:
+    AWS_ACCESS_KEY = os.getenv("AWS_ACCESS_KEY")
+    AWS_SECRET_KEY = os.getenv("AWS_SECRET_KEY")
+    AWS_REGION = os.getenv("AWS_REGION")
+    S3_BUCKET_NAME = os.getenv("S3_BUCKET_NAME")
+    CLOUDFRONT_DOMAIN = os.getenv("CLOUDFRONT_DOMAIN")
+
+
 settings = Settings()
+s3_config = S3Config()

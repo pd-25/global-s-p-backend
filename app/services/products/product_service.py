@@ -24,6 +24,7 @@ from app.schemas.product_schema import (
     TrendingProductsFilterSchema,
 )
 from app.utils.file_utils import save_upload_file
+from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
 from app.utils.string_utils import generate_slug
 
 from app.database.session import SESSIONLOCAL
@@ -31,6 +32,7 @@ from app.database.session import SESSIONLOCAL
 logger = logging.getLogger(__name__)
 
 PRODUCT_IMAGE_DIR = "app/static/uploads/products"
+S3_PRODUCT_FOLDER = "products"
 
 
 def product_model_query(db: Session):
@@ -376,13 +378,13 @@ def create_product_service(product_data: CreateProductSchema, db: Session):
         db.add(new_product)
         db.flush()  # Get the product ID before adding images
 
-        # Handle multiple image uploads
+        # Handle multiple image uploads → S3
         if product_data.images:
             for index, image_file in enumerate(product_data.images):
-                image_path = save_upload_file(image_file, PRODUCT_IMAGE_DIR)
+                image_url = upload_file_to_s3(image_file, S3_PRODUCT_FOLDER)
                 product_image = ProductImage(
                     product_id=new_product.id,
-                    image=image_path,
+                    image=image_url,
                     is_preview=(index == 0),  # First image is preview by default
                 )
                 db.add(product_image)
@@ -470,13 +472,13 @@ def update_product_service(slug: str, product_data: UpdateProductSchema, db: Ses
         existing_product.category_id = product_data.category_id
         existing_product.updated_at = datetime.now()
 
-        # Handle new image uploads (added alongside existing images)
+        # Handle new image uploads → S3 (added alongside existing images)
         if product_data.images:
             for image_file in product_data.images:
-                image_path = save_upload_file(image_file, PRODUCT_IMAGE_DIR)
+                image_url = upload_file_to_s3(image_file, S3_PRODUCT_FOLDER)
                 product_image = ProductImage(
                     product_id=existing_product.id,
-                    image=image_path,
+                    image=image_url,
                     is_preview=False,
                 )
                 db.add(product_image)
@@ -530,12 +532,9 @@ def delete_product_image_service(image_id: int, db: Session):
                 detail="Product image not found",
             )
 
-        # Delete file from disk
+        # Delete file from S3
         if image.image:
-            try:
-                os.remove(image.image)
-            except OSError:
-                pass
+            delete_file_from_s3(image.image)
 
         db.delete(image)
         db.commit()

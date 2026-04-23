@@ -1,5 +1,4 @@
 from datetime import datetime
-import os
 from fastapi import HTTPException, status
 from sqlalchemy import asc, desc
 from sqlalchemy.orm import Session
@@ -8,7 +7,9 @@ import logging
 
 from app.models.country import Country
 from app.schemas.country_schema import CountryFilterSchema, CreateCountrySchema, UpdateCountrySchema
-from app.utils.file_utils import save_upload_file
+from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
+
+S3_COUNTRY_FOLDER = "countries"
 
 logger = logging.getLogger(__name__)
 
@@ -63,7 +64,7 @@ def create_country_service(country_data: CreateCountrySchema, db: Session):
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Country with this name already exists."
             )
-        image_path = save_upload_file(country_data.country_flag, "app/static/uploads/country")
+        image_path = upload_file_to_s3(country_data.country_flag, S3_COUNTRY_FOLDER)
 
         new_country = Country(
             name=country_data.name,
@@ -125,16 +126,13 @@ def update_country_service(country_id: int, country_data: UpdateCountrySchema, d
         existing_country.updated_at = datetime.now()
         # Handle image update if a new image is provided
         if country_data.country_flag:
-            # Delete old country_flag
+            # Delete old country_flag from S3
             if existing_country.country_flag:
-                try:
-                    os.remove(existing_country.country_flag)
-                except OSError:
-                    pass  # Ignore if file doesn't exist
+                delete_file_from_s3(existing_country.country_flag)
             
-            # Save new image
-            image_path = save_upload_file(country_data.country_flag, "app/static/uploads/country")
-            existing_country.country_flag = image_path
+            # Upload new image to S3
+            image_url = upload_file_to_s3(country_data.country_flag, S3_COUNTRY_FOLDER)
+            existing_country.country_flag = image_url
 
         db.commit()
         db.refresh(existing_country)

@@ -13,12 +13,12 @@ from app.schemas.supplier_schema import (
     CreateSupplierSchema,
     UpdateSupplierSchema,
 )
-from app.utils.file_utils import save_upload_file
+from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
 from app.utils.string_utils import generate_slug
 
 logger = logging.getLogger(__name__)
 
-SUPPLIER_LOGO_DIR = "app/static/uploads/suppliers"
+S3_SUPPLIER_FOLDER = "suppliers"
 
 
 def retrieve_all_suppliers(filters: SupplierFilterSchema, db: Session):
@@ -81,7 +81,7 @@ def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session):
         # Handle logo upload
         logo_path = None
         if supplier_data.logo:
-            logo_path = save_upload_file(supplier_data.logo, SUPPLIER_LOGO_DIR)
+            logo_path = upload_file_to_s3(supplier_data.logo, S3_SUPPLIER_FOLDER)
 
         new_supplier = Supplier(
             slug=slug,
@@ -162,15 +162,12 @@ def update_supplier_service(slug: str, supplier_data: UpdateSupplierSchema, db: 
 
         # Handle logo update if a new logo is provided
         if supplier_data.logo:
-            # Delete old logo
+            # Delete old logo from S3
             if existing_supplier.logo:
-                try:
-                    os.remove(existing_supplier.logo)
-                except OSError:
-                    pass  # Ignore if file doesn't exist
+                delete_file_from_s3(existing_supplier.logo)
 
-            # Save new logo
-            logo_path = save_upload_file(supplier_data.logo, SUPPLIER_LOGO_DIR)
+            # Upload new logo to S3
+            logo_path = upload_file_to_s3(supplier_data.logo, S3_SUPPLIER_FOLDER)
             existing_supplier.logo = logo_path
 
         db.commit()
