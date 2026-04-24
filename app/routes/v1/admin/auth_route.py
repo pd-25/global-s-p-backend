@@ -24,6 +24,8 @@ def login(login_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depen
 @auth_router.get("/me")
 def me(db: Session = Depends(get_db), current_user: Admin = Depends(get_current_user)):
     return current_user
-     
-     
-
+@auth_router.post("/logout")
+def logout(current_user: Admin = Depends(get_current_user)):
+    # In a stateless JWT implementation, logout is primarily handled by the client
+    # by deleting the token. We return a success response here.
+    return {"success": True, "message": "Successfully logged out"}

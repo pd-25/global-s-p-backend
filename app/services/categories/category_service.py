@@ -58,6 +58,35 @@ def fetch_categories(filters: CategoryFilterSchema, db: Session):
         .all()
     )
 
+    if categories:
+        from app.models.product import Product
+        
+        parent_ids = [c.id for c in categories]
+        all_category_ids = parent_ids.copy()
+        
+        for parent in categories:
+            all_category_ids.extend([child.id for child in parent.children])
+
+        if all_category_ids:
+            # Fetch product counts
+            product_counts = dict(
+                db.query(Product.category_id, func.count(Product.id))
+                .filter(
+                    Product.category_id.in_(all_category_ids),
+                    Product.deleted_at == None,
+                )
+                .group_by(Product.category_id)
+                .all()
+            )
+
+            for parent in categories:
+                parent_total = product_counts.get(parent.id, 0)
+                for child in parent.children:
+                    parent_total += product_counts.get(child.id, 0)
+                    child.total_products = product_counts.get(child.id, 0)
+                
+                parent.total_products = parent_total
+
     return categories, total_count
 
 from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
@@ -149,10 +178,33 @@ async def update_single_category(slug: str, category_data: UpdateCategorySchema,
         )
         
 def retrieve_single_category(slug: str, db: Session):
-    category = db.query(Categories).filter(Categories.slug == slug).first()
+    category = db.query(Categories).options(joinedload(Categories.children)).filter(Categories.slug == slug).first()
     
     if not category:
         raise HTTPException(status_code=404, detail="Category not found")
+    
+    from app.models.product import Product
+    
+    all_category_ids = [category.id]
+    if category.children:
+        all_category_ids.extend([child.id for child in category.children])
+
+    product_counts = dict(
+        db.query(Product.category_id, func.count(Product.id))
+        .filter(
+            Product.category_id.in_(all_category_ids),
+            Product.deleted_at == None,
+        )
+        .group_by(Product.category_id)
+        .all()
+    )
+
+    parent_total = product_counts.get(category.id, 0)
+    for child in category.children:
+        parent_total += product_counts.get(child.id, 0)
+        child.total_products = product_counts.get(child.id, 0)
+    
+    category.total_products = parent_total
     
     return category
 
