@@ -7,6 +7,8 @@ import os
 # Add the project root to sys.path to allow imports from app
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../")))
 
+import app.database.base # Important: Ensure all models are loaded in registry
+
 from app.database.seeder.admin_seeder import AdminSeeder
 from app.database.seeder.categories_seeder import CategoriesSeeder
 from app.database.seeder.supplier_type_seeder import SupplierTypeSeeder
