@@ -1,3 +1,4 @@
+from app.enums.enums import EnquiryStatus
 from datetime import datetime, date
 from typing import List, Optional
 from pydantic import BaseModel, Field, ValidationError
@@ -110,7 +111,14 @@ class CreateEnquirySchema(BaseModel):
     supplier_id: Optional[int] = None
     supplier_type_ids: Optional[str] = None
     product_id: Optional[int] = None
+    country_id: Optional[int] = None
     files: Optional[List[UploadFile]] = None
+    name: Optional[str] = None
+    email: Optional[str] = None
+    phone: Optional[str] = None
+    # requirement: Optional[str] = None
+    is_quote_form: Optional[bool] = False
+    status: Optional[str] = EnquiryStatus.pending.value
 
     @classmethod
     def as_form(
@@ -127,7 +135,14 @@ class CreateEnquirySchema(BaseModel):
         supplier_id: Optional[int] = Form(None),
         supplier_type_ids: Optional[str] = Form(None),
         product_id: Optional[int] = Form(None),
+        country_id: Optional[int] = Form(None),
         files: Optional[List[UploadFile]] = None,
+        name: Optional[str] = Form(None),
+        email: Optional[str] = Form(None),
+        phone: Optional[str] = Form(None),
+        # requirement: Optional[str] = Form(None),
+        is_quote_form: Optional[bool] = Form(False),
+        status: Optional[str] = Form(EnquiryStatus.pending.value),
     ) -> "CreateEnquirySchema":
         try:
             return cls(
@@ -143,7 +158,14 @@ class CreateEnquirySchema(BaseModel):
                 supplier_id=supplier_id,
                 supplier_type_ids=supplier_type_ids,
                 product_id=product_id,
+                country_id=country_id,
                 files=files,
+                name=name,
+                email=email,
+                phone=phone,
+                # requirement=requirement,
+                is_quote_form=is_quote_form,
+                status=status,
             )
         except ValidationError as e:
             raise HTTPException(

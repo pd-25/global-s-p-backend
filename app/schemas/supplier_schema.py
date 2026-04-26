@@ -1,11 +1,20 @@
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List
 from pydantic import BaseModel, Field, ValidationError, field_validator
 from fastapi import UploadFile, File, Form, HTTPException, status
 from app.schemas.supplier_type_schema import SupplierTypeResponseSchema
 from app.schemas.country_schema import CountryNestedSchema
 import re
 
+
+class SupplierDocumentResponseSchema(BaseModel):
+    id: int
+    name: str
+    document: str
+    is_active: bool
+
+    class Config:
+        from_attributes = True
 
 # Response schema for supplier
 class SupplierResponseSchema(BaseModel):
@@ -32,6 +41,7 @@ class SupplierResponseSchema(BaseModel):
 
     supplier_type: Optional[SupplierTypeResponseSchema] = None
     country: Optional[CountryNestedSchema] = None
+    documents: Optional[List[SupplierDocumentResponseSchema]] = None
 
     class Config:
         from_attributes = True

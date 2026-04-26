@@ -36,3 +36,4 @@ class Supplier(Base):
     # Relationships
     country = relationship("Country", backref="suppliers")
     supplier_type = relationship("SupplierType", backref="suppliers")
+    documents = relationship("SupplierDocument", back_populates="supplier", cascade="all, delete-orphan")

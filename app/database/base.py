@@ -11,5 +11,6 @@ from app.models.enquiry import Enquiry
 from app.models.enquiry_files import EnquiryFiles
 from app.models.enquiry_supplier_types import EnquirySupplierType
 from app.models.product_view import ProductView
+from app.models.supplier_document import SupplierDocument
 
 

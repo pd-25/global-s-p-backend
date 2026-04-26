@@ -1,3 +1,4 @@
+from app.models.country import Country
 from app.schemas.enquiry_schema import EnquiryUpdateSchema
 from app.enums.enums import EnquiryStatus
 from app.utils.string_utils import generate_enquiry_number
@@ -42,6 +43,15 @@ def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Product not found."
                 )
+        
+        #validate country_id if provided
+        if enquiry_data.country_id:
+            country = db.query(Country).filter(Country.id == enquiry_data.country_id).first()
+            if not country:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Country not found."
+                )
 
         new_enquiry = Enquiry(
             name=enquiry_data.name or None,
@@ -60,9 +70,10 @@ def create_enquiry_service(enquiry_data: CreateEnquirySchema, db: Session):
             forward_to_other=enquiry_data.forward_to_other or None,
             supplier_id=enquiry_data.supplier_id or None,
             product_id=enquiry_data.product_id or None,
+            country_id=enquiry_data.country_id or None,
         )
         
-        if enquiry_data.supplier_type_ids:
+        if enquiry_data.supplier_type_ids or enquiry_data.is_quote_form:
             new_enquiry.is_quote_form = True
         
         db.add(new_enquiry)

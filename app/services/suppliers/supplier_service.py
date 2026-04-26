@@ -3,11 +3,12 @@ import time
 from datetime import datetime
 from fastapi import HTTPException, status
 from sqlalchemy import asc, desc
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 from sqlalchemy.exc import SQLAlchemyError
 import logging
 
 from app.models.supplier import Supplier
+from app.models.supplier_document import SupplierDocument
 from app.schemas.supplier_schema import (
     SupplierFilterSchema,
     CreateSupplierSchema,
@@ -67,7 +68,7 @@ def retrieve_all_suppliers(filters: SupplierFilterSchema, db: Session):
         )
 
 
-def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session):
+def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session, documents: list = None):
     """Create a new supplier."""
     try:
         # Generate slug from name
@@ -105,6 +106,18 @@ def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session):
         )
 
         db.add(new_supplier)
+        db.flush()
+
+        if documents:
+            for doc in documents:
+                doc_path = upload_file_to_s3(doc["file"], S3_SUPPLIER_FOLDER)
+                new_doc = SupplierDocument(
+                    supplier_id=new_supplier.id,
+                    name=doc["name"],
+                    document=doc_path
+                )
+                db.add(new_doc)
+
         db.commit()
         db.refresh(new_supplier)
 
@@ -123,7 +136,7 @@ def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session):
 
 def retrieve_single_supplier(slug: str, db: Session):
     """Retrieve a single supplier by slug."""
-    supplier = db.query(Supplier).filter(
+    supplier = db.query(Supplier).options(joinedload(Supplier.documents)).filter(
         Supplier.slug == slug,
         Supplier.deleted_at == None,
     ).first()
