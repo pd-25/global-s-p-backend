@@ -28,7 +28,7 @@ jobs:
             git pull origin main
 
             echo "📦 Installing dependencies..."
-            source venv/bin/activate
+            source virtualenv/bin/activate
             pip install -r requirements.txt
 
             echo "🗃️ Running database migrations..."
