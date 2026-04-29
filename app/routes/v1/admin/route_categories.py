@@ -13,29 +13,6 @@ from app.utils.file_utils import validate_image_file
 category_router = APIRouter()
 
 
-# @category_router.get("/")
-# def get_categories(db: Session= Depends(get_db))-> JSONResponse:
-#     print('this')
-#     return retrieve_all_categories(db=db)
-
-
-# @category_router.get(
-#     "/",
-#     response_model=dict,
-#     status_code=status.HTTP_200_OK
-# )
-# def get_categories(db: Session = Depends(get_db)):
-#     categories = retrieve_all_categories(db=db)
-
-#     return {
-#         "success": True,
-#         "message": "Categories fetched successfully",
-#         "data": categories,
-#         "meta": {
-#             "count": len(categories)
-#         }
-#     }
-
 @category_router.get(
     "/",
     # This is the magic: It documents that we return our Standard Envelope containing a List of Categories
@@ -80,12 +57,6 @@ def get_category(slug: str = None, db: Session = Depends(get_db)):
         success=True,
         message="Category fetched successfully",
         data=category,
-        # meta={
-        #     "count": len(categories),
-        #     "total": total_count,
-        #     "page": filters.page,
-        #     "per_page": filters.per_page,
-        # }
     )
   
 

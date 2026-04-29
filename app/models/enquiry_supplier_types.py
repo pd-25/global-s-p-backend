@@ -16,4 +16,4 @@ class EnquirySupplierType(Base):
     
     
     supplier = relationship("SupplierType", backref="enquiry_suppliers_types")
-    enquiry = relationship("Enquiry", backref="enquiry_suppliers_types")
+    enquiry = relationship("Enquiry", back_populates="enquiry_supplier_types")

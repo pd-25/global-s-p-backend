@@ -6,7 +6,13 @@ from app.enums.enums import CategoryOrderBy, SortOrder
 from app.models.category import Categories
 from sqlalchemy.exc import SQLAlchemyError
 import logging
+from app.models.product import Product
+from sqlalchemy import func
+from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
+from app.utils.string_utils import generate_slug
+import time
 
+S3_CATEGORY_FOLDER = "categories"
 from app.schemas.category_schema import CategoryFilterSchema, CategoryResponseSchema, CategoryWiseSubcategoriesFilterSchema, CreateCategorySchema, UpdateCategorySchema
 logger = logging.getLogger(__name__)
         
@@ -89,11 +95,7 @@ def fetch_categories(filters: CategoryFilterSchema, db: Session):
 
     return categories, total_count
 
-from app.utils.s3_utils import upload_file_to_s3, delete_file_from_s3
-from app.utils.string_utils import generate_slug
-import time
 
-S3_CATEGORY_FOLDER = "categories"
 
 
 async def create_category_service(category_data: CreateCategorySchema, db: Session):
@@ -210,8 +212,7 @@ def retrieve_single_category(slug: str, db: Session):
 
 
 def fetch_category_wise_subcategories(db: Session, filters: CategoryWiseSubcategoriesFilterSchema):
-    from app.models.product import Product
-    from sqlalchemy import func
+
 
     # 1. Fetch Parents
     query = db.query(Categories).filter(
@@ -292,3 +293,7 @@ def fetch_total_categories(db: Session):
         "total_main_categories": result.main_categories or 0,
         "total_sub_categories": result.sub_categories or 0
     }
+
+def fetch_category_wise_subcategories_by_slug(slug: str, db: Session):
+    data = retrieve_single_category(slug=slug, db=db)
+    return data
