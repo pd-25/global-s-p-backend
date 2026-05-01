@@ -17,6 +17,7 @@ class Supplier(Base):
     city = Column(String(255), nullable=True)
     country_id = Column(Integer, ForeignKey("countries.id"), nullable=True)
     address = Column(Text, nullable=True)
+    details = Column(Text, nullable=True)
     address_two = Column(Text, nullable=True)
     delivery_area = Column(String(255), nullable=True)
     founded_year = Column(Integer, nullable=True)

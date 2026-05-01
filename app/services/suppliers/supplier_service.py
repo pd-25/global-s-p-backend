@@ -93,6 +93,7 @@ def create_supplier_service(supplier_data: CreateSupplierSchema, db: Session, do
             city=supplier_data.city,
             country_id=supplier_data.country_id,
             address=supplier_data.address,
+            details=supplier_data.details,
             delivery_area=supplier_data.delivery_area,
             founded_year=supplier_data.founded_year,
             employee_strength=supplier_data.employee_strength,
